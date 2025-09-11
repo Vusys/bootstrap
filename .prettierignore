@@ -1,0 +1,4 @@
+js/tests/vendor/**
+js/tests/phantom.js
+js/tests/server.js
+

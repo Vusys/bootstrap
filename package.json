@@ -1,0 +1,39 @@
+{
+  "name": "bootstrap-legacy",
+  "version": "2.4.0",
+  "description": "",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "fmt": "prettier --write \"js/**/*.js\"",
+    "fmt:check": "prettier --check \"js/**/*.js\"",
+    "lint": "eslint \"js/**/*.js\"",
+    "fix": "eslint --fix \"js/**/*.js\"",
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "del": "^8.0.0",
+    "eslint": "^9.35.0",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "sass": "^1.92.1"
+  }
+}
