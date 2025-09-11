@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
 // BASE TABLES
 // -----------------
 
@@ -221,15 +222,15 @@ table th[class*="span"],
 // Hover states for .table-hover
 .table-hover tbody tr {
   &.success:hover > td {
-    background-color: darken($successBackground, 5%);
+    background-color: color.adjust($successBackground, $lightness: -5%);
   }
   &.error:hover > td {
-    background-color: darken($errorBackground, 5%);
+    background-color: color.adjust($errorBackground, $lightness: -5%);
   }
   &.warning:hover > td {
-    background-color: darken($warningBackground, 5%);
+    background-color: color.adjust($warningBackground, $lightness: -5%);
   }
   &.info:hover > td {
-    background-color: darken($infoBackground, 5%);
+    background-color: color.adjust($infoBackground, $lightness: -5%);
   }
 }

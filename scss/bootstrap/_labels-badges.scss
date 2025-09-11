@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
 // Base classes
 .label,
 .badge {
@@ -52,19 +53,19 @@ a {
 @each $item in label, badge {
   // Important (red)
   .#{$item}-important         { background-color: $errorText; }
-  .#{$item}-important[href]   { background-color: darken($errorText, 10%); }
+  .#{$item}-important[href]   { background-color: color.adjust($errorText, $lightness: -10%); }
   // Warnings (orange)
   .#{$item}-warning           { background-color: $orange; }
-  .#{$item}-warning[href]     { background-color: darken($orange, 10%); }
+  .#{$item}-warning[href]     { background-color: color.adjust($orange, $lightness: -10%); }
   // Success (green)
   .#{$item}-success           { background-color: $successText; }
-  .#{$item}-success[href]     { background-color: darken($successText, 10%); }
+  .#{$item}-success[href]     { background-color: color.adjust($successText, $lightness: -10%); }
   // Info (turquoise)
   .#{$item}-info              { background-color: $infoText; }
-  .#{$item}-info[href]        { background-color: darken($infoText, 10%); }
+  .#{$item}-info[href]        { background-color: color.adjust($infoText, $lightness: -10%); }
   // Inverse (black)
   .#{$item}-inverse           { background-color: $grayDark; }
-  .#{$item}-inverse[href]     { background-color: darken($grayDark, 10%); }
+  .#{$item}-inverse[href]     { background-color: color.adjust($grayDark, $lightness: -10%); }
 }
 
 // Quick fix for labels/badges in buttons

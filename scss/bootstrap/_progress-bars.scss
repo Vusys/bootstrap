@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
 // ANIMATIONS
 // ----------
 
@@ -115,8 +116,8 @@
 
 // Warning (orange)
 .progress-warning .bar, .progress .bar-warning {
-  @include gradient-vertical(lighten($orange, 15%), $orange);
+  @include gradient-vertical(color.adjust($orange, $lightness: 15%), $orange);
 }
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
-  @include gradient-striped(lighten($orange, 15%));
+  @include gradient-striped(color.adjust($orange, $lightness: 15%));
 }

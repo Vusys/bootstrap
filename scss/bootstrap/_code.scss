@@ -1,4 +1,5 @@
 //
+@use "sass:math";
 // Code (inline and blocK)
 // --------------------------------------------------
 
@@ -25,8 +26,8 @@ code {
 // Blocks of code
 pre {
   display: block;
-  padding: ($baseLineHeight - 1) / 2;
-  margin: 0 0 $baseLineHeight / 2;
+  padding: math.div(($baseLineHeight - 1), 2);
+  margin: 0 0 math.div($baseLineHeight, 2);
   font-size: $baseFontSize - 1; // 14px to 13px
   line-height: $baseLineHeight;
   word-break: break-all;

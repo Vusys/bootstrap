@@ -3,11 +3,13 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
+@use "sass:math";
 // Body text
 // -------------------------
 
 p {
-  margin: 0 0 $baseLineHeight / 2;
+  margin: 0 0 math.div($baseLineHeight, 2);
 }
 .lead {
   margin-bottom: $baseLineHeight;
@@ -30,23 +32,23 @@ cite    { font-style: normal; }
 // Utility classes
 .muted               { color: $grayLight; }
 a.muted:hover,
-a.muted:focus        { color: darken($grayLight, 10%); }
+a.muted:focus        { color: color.adjust($grayLight, $lightness: -10%); }
 
 .text-warning        { color: $warningText; }
 a.text-warning:hover,
-a.text-warning:focus { color: darken($warningText, 10%); }
+a.text-warning:focus { color: color.adjust($warningText, $lightness: -10%); }
 
 .text-error          { color: $errorText; }
 a.text-error:hover,
-a.text-error:focus   { color: darken($errorText, 10%); }
+a.text-error:focus   { color: color.adjust($errorText, $lightness: -10%); }
 
 .text-info           { color: $infoText; }
 a.text-info:hover,
-a.text-info:focus    { color: darken($infoText, 10%); }
+a.text-info:focus    { color: color.adjust($infoText, $lightness: -10%); }
 
 .text-success        { color: $successText; }
 a.text-success:hover,
-a.text-success:focus { color: darken($successText, 10%); }
+a.text-success:focus { color: color.adjust($successText, $lightness: -10%); }
 
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
@@ -57,7 +59,7 @@ a.text-success:focus { color: darken($successText, 10%); }
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: ($baseLineHeight / 2) 0;
+  margin: (math.div($baseLineHeight, 2)) 0;
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: $baseLineHeight;
@@ -91,7 +93,7 @@ h4 small { font-size: $baseFontSize; }
 // -------------------------
 
 .page-header {
-  padding-bottom: ($baseLineHeight / 2) - 1;
+  padding-bottom: (math.div($baseLineHeight, 2)) - 1;
   margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
   border-bottom: 1px solid $grayLighter;
 }
@@ -104,7 +106,7 @@ h4 small { font-size: $baseFontSize; }
 // Unordered and Ordered lists
 ul, ol {
   padding: 0;
-  margin: 0 0 $baseLineHeight / 2 25px;
+  margin: 0 0 math.div($baseLineHeight, 2) 25px;
 }
 ul ul,
 ul ol,
@@ -148,7 +150,7 @@ dt {
   font-weight: bold;
 }
 dd {
-  margin-left: $baseLineHeight / 2;
+  margin-left: math.div($baseLineHeight, 2);
 }
 // Horizontal layout (like forms)
 .dl-horizontal {
