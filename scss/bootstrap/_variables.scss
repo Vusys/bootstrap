@@ -3,6 +3,9 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
+@use "sass:math";
+
 // Global values
 // --------------------------------------------------
 
@@ -39,7 +42,7 @@ $textColor:             $grayDark !default;
 // Links
 // -------------------------
 $linkColor:             #08c !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColorHover:        color.adjust($linkColor, $lightness: -15%) !default;
 
 
 // Typography
@@ -85,11 +88,11 @@ $tableBorder:                       #ddd !default; // table and cell border
 // Buttons
 // -------------------------
 $btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBackgroundHighlight:            color.adjust($white, $lightness: -10%) !default;
 $btnBorder:                         #ccc !default;
 
 $btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackgroundHighlight:     color.adjust($btnPrimaryBackground, $hue: 20deg) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
@@ -97,7 +100,7 @@ $btnInfoBackgroundHighlight:        #2f96b4 !default;
 $btnSuccessBackground:              #62c462 !default;
 $btnSuccessBackgroundHighlight:     #51a351 !default;
 
-$btnWarningBackground:              lighten($orange, 15%) !default;
+$btnWarningBackground:              color.adjust($orange, $lightness: 15%) !default;
 $btnWarningBackgroundHighlight:     $orange !default;
 
 $btnDangerBackground:               #ee5f5b !default;
@@ -182,15 +185,15 @@ $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
 $navbarHeight:                    40px !default;
 $navbarBackgroundHighlight:       #ffffff !default;
-$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
-$navbarBorder:                    darken($navbarBackground, 12%) !default;
+$navbarBackground:                color.adjust($navbarBackgroundHighlight, $lightness: -5%) !default;
+$navbarBorder:                    color.adjust($navbarBackground, $lightness: -12%) !default;
 
 $navbarText:                      #777 !default;
 $navbarLinkColor:                 #777 !default;
 $navbarLinkColorHover:            $grayDark !default;
 $navbarLinkColorActive:           $gray !default;
 $navbarLinkBackgroundHover:       transparent !default;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
+$navbarLinkBackgroundActive:      color.adjust($navbarBackground, $lightness: -5%) !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
 
@@ -206,7 +209,7 @@ $navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
 $navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
 
-$navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
+$navbarInverseSearchBackground:          color.adjust($navbarInverseBackground, $lightness: 25%) !default;
 $navbarInverseSearchBackgroundFocus:     $white !default;
 $navbarInverseSearchBorder:              $navbarInverseBackground !default;
 $navbarInverseSearchPlaceholderColor:    #ccc !default;
@@ -232,19 +235,19 @@ $heroUnitLeadColor:               inherit !default;
 // -------------------------
 $warningText:             #c09853 !default;
 $warningBackground:       #fcf8e3 !default;
-$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%) !default;
+$warningBorder:           color.adjust(color.adjust($warningBackground, $hue: -10deg), $lightness: -3%) !default;
 
 $errorText:               #b94a48 !default;
 $errorBackground:         #f2dede !default;
-$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%) !default;
+$errorBorder:             color.adjust(color.adjust($errorBackground, $hue: -10deg), $lightness: -3%) !default;
 
 $successText:             #468847 !default;
 $successBackground:       #dff0d8 !default;
-$successBorder:           darken(adjust-hue($successBackground, -10), 5%) !default;
+$successBorder:           color.adjust(color.adjust($successBackground, $hue: -10deg), $lightness: -5%) !default;
 
 $infoText:                #3a87ad !default;
 $infoBackground:          #d9edf7 !default;
-$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
+$infoBorder:              color.adjust(color.adjust($infoBackground, $hue: -10deg), $lightness: -7%) !default;
 
 
 // Tooltips and popovers
@@ -257,7 +260,7 @@ $tooltipArrowColor:       $tooltipBackground !default;
 $popoverBackground:       #fff !default;
 $popoverArrowWidth:       10px !default;
 $popoverArrowColor:       #fff !default;
-$popoverTitleBackground:  darken($popoverBackground, 3%) !default;
+$popoverTitleBackground:  color.adjust($popoverBackground, $lightness: -3%) !default;
 
 // Special enhancement for popovers
 $popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
@@ -289,13 +292,13 @@ $gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWid
 
 // Fluid grid
 // -------------------------
-$fluidGridColumnWidth:    percentage($gridColumnWidth/$gridRowWidth) !default;
-$fluidGridGutterWidth:    percentage($gridGutterWidth/$gridRowWidth) !default;
+$fluidGridColumnWidth:    math.percentage(math.div($gridColumnWidth, $gridRowWidth)) !default;
+$fluidGridGutterWidth:    math.percentage(math.div($gridGutterWidth, $gridRowWidth)) !default;
 
 // 1200px min
-$fluidGridColumnWidth1200:     percentage($gridColumnWidth1200/$gridRowWidth1200) !default;
-$fluidGridGutterWidth1200:     percentage($gridGutterWidth1200/$gridRowWidth1200) !default;
+$fluidGridColumnWidth1200:     math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200)) !default;
+$fluidGridGutterWidth1200:     math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200)) !default;
 
 // 768px-979px
-$fluidGridColumnWidth768:      percentage($gridColumnWidth768/$gridRowWidth768) !default;
-$fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768) !default;
+$fluidGridColumnWidth768:      math.percentage(math.div($gridColumnWidth768, $gridRowWidth768)) !default;
+$fluidGridGutterWidth768:      math.percentage(math.div($gridGutterWidth768, $gridRowWidth768)) !default;

@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 
+@use "sass:color";
 // Use the .menu class on any <li> element within the topbar or ul.tabs and you'll get some superfancy dropdowns
 .dropup,
 .dropdown {
@@ -91,7 +92,7 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: $dropdownLinkColorHover;
-  @include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
+  @include gradient-vertical($dropdownLinkBackgroundHover, color.adjust($dropdownLinkBackgroundHover, $lightness: -5%));
 }
 
 // Active state
@@ -102,7 +103,7 @@
   color: $dropdownLinkColorActive;
   text-decoration: none;
   outline: 0;
-  @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
+  @include gradient-vertical($dropdownLinkBackgroundActive, color.adjust($dropdownLinkBackgroundActive, $lightness: -5%));
 }
 
 // Disabled state
@@ -209,7 +210,7 @@
   border-color: transparent;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-left-color: darken($dropdownBackground, 20%);
+  border-left-color: color.adjust($dropdownBackground, $lightness: -20%);
   margin-top: 5px;
   margin-right: -10px;
 }
