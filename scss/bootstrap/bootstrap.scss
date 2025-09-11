@@ -9,55 +9,57 @@
  */
 
 // Core variables and mixins
-@import "./variables"; // Modify this for custom colors, font-sizes, etc
-@import "./mixins";
+@use "./variables";
+// Modify this for custom colors, font-sizes, etc
+@use "./mixins";
 
 // CSS Reset
-@import "./reset";
+@use "./reset";
 
 // Grid system and page structure
-@import "./scaffolding";
-@import "./grid";
-@import "./layouts";
+@use "./scaffolding";
+@use "./grid";
+@use "./layouts";
 
 // Base CSS
-@import "./type";
-@import "./code";
-@import "./forms";
-@import "./tables";
+@use "./type";
+@use "./code";
+@use "./forms";
+@use "./tables";
 
 // Components: common
-@import "./sprites";
-@import "./dropdowns";
-@import "./wells";
-@import "./component-animations";
-@import "./close";
+@use "./sprites";
+@use "./dropdowns";
+@use "./wells";
+@use "./component-animations";
+@use "./close";
 
 // Components: Buttons & Alerts
-@import "./buttons";
-@import "./button-groups";
-@import "./alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+@use "./buttons";
+@use "./button-groups";
+@use "./alerts";
+// Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav
-@import "./navs";
-@import "./navbar";
-@import "./breadcrumbs";
-@import "./pagination";
-@import "./pager";
+@use "./navs";
+@use "./navbar";
+@use "./breadcrumbs";
+@use "./pagination";
+@use "./pager";
 
 // Components: Popovers
-@import "./modals";
-@import "./tooltip";
-@import "./popovers";
+@use "./modals";
+@use "./tooltip";
+@use "./popovers";
 
 // Components: Misc
-@import "./thumbnails";
-@import "./media";
-@import "./labels-badges";
-@import "./progress-bars";
-@import "./accordion";
-@import "./carousel";
-@import "./hero-unit";
+@use "./thumbnails";
+@use "./media";
+@use "./labels-badges";
+@use "./progress-bars";
+@use "./accordion";
+@use "./carousel";
+@use "./hero-unit";
 
 // Utility classes
-@import "./utilities"; // Has to be last to override when necessary
+@use "./utilities"; // Has to be last to override when necessary
