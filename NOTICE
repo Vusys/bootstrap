@@ -1,0 +1,14 @@
+NOTICE
+
+This project is a fork of Bootstrap and bootstrap-sass.
+
+Bootstrap 2.x was originally released under the Apache License, Version 2.0.
+bootstrap-sass was released under the MIT License.
+
+Portions of this code are derived from those projects and retain their
+original copyright notices. All new contributions to this fork are licensed
+under the MIT License.
+
+Original project:
+- Bootstrap: https://getbootstrap.com/
+- bootstrap-sass: https://github.com/twbs/bootstrap-sass
