@@ -89,7 +89,7 @@ input[type="color"],
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $gray;
-  @include border-radius($inputBorderRadius);
+  border-radius: $inputBorderRadius;
   vertical-align: middle;
 }
 
@@ -123,15 +123,15 @@ input[type="color"],
 .uneditable-input {
   background-color: $inputBackground;
   border: 1px solid $inputBorder;
-  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-  @include transition(border linear .2s, box-shadow linear .2s);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border linear .2s, box-shadow linear .2s;
 
   // Focus state
   &:focus {
     border-color: rgba(82,168,236,.8);
     outline: 0;
     outline: thin dotted \9; /* IE6-9 */
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6));
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
   }
 }
 
@@ -194,7 +194,7 @@ input[type="checkbox"]:focus {
   color: $grayLight;
   background-color: color.adjust($inputBackground, $lightness: -1%);
   border-color: $inputBorder;
-  @include box-shadow(inset 0 1px 2px rgba(0,0,0,.025));
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.025);
   cursor: not-allowed;
 }
 
@@ -217,7 +217,7 @@ input[type="checkbox"]:focus {
 // Placeholder text gets special styles because when browsers invalidate entire lines if it doesn't understand a selector
 input,
 textarea {
-  @include placeholder();
+  &::placeholder { color: $placeholderText; }
 }
 
 
@@ -377,7 +377,7 @@ select:focus:invalid {
   border-color: #ee5f5b;
   &:focus {
     border-color: color.adjust(#ee5f5b, $lightness: -10%);
-    @include box-shadow(0 0 6px color.adjust(#ee5f5b, $lightness: 20%));
+    box-shadow: 0 0 6px color.adjust(#ee5f5b, $lightness: 20%);
   }
 }
 
@@ -447,7 +447,7 @@ select:focus:invalid {
     margin-bottom: 0; // prevent bottom margin from screwing up alignment in stacked forms
     *margin-left: 0;
     vertical-align: top;
-    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+    border-radius: 0 $inputBorderRadius $inputBorderRadius 0;
     // Make input on top when focused so blue border and shadow always show
     &:focus {
       z-index: 2;
@@ -471,7 +471,7 @@ select:focus:invalid {
   .btn,
   .btn-group > .dropdown-toggle {
     vertical-align: top;
-    @include border-radius(0);
+    border-radius: 0;
   }
   .active {
     background-color: color.adjust($green, $lightness: 30%);
@@ -487,7 +487,7 @@ select:focus:invalid {
   .add-on:first-child,
   .btn:first-child {
     // FYI, `.btn:first-child` accounts for a button group that's prepended
-    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
+    border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
   }
 }
 
@@ -495,9 +495,9 @@ select:focus:invalid {
   input,
   select,
   .uneditable-input {
-    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
+    border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
     + .btn-group .btn:last-child {
-      @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+      border-radius: 0 $inputBorderRadius $inputBorderRadius 0;
     }
   }
   .add-on,
@@ -508,7 +508,7 @@ select:focus:invalid {
   .add-on:last-child,
   .btn:last-child,
   .btn-group:last-child > .dropdown-toggle {
-    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+    border-radius: 0 $inputBorderRadius $inputBorderRadius 0;
   }
 }
 
@@ -517,20 +517,20 @@ select:focus:invalid {
   input,
   select,
   .uneditable-input {
-    @include border-radius(0);
+    border-radius: 0;
     + .btn-group .btn {
-      @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+      border-radius: 0 $inputBorderRadius $inputBorderRadius 0;
     }
   }
   .add-on:first-child,
   .btn:first-child {
     margin-right: -1px;
-    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
+    border-radius: $inputBorderRadius 0 0 $inputBorderRadius;
   }
   .add-on:last-child,
   .btn:last-child {
     margin-left: -1px;
-    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+    border-radius: 0 $inputBorderRadius $inputBorderRadius 0;
   }
   .btn-group:first-child {
     margin-left: 0;
@@ -549,25 +549,25 @@ input.search-query {
   padding-left: 14px;
   padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0; // Remove the default margin on all inputs
-  @include border-radius(15px);
+  border-radius: 15px;
 }
 
 /* Allow for input prepend/append in search forms */
 .form-search .input-append .search-query,
 .form-search .input-prepend .search-query {
-  @include border-radius(0); // Override due to specificity
+  border-radius: 0; // Override due to specificity
 }
 .form-search .input-append .search-query {
-  @include border-radius(14px 0 0 14px);
+  border-radius: 14px 0 0 14px;
 }
 .form-search .input-append .btn {
-  @include border-radius(0 14px 14px 0);
+  border-radius: 0 14px 14px 0;
 }
 .form-search .input-prepend .search-query {
-  @include border-radius(0 14px 14px 0);
+  border-radius: 0 14px 14px 0;
 }
 .form-search .input-prepend .btn {
-  @include border-radius(14px 0 0 14px);
+  border-radius: 14px 0 0 14px;
 }
 
 

@@ -22,7 +22,7 @@
   > .item {
     display: none;
     position: relative;
-    @include transition(.6s ease-in-out left);
+    transition: .6s ease-in-out left;
 
   // Account for jankitude on images
     > img,
@@ -84,7 +84,7 @@
   text-align: center;
   background: $grayDarker;
   border: 3px solid $white;
-  @include border-radius(23px);
+  border-radius: 23px;
   @include opacity(50);
 
   // we can't have this transition here
