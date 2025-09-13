@@ -1,17 +1,17 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
 
 
-@media (max-width: 767px) {
-
+@media (width <= 767px) {
   // Padding to set content in a bit
   body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -19,6 +19,7 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+
   // Remove padding on container given explicit padding set on body
   .container-fluid {
     padding: 0;
@@ -34,6 +35,7 @@
       width: auto;
       text-align: left;
     }
+
     dd {
       margin-left: 0;
     }
@@ -45,19 +47,23 @@
   .container {
     width: auto;
   }
+
   // Fluid rows
   .row-fluid {
     width: 100%;
   }
+
   // Undo negative margin on rows and thumbnails
   .row,
   .thumbnails {
     margin-left: 0;
   }
+
   .thumbnails > li {
     float: none;
     margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
   }
+
   // Make all grid-sized elements block level again
   [class*="span"],
   .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
@@ -68,11 +74,13 @@
     margin-left: 0;
     box-sizing: border-box;
   }
+
   .span12,
   .row-fluid .span12 {
     width: 100%;
     box-sizing: border-box;
   }
+
   .row-fluid [class*="offset"]:first-child {
     margin-left: 0;
   }
@@ -87,8 +95,9 @@
   select[class*="span"],
   textarea[class*="span"],
   .uneditable-input {
-    @include input-block-level();
+    @include input-block-level;
   }
+
   // But don't let it screw up prepend/append inputs
   .input-prepend input,
   .input-append input,
@@ -97,6 +106,7 @@
     display: inline-block; // redeclare so they don't wrap to new lines
     width: auto;
   }
+
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 0;
   }
@@ -120,11 +130,10 @@
 // UP TO LANDSCAPE PHONE
 // ---------------------
 
-@media (max-width: 480px) {
-
+@media (width <= 480px) {
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
+    transform: translate3d(0, 0, 0); // activate the GPU
   }
 
   // Block level the page header small tag for readability
@@ -147,14 +156,17 @@
       padding-top: 0;
       text-align: left;
     }
+
     // Move over all input controls and content
     .controls {
       margin-left: 0;
     }
+
     // Move the options list down to align with labels
     .control-list {
       padding-top: 0; // has to be padding because margin collaspes
     }
+
     // Move over buttons in .form-actions to align with .controls
     .form-actions {
       padding-left: 10px;
@@ -170,6 +182,7 @@
     display: block;
     margin-bottom: 10px;
   }
+
   // Remove side margins since we stack instead of indent
   .media-object {
     margin-right: 0;
@@ -182,6 +195,7 @@
     left:  10px;
     right: 10px;
   }
+
   .modal-header .close {
     padding: 10px;
     margin: -10px;

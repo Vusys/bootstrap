@@ -1,11 +1,12 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Labels and badges
 // --------------------------------------------------
 
 
 @use "sass:color";
+
 // Base classes
 .label,
 .badge {
@@ -17,13 +18,15 @@
   color: $white;
   vertical-align: baseline;
   white-space: nowrap;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
   background-color: $grayLight;
 }
+
 // Set unique padding and border-radii
 .label {
   border-radius: 3px;
 }
+
 .badge {
   padding-left: 9px;
   padding-right: 9px;
@@ -31,11 +34,9 @@
 }
 
 // Empty labels/badges collapse
-.label,
-.badge {
-  &:empty {
-    display: none;
-  }
+.label:empty,
+.badge:empty {
+  display: none;
 }
 
 // Hover/focus state, but only for links
@@ -56,15 +57,19 @@ a {
   // Important (red)
   .#{$item}-important         { background-color: $errorText; }
   .#{$item}-important[href]   { background-color: color.adjust($errorText, $lightness: -10%); }
+
   // Warnings (orange)
   .#{$item}-warning           { background-color: $orange; }
   .#{$item}-warning[href]     { background-color: color.adjust($orange, $lightness: -10%); }
+
   // Success (green)
   .#{$item}-success           { background-color: $successText; }
   .#{$item}-success[href]     { background-color: color.adjust($successText, $lightness: -10%); }
+
   // Info (turquoise)
   .#{$item}-info              { background-color: $infoText; }
   .#{$item}-info[href]        { background-color: color.adjust($infoText, $lightness: -10%); }
+
   // Inverse (black)
   .#{$item}-inverse           { background-color: $grayDark; }
   .#{$item}-inverse[href]     { background-color: color.adjust($grayDark, $lightness: -10%); }
@@ -78,6 +83,7 @@ a {
     top: -1px;
   }
 }
+
 .btn-mini {
   .label,
   .badge {

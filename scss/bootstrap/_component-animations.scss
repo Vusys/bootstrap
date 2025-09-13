@@ -1,6 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Component animations
 // --------------------------------------------------
 
@@ -8,6 +8,7 @@
 .fade {
   opacity: 0;
   transition: opacity .15s linear;
+
   &.in {
     opacity: 1;
   }
@@ -18,6 +19,7 @@
   height: 0;
   overflow: hidden;
   transition: height .35s ease;
+
   &.in {
     height: auto;
   }
