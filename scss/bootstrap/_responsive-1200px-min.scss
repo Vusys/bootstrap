@@ -1,12 +1,11 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Responsive: Large desktop and up
 // --------------------------------------------------
 
 
-@media (min-width: 1200px) {
-
+@media (width >= 1200px) {
   // Fixed grid
   @include grid-core($gridColumnWidth1200, $gridGutterWidth1200);
 
@@ -20,9 +19,11 @@
   .thumbnails {
     margin-left: -$gridGutterWidth1200;
   }
+
   .thumbnails > li {
     margin-left: $gridGutterWidth1200;
   }
+
   .row-fluid .thumbnails {
     margin-left: 0;
   }

@@ -1,11 +1,12 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Tables
 // --------------------------------------------------
 
 
 @use "sass:color";
+
 // BASE TABLES
 // -----------------
 
@@ -22,6 +23,7 @@ table {
 .table {
   width: 100%;
   margin-bottom: $baseLineHeight;
+
   // Cells
   th,
   td {
@@ -30,14 +32,22 @@ table {
     text-align: left;
     vertical-align: top;
     border-top: 1px solid $tableBorder;
+
+    // Width helpers for spanX cells within .table
+    @for $i from 1 through 12 {
+      &.span#{$i} { @include table-columns($i); }
+    }
   }
+
   th {
     font-weight: bold;
   }
+
   // Bottom align for column headings
   thead th {
     vertical-align: bottom;
   }
+
   // Remove top border from thead by default
   caption + thead tr:first-child th,
   caption + thead tr:first-child td,
@@ -47,6 +57,7 @@ table {
   thead:first-child tr:first-child td {
     border-top: 0;
   }
+
   // Account for multiple tbody instances
   tbody + tbody {
     border-top: 2px solid $tableBorder;
@@ -56,6 +67,8 @@ table {
   .table {
     background-color: $bodyBackground;
   }
+
+  
 }
 
 
@@ -80,10 +93,12 @@ table {
   *border-collapse: collapse; // IE7 can't round corners anyway
   border-left: 0;
   border-radius: $baseBorderRadius;
+
   th,
   td {
     border-left: 1px solid $tableBorder;
   }
+
   // Prevent a double border
   caption + thead tr:first-child th,
   caption + tbody tr:first-child th,
@@ -96,18 +111,21 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
+
   // For first th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:first-child,
   tbody:first-child tr:first-child > td:first-child,
   tbody:first-child tr:first-child > th:first-child {
     border-top-left-radius: $baseBorderRadius;
   }
+
   // For last th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:last-child,
   tbody:first-child tr:first-child > td:last-child,
   tbody:first-child tr:first-child > th:last-child {
     border-top-right-radius: $baseBorderRadius;
   }
+
   // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:first-child,
   tbody:last-child tr:last-child > td:first-child,
@@ -116,6 +134,7 @@ table {
   tfoot:last-child tr:last-child > th:first-child {
     border-bottom-left-radius: $baseBorderRadius;
   }
+
   // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
@@ -129,6 +148,7 @@ table {
   tfoot + tbody:last-child tr:last-child td:first-child {
     border-bottom-left-radius: 0;
   }
+
   tfoot + tbody:last-child tr:last-child td:last-child {
     border-bottom-right-radius: 0;
   }
@@ -140,6 +160,7 @@ table {
   colgroup + tbody tr:first-child td:first-child {
     border-top-left-radius: $baseBorderRadius;
   }
+
   caption + thead tr:first-child th:last-child,
   caption + tbody tr:first-child td:last-child,
   colgroup + thead tr:first-child th:last-child,
@@ -193,12 +214,7 @@ table th[class*="span"],
 }
 
 // Change the column widths to account for td/th padding
-.table td,
-.table th {
-  @for $i from 1 through 12 {
-    &.span#{$i} { @include tableColumns($i); }
-  }
-}
+// Moved width helpers into the .table block above
 
 
 
@@ -210,12 +226,15 @@ table th[class*="span"],
   &.success > td {
     background-color: $successBackground;
   }
+
   &.error > td {
     background-color: $errorBackground;
   }
+
   &.warning > td {
     background-color: $warningBackground;
   }
+
   &.info > td {
     background-color: $infoBackground;
   }
@@ -226,12 +245,15 @@ table th[class*="span"],
   &.success:hover > td {
     background-color: color.adjust($successBackground, $lightness: -5%);
   }
+
   &.error:hover > td {
     background-color: color.adjust($errorBackground, $lightness: -5%);
   }
+
   &.warning:hover > td {
     background-color: color.adjust($warningBackground, $lightness: -5%);
   }
+
   &.info:hover > td {
     background-color: color.adjust($infoBackground, $lightness: -5%);
   }

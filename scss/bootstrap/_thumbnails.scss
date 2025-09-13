@@ -1,6 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Thumbnails
 // --------------------------------------------------
 
@@ -11,8 +11,10 @@
 .thumbnails {
   margin-left: -$gridGutterWidth;
   list-style: none;
-  @include clearfix();
+
+  @include clearfix;
 }
+
 // Fluid rows have no left margin
 .row-fluid .thumbnails {
   margin-left: 0;
@@ -32,14 +34,15 @@
   line-height: $baseLineHeight;
   border: 1px solid #ddd;
   border-radius: $baseBorderRadius;
-  box-shadow: 0 1px 3px rgba(0,0,0,.055);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 5.5%);
   transition: all .2s ease-in-out;
 }
+
 // Add a hover/focus state for linked versions only
 a.thumbnail:hover,
 a.thumbnail:focus {
   border-color: $linkColor;
-  box-shadow: 0 1px 4px rgba(0,105,214,.25);
+  box-shadow: 0 1px 4px rgb(0 105 214 / 25%);
 }
 
 // Images and captions
@@ -49,6 +52,7 @@ a.thumbnail:focus {
   margin-left: auto;
   margin-right: auto;
 }
+
 .thumbnail .caption {
   padding: 9px;
   color: $gray;

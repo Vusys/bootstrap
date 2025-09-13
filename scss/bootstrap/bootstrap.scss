@@ -10,6 +10,7 @@
 
 // Core variables and mixins
 @use "./variables";
+
 // Modify this for custom colors, font-sizes, etc
 @use "./mixins";
 
@@ -38,6 +39,7 @@
 @use "./buttons";
 @use "./button-groups";
 @use "./alerts";
+
 // Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav

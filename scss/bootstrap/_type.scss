@@ -1,18 +1,20 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Typography
 // --------------------------------------------------
 
 
 @use "sass:color";
 @use "sass:math";
+
 // Body text
 // -------------------------
 
 p {
   margin: 0 0 math.div($baseLineHeight, 2);
 }
+
 .lead {
   margin-bottom: $baseLineHeight;
   font-size: $baseFontSize * 1.5;
@@ -33,22 +35,27 @@ cite    { font-style: normal; }
 
 // Utility classes
 .muted               { color: $grayLight; }
+
 a.muted:hover,
 a.muted:focus        { color: color.adjust($grayLight, $lightness: -10%); }
 
 .text-warning        { color: $warningText; }
+
 a.text-warning:hover,
 a.text-warning:focus { color: color.adjust($warningText, $lightness: -10%); }
 
 .text-error          { color: $errorText; }
+
 a.text-error:hover,
 a.text-error:focus   { color: color.adjust($errorText, $lightness: -10%); }
 
 .text-info           { color: $infoText; }
+
 a.text-info:hover,
 a.text-info:focus    { color: color.adjust($infoText, $lightness: -10%); }
 
 .text-success        { color: $successText; }
+
 a.text-success:hover,
 a.text-success:focus { color: color.adjust($successText, $lightness: -10%); }
 
@@ -110,12 +117,14 @@ ul, ol {
   padding: 0;
   margin: 0 0 math.div($baseLineHeight, 2) 25px;
 }
+
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
 }
+
 li {
   line-height: $baseLineHeight;
 }
@@ -132,9 +141,12 @@ ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
+
   > li {
     display: inline-block;
-    @include ie7-inline-block();
+
+    @include ie7-inline-block;
+
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -144,26 +156,32 @@ ol.inline {
 dl {
   margin-bottom: $baseLineHeight;
 }
+
 dt,
 dd {
   line-height: $baseLineHeight;
 }
+
 dt {
   font-weight: bold;
 }
+
 dd {
   margin-left: math.div($baseLineHeight, 2);
 }
+
 // Horizontal layout (like forms)
 .dl-horizontal {
-  @include clearfix(); // Ensure dl clears floats if empty dd elements present
+  @include clearfix; // Ensure dl clears floats if empty dd elements present
   dt {
     float: left;
     width: $horizontalComponentOffset - 20;
     clear: left;
     text-align: right;
-    @include text-overflow();
+
+    @include text-overflow;
   }
+
   dd {
     margin-left: $horizontalComponentOffset;
   }
@@ -187,6 +205,7 @@ abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted $grayLight;
 }
+
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
@@ -197,17 +216,20 @@ blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 $baseLineHeight;
   border-left: 5px solid $grayLighter;
+
   p {
     margin-bottom: 0;
     font-size: $baseFontSize * 1.25;
     font-weight: 300;
     line-height: 1.25;
   }
+
   small {
     display: block;
     line-height: $baseLineHeight;
     color: $grayLight;
-    &:before {
+
+    &::before {
       content: '\2014 \00A0';
     }
   }
@@ -219,15 +241,18 @@ blockquote {
     padding-left: 0;
     border-right: 5px solid $grayLighter;
     border-left: 0;
+
     p,
     small {
       text-align: right;
     }
+
     small {
-      &:before {
+      &::before {
         content: '';
       }
-      &:after {
+
+      &::after {
         content: '\00A0 \2014';
       }
     }
@@ -235,10 +260,10 @@ blockquote {
 }
 
 // Quotes
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
   content: "";
 }
 

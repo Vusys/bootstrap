@@ -1,6 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Utility classes
 // --------------------------------------------------
 
@@ -9,6 +9,7 @@
 .pull-right {
   float: right;
 }
+
 .pull-left {
   float: left;
 }
@@ -17,6 +18,7 @@
 .hide {
   display: none;
 }
+
 .show {
   display: block;
 }
@@ -33,15 +35,15 @@
 
 // Clearing floats
 .clearfix {
-  @include clearfix();
+  @include clearfix;
 }
 
 // Accessible yet invisible text
 .hide-text {
-  @include hide-text();
+  @include hide-text;
 }
 
 // Uses box-sizing mixin, so must be defined here
 .input-block-level {
-  @include input-block-level();
+  @include input-block-level;
 }

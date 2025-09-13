@@ -1,6 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
-//
+
 // Hero unit
 // --------------------------------------------------
 
@@ -14,6 +14,7 @@
   color: $heroUnitLeadColor;
   background-color: $heroUnitBackground;
   border-radius: 6px;
+
   h1 {
     margin-bottom: 0;
     font-size: 60px;
@@ -21,6 +22,7 @@
     color: $heroUnitHeadingColor;
     letter-spacing: -1px;
   }
+
   li {
     line-height: $baseLineHeight * 1.5; // Reset since we specify in type.scss
   }
