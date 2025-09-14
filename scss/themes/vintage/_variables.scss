@@ -1,0 +1,203 @@
+@use "sass:color";
+@use "sass:math";
+
+// Vintage — Variables (1950s retro)
+
+// Grays
+$black:                 #000;
+$grayDarker:            #2b1d17;
+$grayDark:              #3f2a22;
+$gray:                  #6a4e42; // brownish gray
+$grayLight:             #a08a7f;
+$grayLighter:           #efe6dd;
+$white:                 #fffdfa;
+
+// Accent colors
+$blue:                  #40E0D0; // turquoise
+$blueDark:              #0F766E; // deep teal
+$green:                 #228B22; // forest
+$red:                   #B22222; // deep red
+$yellow:                #DAA520; // mustard
+$orange:                #DC7633; // warm orange
+$pink:                  #EAA4B8; // retro pink
+$purple:                #7B5EA7; // muted purple
+
+// Scaffolding
+$bodyBackground:        #FAF7F0; // off-white paper
+$textColor:             #3E2C25; // dark brown
+
+// Links
+$linkColor:             #DC143C; // classic red
+$linkColorHover:        color.adjust($linkColor, $lightness: -10%);
+
+// Typography
+$sansFontFamily:        "Futura", "Avenir Next", Helvetica, Arial, sans-serif;
+$serifFontFamily:       "Playfair Display", Georgia, serif;
+$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+$baseFontSize:          15px;
+$baseFontFamily:        $serifFontFamily;
+$baseLineHeight:        22px;
+$altFontFamily:         $sansFontFamily;
+$headingsFontFamily:    'Playfair Display', serif;
+$headingsFontWeight:    700;
+$headingsColor:         #2b1d17;
+
+// Component sizing
+$fontSizeLarge:         $baseFontSize * 1.25;
+$fontSizeSmall:         $baseFontSize * 0.85;
+$fontSizeMini:          $baseFontSize * 0.75;
+$paddingLarge:          12px 20px;
+$paddingSmall:          3px 10px;
+$paddingMini:           0 6px;
+$baseBorderRadius:      6px;
+$borderRadiusLarge:     8px;
+$borderRadiusSmall:     3px;
+
+// Tables
+$tableBackground:                   #FFF9F0;
+$tableBackgroundAccent:             #F2E6D9;
+$tableBackgroundHover:              #E9DCCE;
+$tableBorder:                       #D7C7B6;
+
+// Buttons
+$btnBackground:                     #fff8ef;
+$btnBackgroundHighlight:            #fff2e3;
+$btnBorder:                         #d7c7b6;
+$btnPrimaryBackground:              $linkColor;
+$btnPrimaryBackgroundHighlight:     color.adjust($linkColor, $lightness: -8%);
+$btnInfoBackground:                 $blue;
+$btnInfoBackgroundHighlight:        color.adjust($blue, $lightness: -8%);
+$btnSuccessBackground:              $green;
+$btnSuccessBackgroundHighlight:     color.adjust($green, $lightness: -8%);
+$btnWarningBackground:              $yellow;
+$btnWarningBackgroundHighlight:     color.adjust($yellow, $lightness: -8%);
+$btnDangerBackground:               $red;
+$btnDangerBackgroundHighlight:      color.adjust($red, $lightness: -8%);
+$btnInverseBackground:              $grayDark;
+$btnInverseBackgroundHighlight:     color.adjust($grayDark, $lightness: -8%);
+
+// Forms
+$inputBackground:               #fffdfa;
+$inputBorder:                   #d7c7b6;
+$inputBorderRadius:             $baseBorderRadius;
+$inputDisabledBackground:       #efe6dd;
+$formActionsBackground:         #f4eadf;
+$inputHeight:                   $baseLineHeight + 10px;
+
+// Dropdowns
+$dropdownBackground:            #fff8ef;
+$dropdownBorder:                rgba(0,0,0,.1);
+$dropdownDividerTop:            #eadac9;
+$dropdownDividerBottom:         $white;
+$dropdownLinkColor:             $textColor;
+$dropdownLinkColorHover:        $white;
+$dropdownLinkColorActive:       $white;
+$dropdownLinkBackgroundActive:  $linkColor;
+$dropdownLinkBackgroundHover:   $linkColor;
+
+// Z-index
+$zindexDropdown:          1000;
+$zindexPopover:           1010;
+$zindexTooltip:           1030;
+$zindexFixedNavbar:       1030;
+$zindexModalBackdrop:     1040;
+$zindexModal:             1050;
+
+// Sprites
+$iconSpritePath:          "../img/glyphicons-halflings.png";
+$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+
+// Placeholders / hr
+$placeholderText:         $grayLight;
+$hrBorder:                #eadac9;
+
+// Horizontal forms & lists
+$horizontalComponentOffset:       180px;
+
+// Wells
+$wellBackground:                  #fff2e3;
+
+// Navbar
+$navbarCollapseWidth:             979px;
+$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+$navbarHeight:                    56px;
+$navbarBackground:                #fff2e3;
+$navbarBackgroundHighlight:       #ffe9d1;
+$navbarBorder:                    #e2cfbb;
+$navbarText:                      $gray;
+$navbarLinkColor:                 $textColor;
+$navbarLinkColorHover:            $linkColor;
+$navbarLinkColorActive:           $navbarLinkColorHover;
+$navbarLinkBackgroundHover:       transparent;
+$navbarLinkBackgroundActive:      transparent;
+$navbarBrandColor:                $textColor;
+
+// Inverted navbar
+$navbarInverseBackground:                $blueDark;
+$navbarInverseBackgroundHighlight:       color.adjust($blueDark, $lightness: 5%);
+$navbarInverseBorder:                    color.adjust($blueDark, $lightness: -5%);
+$navbarInverseText:                      #f7f1e8;
+$navbarInverseLinkColor:                 #f7f1e8;
+$navbarInverseLinkColorHover:            $yellow;
+$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover;
+$navbarInverseLinkBackgroundHover:       transparent;
+$navbarInverseLinkBackgroundActive:      transparent;
+$navbarInverseSearchBackground:          #fff8ef;
+$navbarInverseSearchBackgroundFocus:     #fff8ef;
+$navbarInverseSearchBorder:              $navbarInverseBackground;
+$navbarInverseSearchPlaceholderColor:    $grayLight;
+$navbarInverseBrandColor:                $navbarInverseLinkColor;
+
+// Pagination
+$paginationBackground:                #fff8ef;
+$paginationBorder:                    #e2cfbb;
+$paginationActiveBackground:          $linkColor;
+
+// Hero unit
+$heroUnitBackground:              #fff2e3;
+$heroUnitHeadingColor:            inherit;
+$heroUnitLeadColor:               inherit;
+
+// Form states and alerts
+$warningText:             #3E2C25;
+$warningBackground:       color.adjust($yellow, $lightness: 15%);
+$warningBorder:           color.adjust($yellow, $lightness: -5%);
+$errorText:               #3E2C25;
+$errorBackground:         color.adjust($red, $lightness: 30%);
+$errorBorder:             color.adjust($red, $lightness: 5%);
+$successText:             #3E2C25;
+$successBackground:       color.adjust($green, $lightness: 30%);
+$successBorder:           color.adjust($green, $lightness: 5%);
+$infoText:                #3E2C25;
+$infoBackground:          color.adjust($blue, $lightness: 25%);
+$infoBorder:              color.adjust($blue, $lightness: 5%);
+
+// Tooltips and popovers
+$tooltipColor:            #fff;
+$tooltipBackground:       #3f2a22;
+$tooltipArrowWidth:       5px;
+$tooltipArrowColor:       $tooltipBackground;
+$popoverBackground:       #fff8ef;
+$popoverArrowWidth:       10px;
+$popoverArrowColor:       $popoverBackground;
+$popoverTitleBackground:  #ffe9d1;
+$popoverArrowOuterWidth:  $popoverArrowWidth + 1;
+$popoverArrowOuterColor:  rgba(0,0,0,.15);
+
+// GRID
+$gridColumns:             12;
+$gridColumnWidth:         60px;
+$gridGutterWidth:         20px;
+$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
+$gridColumnWidth1200:     70px;
+$gridGutterWidth1200:     30px;
+$gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
+$gridColumnWidth768:      42px;
+$gridGutterWidth768:      20px;
+$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
+$fluidGridColumnWidth:    math.percentage(math.div($gridColumnWidth, $gridRowWidth));
+$fluidGridGutterWidth:    math.percentage(math.div($gridGutterWidth, $gridRowWidth));
+$fluidGridColumnWidth1200:     math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200));
+$fluidGridGutterWidth1200:     math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200));
+$fluidGridColumnWidth768:      math.percentage(math.div($gridColumnWidth768, $gridRowWidth768));
+$fluidGridGutterWidth768:      math.percentage(math.div($gridGutterWidth768, $gridRowWidth768));
