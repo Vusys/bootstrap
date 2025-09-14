@@ -13,7 +13,8 @@
     "lint:scss": "stylelint \"scss/**/*.scss\"",
     "lint:scss:fix": "stylelint \"scss/**/*.scss\" --fix",
     "start": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:copy": "cp -r dist/css dist/js dist/img dist/themes docs/_media/"
   },
   "keywords": [],
   "author": "",
