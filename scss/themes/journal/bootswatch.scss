@@ -5,7 +5,7 @@
 // Journal 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url('//fonts.googleapis.com/css?family=News+Cycle:400,700');
+@import '//fonts.googleapis.com/css?family=News+Cycle:400,700';
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
@@ -63,7 +63,7 @@ hr { border-bottom: 1px solid $grayLighter; }
   }
 
   .nav > li > a {
-    padding: 20px 10px 20px;
+    padding: 20px 10px;
     font-size: 18px;
     text-shadow: none;
     text-transform: uppercase;
@@ -102,6 +102,7 @@ hr { border-bottom: 1px solid $grayLighter; }
   .navbar-search .search-query:hover {
     border: 2px solid $grayLighter;
     color: $textColor;
+
     // placeholder mixin equivalent
     &::placeholder { color: $gray; }
   }
@@ -216,7 +217,7 @@ legend {
 
 .hero-unit {
   padding: 30px 60px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(0 0 0 / 5%);
   border-radius: 0;
   box-shadow: none;
 
@@ -227,7 +228,7 @@ legend {
 }
 
 .modal {
-  border-radius: 0px;
+  border-radius: 0;
   background: $bodyBackground;
 }
 
@@ -242,7 +243,7 @@ legend {
 .close,
 .close:hover { border-bottom: none; }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   div.subnav {
     height: auto;
 

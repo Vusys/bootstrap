@@ -4,200 +4,200 @@
 // Neon — Variables (cyberpunk/synthwave)
 
 // Grays
-$black:                 #000;
-$grayDarker:            #0b0b0b;
-$grayDark:              #141414;
-$gray:                  #6b6b6b;
-$grayLight:             #9b9b9b;
-$grayLighter:           #e5e5e5;
-$white:                 #fff;
+$black: #000;
+$grayDarker: #0b0b0b;
+$grayDark: #141414;
+$gray: #6b6b6b;
+$grayLight: #9b9b9b;
+$grayLighter: #e5e5e5;
+$white: #fff;
 
 // Accent colors
-$blue:                  #7DF9FF; // neon cyan
-$blueDark:              #1A1A1A; // deep black background
-$green:                 #39FF14; // neon green
-$red:                   #FF1744; // neon red
-$yellow:                #FFD600; // neon yellow
-$orange:                #FF8C00; // neon orange
-$pink:                  #FF1493; // hot pink
-$purple:                #8A2BE2; // electric purple
+$blue: #7DF9FF; // neon cyan
+$blueDark: #1A1A1A; // deep black background
+$green: #39FF14; // neon green
+$red: #FF1744; // neon red
+$yellow: #FFD600; // neon yellow
+$orange: #FF8C00; // neon orange
+$pink: #FF1493; // hot pink
+$purple: #8A2BE2; // electric purple
 
 // Scaffolding
-$bodyBackground:        #000000;
-$textColor:             #EDEDED;
+$bodyBackground: #000;
+$textColor: #EDEDED;
 
 // Links
-$linkColor:             $pink;
-$linkColorHover:        $blue;
+$linkColor: $pink;
+$linkColorHover: $blue;
 
 // Typography
-$sansFontFamily:        "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
-$baseFontSize:          15px;
-$baseFontFamily:        $sansFontFamily;
-$baseLineHeight:        20px;
-$altFontFamily:         $sansFontFamily;
-$headingsFontFamily:    'Montserrat', sans-serif;
-$headingsFontWeight:    700;
-$headingsColor:         $pink;
+$sansFontFamily: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+$serifFontFamily: georgia, "Times New Roman", times, serif;
+$monoFontFamily: menlo, monaco, consolas, "Courier New", monospace;
+$baseFontSize: 15px;
+$baseFontFamily: $sansFontFamily;
+$baseLineHeight: 20px;
+$altFontFamily: $sansFontFamily;
+$headingsFontFamily: 'Montserrat', sans-serif;
+$headingsFontWeight: 700;
+$headingsColor: $pink;
 
 // Component sizing
-$fontSizeLarge:         $baseFontSize * 1.25;
-$fontSizeSmall:         $baseFontSize * 0.85;
-$fontSizeMini:          $baseFontSize * 0.75;
-$paddingLarge:          11px 19px;
-$paddingSmall:          2px 10px;
-$paddingMini:           0 6px;
-$baseBorderRadius:      4px;
-$borderRadiusLarge:     6px;
-$borderRadiusSmall:     3px;
+$fontSizeLarge: $baseFontSize * 1.25;
+$fontSizeSmall: $baseFontSize * 0.85;
+$fontSizeMini: $baseFontSize * 0.75;
+$paddingLarge: 11px 19px;
+$paddingSmall: 2px 10px;
+$paddingMini: 0 6px;
+$baseBorderRadius: 4px;
+$borderRadiusLarge: 6px;
+$borderRadiusSmall: 3px;
 
 // Tables
-$tableBackground:                   #0d0d0d;
-$tableBackgroundAccent:             #121212;
-$tableBackgroundHover:              #161616;
-$tableBorder:                       #1f1f1f;
+$tableBackground: #0d0d0d;
+$tableBackgroundAccent: #121212;
+$tableBackgroundHover: #161616;
+$tableBorder: #1f1f1f;
 
 // Buttons
-$btnBackground:                     #0d0d0d;
-$btnBackgroundHighlight:            #101010;
-$btnBorder:                         #1f1f1f;
-$btnPrimaryBackground:              $pink;
-$btnPrimaryBackgroundHighlight:     color.adjust($pink, $lightness: -8%);
-$btnInfoBackground:                 $blue;
-$btnInfoBackgroundHighlight:        color.adjust($blue, $lightness: -10%);
-$btnSuccessBackground:              $green;
-$btnSuccessBackgroundHighlight:     color.adjust($green, $lightness: -10%);
-$btnWarningBackground:              $yellow;
-$btnWarningBackgroundHighlight:     color.adjust($yellow, $lightness: -10%);
-$btnDangerBackground:               $red;
-$btnDangerBackgroundHighlight:      color.adjust($red, $lightness: -10%);
-$btnInverseBackground:              $purple;
-$btnInverseBackgroundHighlight:     color.adjust($purple, $lightness: -8%);
+$btnBackground: #0d0d0d;
+$btnBackgroundHighlight: #101010;
+$btnBorder: #1f1f1f;
+$btnPrimaryBackground: $pink;
+$btnPrimaryBackgroundHighlight: color.adjust($pink, $lightness: -8%);
+$btnInfoBackground: $blue;
+$btnInfoBackgroundHighlight: color.adjust($blue, $lightness: -10%);
+$btnSuccessBackground: $green;
+$btnSuccessBackgroundHighlight: color.adjust($green, $lightness: -10%);
+$btnWarningBackground: $yellow;
+$btnWarningBackgroundHighlight: color.adjust($yellow, $lightness: -10%);
+$btnDangerBackground: $red;
+$btnDangerBackgroundHighlight: color.adjust($red, $lightness: -10%);
+$btnInverseBackground: $purple;
+$btnInverseBackgroundHighlight: color.adjust($purple, $lightness: -8%);
 
 // Forms
-$inputBackground:               #0b0b0b;
-$inputBorder:                   #232323;
-$inputBorderRadius:             $baseBorderRadius;
-$inputDisabledBackground:       #141414;
-$formActionsBackground:         transparent;
-$inputHeight:                   $baseLineHeight + 10px;
+$inputBackground: #0b0b0b;
+$inputBorder: #232323;
+$inputBorderRadius: $baseBorderRadius;
+$inputDisabledBackground: #141414;
+$formActionsBackground: transparent;
+$inputHeight: $baseLineHeight + 10px;
 
 // Dropdowns
-$dropdownBackground:            #0f0f0f;
-$dropdownBorder:                rgba(255,255,255,.06);
-$dropdownDividerTop:            rgba(255,255,255,.06);
-$dropdownDividerBottom:         rgba(255,255,255,.02);
-$dropdownLinkColor:             $textColor;
-$dropdownLinkColorHover:        $white;
-$dropdownLinkColorActive:       $white;
-$dropdownLinkBackgroundActive:  $pink;
-$dropdownLinkBackgroundHover:   $pink;
+$dropdownBackground: #0f0f0f;
+$dropdownBorder: rgb(255 255 255 / 6%);
+$dropdownDividerTop: rgb(255 255 255 / 6%);
+$dropdownDividerBottom: rgb(255 255 255 / 2%);
+$dropdownLinkColor: $textColor;
+$dropdownLinkColorHover: $white;
+$dropdownLinkColorActive: $white;
+$dropdownLinkBackgroundActive: $pink;
+$dropdownLinkBackgroundHover: $pink;
 
 // Z-index
-$zindexDropdown:          1000;
-$zindexPopover:           1010;
-$zindexTooltip:           1030;
-$zindexFixedNavbar:       1030;
-$zindexModalBackdrop:     1040;
-$zindexModal:             1050;
+$zindexDropdown: 1000;
+$zindexPopover: 1010;
+$zindexTooltip: 1030;
+$zindexFixedNavbar: 1030;
+$zindexModalBackdrop: 1040;
+$zindexModal: 1050;
 
 // Sprites
-$iconSpritePath:          "../img/glyphicons-halflings.png";
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+$iconSpritePath: "../img/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../img/glyphicons-halflings-white.png";
 
 // Placeholders / hr
-$placeholderText:         $grayLight;
-$hrBorder:                #1f1f1f;
+$placeholderText: $grayLight;
+$hrBorder: #1f1f1f;
 
 // Horizontal forms & lists
-$horizontalComponentOffset:       180px;
+$horizontalComponentOffset: 180px;
 
 // Wells
-$wellBackground:                  #0f0f0f;
+$wellBackground: #0f0f0f;
 
 // Navbar
-$navbarCollapseWidth:             979px;
-$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
-$navbarHeight:                    60px;
-$navbarBackground:                #0d0d0d;
-$navbarBackgroundHighlight:       #0d0d0d;
-$navbarBorder:                    #1f1f1f;
-$navbarText:                      $grayLight;
-$navbarLinkColor:                 $pink;
-$navbarLinkColorHover:            $blue;
-$navbarLinkColorActive:           $navbarLinkColorHover;
-$navbarLinkBackgroundHover:       transparent;
-$navbarLinkBackgroundActive:      transparent;
-$navbarBrandColor:                $navbarLinkColor;
+$navbarCollapseWidth: 979px;
+$navbarCollapseDesktopWidth: $navbarCollapseWidth + 1;
+$navbarHeight: 60px;
+$navbarBackground: #0d0d0d;
+$navbarBackgroundHighlight: #0d0d0d;
+$navbarBorder: #1f1f1f;
+$navbarText: $grayLight;
+$navbarLinkColor: $pink;
+$navbarLinkColorHover: $blue;
+$navbarLinkColorActive: $navbarLinkColorHover;
+$navbarLinkBackgroundHover: transparent;
+$navbarLinkBackgroundActive: transparent;
+$navbarBrandColor: $navbarLinkColor;
 
 // Inverted navbar
-$navbarInverseBackground:                #121212;
-$navbarInverseBackgroundHighlight:       #121212;
-$navbarInverseBorder:                    #1f1f1f;
-$navbarInverseText:                      $grayLight;
-$navbarInverseLinkColor:                 $blue;
-$navbarInverseLinkColorHover:            $pink;
-$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover;
-$navbarInverseLinkBackgroundHover:       transparent;
-$navbarInverseLinkBackgroundActive:      transparent;
-$navbarInverseSearchBackground:          #0b0b0b;
-$navbarInverseSearchBackgroundFocus:     #0b0b0b;
-$navbarInverseSearchBorder:              #1f1f1f;
-$navbarInverseSearchPlaceholderColor:    $grayLight;
-$navbarInverseBrandColor:                $navbarInverseLinkColor;
+$navbarInverseBackground: #121212;
+$navbarInverseBackgroundHighlight: #121212;
+$navbarInverseBorder: #1f1f1f;
+$navbarInverseText: $grayLight;
+$navbarInverseLinkColor: $blue;
+$navbarInverseLinkColorHover: $pink;
+$navbarInverseLinkColorActive: $navbarInverseLinkColorHover;
+$navbarInverseLinkBackgroundHover: transparent;
+$navbarInverseLinkBackgroundActive: transparent;
+$navbarInverseSearchBackground: #0b0b0b;
+$navbarInverseSearchBackgroundFocus: #0b0b0b;
+$navbarInverseSearchBorder: #1f1f1f;
+$navbarInverseSearchPlaceholderColor: $grayLight;
+$navbarInverseBrandColor: $navbarInverseLinkColor;
 
 // Pagination
-$paginationBackground:                #0d0d0d;
-$paginationBorder:                    #1f1f1f;
-$paginationActiveBackground:          $pink;
+$paginationBackground: #0d0d0d;
+$paginationBorder: #1f1f1f;
+$paginationActiveBackground: $pink;
 
 // Hero unit
-$heroUnitBackground:              #0d0d0d;
-$heroUnitHeadingColor:            inherit;
-$heroUnitLeadColor:               inherit;
+$heroUnitBackground: #0d0d0d;
+$heroUnitHeadingColor: inherit;
+$heroUnitLeadColor: inherit;
 
 // Form states and alerts
-$warningText:             #0b0b0b;
-$warningBackground:       color.adjust($yellow, $lightness: -5%);
-$warningBorder:           color.adjust($yellow, $lightness: -15%);
-$errorText:               #0b0b0b;
-$errorBackground:         color.adjust($red, $lightness: 10%);
-$errorBorder:             color.adjust($red, $lightness: -10%);
-$successText:             #0b0b0b;
-$successBackground:       color.adjust($green, $lightness: 10%);
-$successBorder:           color.adjust($green, $lightness: -10%);
-$infoText:                #0b0b0b;
-$infoBackground:          color.adjust($blue, $lightness: 10%);
-$infoBorder:              color.adjust($blue, $lightness: -10%);
+$warningText: #0b0b0b;
+$warningBackground: color.adjust($yellow, $lightness: -5%);
+$warningBorder: color.adjust($yellow, $lightness: -15%);
+$errorText: #0b0b0b;
+$errorBackground: color.adjust($red, $lightness: 10%);
+$errorBorder: color.adjust($red, $lightness: -10%);
+$successText: #0b0b0b;
+$successBackground: color.adjust($green, $lightness: 10%);
+$successBorder: color.adjust($green, $lightness: -10%);
+$infoText: #0b0b0b;
+$infoBackground: color.adjust($blue, $lightness: 10%);
+$infoBorder: color.adjust($blue, $lightness: -10%);
 
 // Tooltips and popovers
-$tooltipColor:            #000;
-$tooltipBackground:       $pink;
-$tooltipArrowWidth:       5px;
-$tooltipArrowColor:       $tooltipBackground;
-$popoverBackground:       #0f0f0f;
-$popoverArrowWidth:       10px;
-$popoverArrowColor:       $popoverBackground;
-$popoverTitleBackground:  #121212;
-$popoverArrowOuterWidth:  $popoverArrowWidth + 1;
-$popoverArrowOuterColor:  rgba(255,255,255,.06);
+$tooltipColor: #000;
+$tooltipBackground: $pink;
+$tooltipArrowWidth: 5px;
+$tooltipArrowColor: $tooltipBackground;
+$popoverBackground: #0f0f0f;
+$popoverArrowWidth: 10px;
+$popoverArrowColor: $popoverBackground;
+$popoverTitleBackground: #121212;
+$popoverArrowOuterWidth: $popoverArrowWidth + 1;
+$popoverArrowOuterColor: rgb(255 255 255 / 6%);
 
 // GRID
-$gridColumns:             12;
-$gridColumnWidth:         60px;
-$gridGutterWidth:         20px;
-$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
-$gridColumnWidth1200:     70px;
-$gridGutterWidth1200:     30px;
-$gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
-$gridColumnWidth768:      42px;
-$gridGutterWidth768:      20px;
-$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
-$fluidGridColumnWidth:    math.percentage(math.div($gridColumnWidth, $gridRowWidth));
-$fluidGridGutterWidth:    math.percentage(math.div($gridGutterWidth, $gridRowWidth));
-$fluidGridColumnWidth1200:     math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200));
-$fluidGridGutterWidth1200:     math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200));
-$fluidGridColumnWidth768:      math.percentage(math.div($gridColumnWidth768, $gridRowWidth768));
-$fluidGridGutterWidth768:      math.percentage(math.div($gridGutterWidth768, $gridRowWidth768));
+$gridColumns: 12;
+$gridColumnWidth: 60px;
+$gridGutterWidth: 20px;
+$gridRowWidth: ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
+$gridColumnWidth1200: 70px;
+$gridGutterWidth1200: 30px;
+$gridRowWidth1200: ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
+$gridColumnWidth768: 42px;
+$gridGutterWidth768: 20px;
+$gridRowWidth768: ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
+$fluidGridColumnWidth: math.percentage(math.div($gridColumnWidth, $gridRowWidth));
+$fluidGridGutterWidth: math.percentage(math.div($gridGutterWidth, $gridRowWidth));
+$fluidGridColumnWidth1200: math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200));
+$fluidGridGutterWidth1200: math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200));
+$fluidGridColumnWidth768: math.percentage(math.div($gridColumnWidth768, $gridRowWidth768));
+$fluidGridGutterWidth768: math.percentage(math.div($gridGutterWidth768, $gridRowWidth768));

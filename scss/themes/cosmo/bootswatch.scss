@@ -5,7 +5,7 @@
 // Cosmo 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+@import '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700';
 
 body { font-weight: 300; }
 
@@ -169,6 +169,7 @@ div.subnav {
   }
 
   .nav-header { color: $grayDarker; }
+
   .divider {
     background-color: $gray;
     border-bottom: none;
@@ -249,7 +250,7 @@ div.subnav {
   text-shadow: none;
 
   &.disabled {
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 5%);
   }
 }
 
@@ -424,6 +425,7 @@ a.thumbnail {
   border-radius: 0;
 
   &-header { border-bottom: none; }
+
   &-footer {
     border-top: none;
     background-color: transparent;

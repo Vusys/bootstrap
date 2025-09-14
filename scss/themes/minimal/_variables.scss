@@ -4,200 +4,200 @@
 // Minimal — Variables (clean & modern)
 
 // Grays
-$black:                 #000;
-$grayDarker:            #2C3E50; // charcoal
-$grayDark:              #34495E;
-$gray:                  #7F8C8D;
-$grayLight:             #BDC3C7;
-$grayLighter:           #ECF0F1;
-$white:                 #FFFFFF;
+$black: #000;
+$grayDarker: #2C3E50; // charcoal
+$grayDark: #34495E;
+$gray: #7F8C8D;
+$grayLight: #BDC3C7;
+$grayLighter: #ECF0F1;
+$white: #FFF;
 
 // Accent colors
-$blue:                  #3498DB; // soft blue
-$blueDark:              #2980B9;
-$green:                 #1ABC9C; // mint
-$red:                   #E74C3C; // coral
-$yellow:                #F39C12; // soft orange
-$orange:                #E67E22;
-$pink:                  #D2527F;
-$purple:                #9B59B6;
+$blue: #3498DB; // soft blue
+$blueDark: #2980B9;
+$green: #1ABC9C; // mint
+$red: #E74C3C; // coral
+$yellow: #F39C12; // soft orange
+$orange: #E67E22;
+$pink: #D2527F;
+$purple: #9B59B6;
 
 // Scaffolding
-$bodyBackground:        $white;
-$textColor:             $grayDark;
+$bodyBackground: $white;
+$textColor: $grayDark;
 
 // Links
-$linkColor:             $blue;
-$linkColorHover:        color.adjust($blue, $lightness: -10%);
+$linkColor: $blue;
+$linkColorHover: color.adjust($blue, $lightness: -10%);
 
 // Typography
-$sansFontFamily:        "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
-$baseFontSize:          15px;
-$baseFontFamily:        $sansFontFamily;
-$baseLineHeight:        22px;
-$altFontFamily:         $sansFontFamily;
-$headingsFontFamily:    'Inter', sans-serif;
-$headingsFontWeight:    600;
-$headingsColor:         $grayDarker;
+$sansFontFamily: "Inter", "Helvetica Neue", helvetica, arial, sans-serif;
+$serifFontFamily: georgia, "Times New Roman", times, serif;
+$monoFontFamily: menlo, monaco, consolas, "Courier New", monospace;
+$baseFontSize: 15px;
+$baseFontFamily: $sansFontFamily;
+$baseLineHeight: 22px;
+$altFontFamily: $sansFontFamily;
+$headingsFontFamily: 'Inter', sans-serif;
+$headingsFontWeight: 600;
+$headingsColor: $grayDarker;
 
 // Component sizing
-$fontSizeLarge:         $baseFontSize * 1.25;
-$fontSizeSmall:         $baseFontSize * 0.85;
-$fontSizeMini:          $baseFontSize * 0.75;
-$paddingLarge:          10px 18px;
-$paddingSmall:          2px 10px;
-$paddingMini:           0 6px;
-$baseBorderRadius:      4px;
-$borderRadiusLarge:     6px;
-$borderRadiusSmall:     3px;
+$fontSizeLarge: $baseFontSize * 1.25;
+$fontSizeSmall: $baseFontSize * 0.85;
+$fontSizeMini: $baseFontSize * 0.75;
+$paddingLarge: 10px 18px;
+$paddingSmall: 2px 10px;
+$paddingMini: 0 6px;
+$baseBorderRadius: 4px;
+$borderRadiusLarge: 6px;
+$borderRadiusSmall: 3px;
 
 // Tables
-$tableBackground:                   $white;
-$tableBackgroundAccent:             #f9fafb;
-$tableBackgroundHover:              #f2f4f6;
-$tableBorder:                       #e6e9ec;
+$tableBackground: $white;
+$tableBackgroundAccent: #f9fafb;
+$tableBackgroundHover: #f2f4f6;
+$tableBorder: #e6e9ec;
 
 // Buttons
-$btnBackground:                     $white;
-$btnBackgroundHighlight:            color.adjust($white, $lightness: -6%);
-$btnBorder:                         #dfe4ea;
-$btnPrimaryBackground:              $blue;
-$btnPrimaryBackgroundHighlight:     color.adjust($blue, $lightness: -10%);
-$btnInfoBackground:                 $purple;
-$btnInfoBackgroundHighlight:        color.adjust($purple, $lightness: -10%);
-$btnSuccessBackground:              $green;
-$btnSuccessBackgroundHighlight:     color.adjust($green, $lightness: -10%);
-$btnWarningBackground:              $yellow;
-$btnWarningBackgroundHighlight:     color.adjust($yellow, $lightness: -10%);
-$btnDangerBackground:               $red;
-$btnDangerBackgroundHighlight:      color.adjust($red, $lightness: -10%);
-$btnInverseBackground:              $grayDark;
-$btnInverseBackgroundHighlight:     color.adjust($grayDark, $lightness: -8%);
+$btnBackground: $white;
+$btnBackgroundHighlight: color.adjust($white, $lightness: -6%);
+$btnBorder: #dfe4ea;
+$btnPrimaryBackground: $blue;
+$btnPrimaryBackgroundHighlight: color.adjust($blue, $lightness: -10%);
+$btnInfoBackground: $purple;
+$btnInfoBackgroundHighlight: color.adjust($purple, $lightness: -10%);
+$btnSuccessBackground: $green;
+$btnSuccessBackgroundHighlight: color.adjust($green, $lightness: -10%);
+$btnWarningBackground: $yellow;
+$btnWarningBackgroundHighlight: color.adjust($yellow, $lightness: -10%);
+$btnDangerBackground: $red;
+$btnDangerBackgroundHighlight: color.adjust($red, $lightness: -10%);
+$btnInverseBackground: $grayDark;
+$btnInverseBackgroundHighlight: color.adjust($grayDark, $lightness: -8%);
 
 // Forms
-$inputBackground:               $white;
-$inputBorder:                   #dfe4ea;
-$inputBorderRadius:             $baseBorderRadius;
-$inputDisabledBackground:       $grayLighter;
-$formActionsBackground:         #f7f9fb;
-$inputHeight:                   $baseLineHeight + 10px;
+$inputBackground: $white;
+$inputBorder: #dfe4ea;
+$inputBorderRadius: $baseBorderRadius;
+$inputDisabledBackground: $grayLighter;
+$formActionsBackground: #f7f9fb;
+$inputHeight: $baseLineHeight + 10px;
 
 // Dropdowns
-$dropdownBackground:            $white;
-$dropdownBorder:                rgba(0,0,0,.06);
-$dropdownDividerTop:            #eef2f5;
-$dropdownDividerBottom:         $white;
-$dropdownLinkColor:             $grayDark;
-$dropdownLinkColorHover:        $black;
-$dropdownLinkColorActive:       $white;
-$dropdownLinkBackgroundActive:  $blue;
-$dropdownLinkBackgroundHover:   #f2f4f6;
+$dropdownBackground: $white;
+$dropdownBorder: rgb(0 0 0 / 6%);
+$dropdownDividerTop: #eef2f5;
+$dropdownDividerBottom: $white;
+$dropdownLinkColor: $grayDark;
+$dropdownLinkColorHover: $black;
+$dropdownLinkColorActive: $white;
+$dropdownLinkBackgroundActive: $blue;
+$dropdownLinkBackgroundHover: #f2f4f6;
 
 // Z-index
-$zindexDropdown:          1000;
-$zindexPopover:           1010;
-$zindexTooltip:           1030;
-$zindexFixedNavbar:       1030;
-$zindexModalBackdrop:     1040;
-$zindexModal:             1050;
+$zindexDropdown: 1000;
+$zindexPopover: 1010;
+$zindexTooltip: 1030;
+$zindexFixedNavbar: 1030;
+$zindexModalBackdrop: 1040;
+$zindexModal: 1050;
 
 // Sprites
-$iconSpritePath:          "../img/glyphicons-halflings.png";
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+$iconSpritePath: "../img/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../img/glyphicons-halflings-white.png";
 
 // Placeholders / hr
-$placeholderText:         $gray;
-$hrBorder:                #eef2f5;
+$placeholderText: $gray;
+$hrBorder: #eef2f5;
 
 // Horizontal forms & lists
-$horizontalComponentOffset:       180px;
+$horizontalComponentOffset: 180px;
 
 // Wells
-$wellBackground:                  #f7f9fb;
+$wellBackground: #f7f9fb;
 
 // Navbar
-$navbarCollapseWidth:             979px;
-$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
-$navbarHeight:                    54px;
-$navbarBackground:                $white;
-$navbarBackgroundHighlight:       $white;
-$navbarBorder:                    #e6e9ec;
-$navbarText:                      $gray;
-$navbarLinkColor:                 $grayDark;
-$navbarLinkColorHover:            $black;
-$navbarLinkColorActive:           $navbarLinkColorHover;
-$navbarLinkBackgroundHover:       transparent;
-$navbarLinkBackgroundActive:      transparent;
-$navbarBrandColor:                $grayDarker;
+$navbarCollapseWidth: 979px;
+$navbarCollapseDesktopWidth: $navbarCollapseWidth + 1;
+$navbarHeight: 54px;
+$navbarBackground: $white;
+$navbarBackgroundHighlight: $white;
+$navbarBorder: #e6e9ec;
+$navbarText: $gray;
+$navbarLinkColor: $grayDark;
+$navbarLinkColorHover: $black;
+$navbarLinkColorActive: $navbarLinkColorHover;
+$navbarLinkBackgroundHover: transparent;
+$navbarLinkBackgroundActive: transparent;
+$navbarBrandColor: $grayDarker;
 
 // Inverted navbar
-$navbarInverseBackground:                $grayDarker;
-$navbarInverseBackgroundHighlight:       $grayDarker;
-$navbarInverseBorder:                    color.adjust($grayDarker, $lightness: -5%);
-$navbarInverseText:                      $grayLighter;
-$navbarInverseLinkColor:                 $grayLighter;
-$navbarInverseLinkColorHover:            $white;
-$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover;
-$navbarInverseLinkBackgroundHover:       transparent;
-$navbarInverseLinkBackgroundActive:      transparent;
-$navbarInverseSearchBackground:          $white;
-$navbarInverseSearchBackgroundFocus:     $white;
-$navbarInverseSearchBorder:              $navbarInverseBackground;
-$navbarInverseSearchPlaceholderColor:    $grayLight;
-$navbarInverseBrandColor:                $navbarInverseLinkColor;
+$navbarInverseBackground: $grayDarker;
+$navbarInverseBackgroundHighlight: $grayDarker;
+$navbarInverseBorder: color.adjust($grayDarker, $lightness: -5%);
+$navbarInverseText: $grayLighter;
+$navbarInverseLinkColor: $grayLighter;
+$navbarInverseLinkColorHover: $white;
+$navbarInverseLinkColorActive: $navbarInverseLinkColorHover;
+$navbarInverseLinkBackgroundHover: transparent;
+$navbarInverseLinkBackgroundActive: transparent;
+$navbarInverseSearchBackground: $white;
+$navbarInverseSearchBackgroundFocus: $white;
+$navbarInverseSearchBorder: $navbarInverseBackground;
+$navbarInverseSearchPlaceholderColor: $grayLight;
+$navbarInverseBrandColor: $navbarInverseLinkColor;
 
 // Pagination
-$paginationBackground:                $white;
-$paginationBorder:                    #e6e9ec;
-$paginationActiveBackground:          $blue;
+$paginationBackground: $white;
+$paginationBorder: #e6e9ec;
+$paginationActiveBackground: $blue;
 
 // Hero unit
-$heroUnitBackground:              #f7f9fb;
-$heroUnitHeadingColor:            inherit;
-$heroUnitLeadColor:               inherit;
+$heroUnitBackground: #f7f9fb;
+$heroUnitHeadingColor: inherit;
+$heroUnitLeadColor: inherit;
 
 // Form states and alerts
-$warningText:             $black;
-$warningBackground:       color.adjust($yellow, $lightness: 20%);
-$warningBorder:           color.adjust($yellow, $lightness: -5%);
-$errorText:               $black;
-$errorBackground:         color.adjust($red, $lightness: 35%);
-$errorBorder:             color.adjust($red, $lightness: 5%);
-$successText:             $black;
-$successBackground:       color.adjust($green, $lightness: 30%);
-$successBorder:           color.adjust($green, $lightness: 5%);
-$infoText:                $black;
-$infoBackground:          color.adjust($blue, $lightness: 30%);
-$infoBorder:              color.adjust($blue, $lightness: 5%);
+$warningText: $black;
+$warningBackground: color.adjust($yellow, $lightness: 20%);
+$warningBorder: color.adjust($yellow, $lightness: -5%);
+$errorText: $black;
+$errorBackground: color.adjust($red, $lightness: 35%);
+$errorBorder: color.adjust($red, $lightness: 5%);
+$successText: $black;
+$successBackground: color.adjust($green, $lightness: 30%);
+$successBorder: color.adjust($green, $lightness: 5%);
+$infoText: $black;
+$infoBackground: color.adjust($blue, $lightness: 30%);
+$infoBorder: color.adjust($blue, $lightness: 5%);
 
 // Tooltips and popovers
-$tooltipColor:            #fff;
-$tooltipBackground:       #000;
-$tooltipArrowWidth:       5px;
-$tooltipArrowColor:       $tooltipBackground;
-$popoverBackground:       $white;
-$popoverArrowWidth:       10px;
-$popoverArrowColor:       $white;
-$popoverTitleBackground:  #f2f4f6;
-$popoverArrowOuterWidth:  $popoverArrowWidth + 1;
-$popoverArrowOuterColor:  rgba(0,0,0,.1);
+$tooltipColor: #fff;
+$tooltipBackground: #000;
+$tooltipArrowWidth: 5px;
+$tooltipArrowColor: $tooltipBackground;
+$popoverBackground: $white;
+$popoverArrowWidth: 10px;
+$popoverArrowColor: $white;
+$popoverTitleBackground: #f2f4f6;
+$popoverArrowOuterWidth: $popoverArrowWidth + 1;
+$popoverArrowOuterColor: rgb(0 0 0 / 10%);
 
 // GRID
-$gridColumns:             12;
-$gridColumnWidth:         60px;
-$gridGutterWidth:         20px;
-$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
-$gridColumnWidth1200:     70px;
-$gridGutterWidth1200:     30px;
-$gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
-$gridColumnWidth768:      42px;
-$gridGutterWidth768:      20px;
-$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
-$fluidGridColumnWidth:    math.percentage(math.div($gridColumnWidth, $gridRowWidth));
-$fluidGridGutterWidth:    math.percentage(math.div($gridGutterWidth, $gridRowWidth));
-$fluidGridColumnWidth1200:     math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200));
-$fluidGridGutterWidth1200:     math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200));
-$fluidGridColumnWidth768:      math.percentage(math.div($gridColumnWidth768, $gridRowWidth768));
-$fluidGridGutterWidth768:      math.percentage(math.div($gridGutterWidth768, $gridRowWidth768));
+$gridColumns: 12;
+$gridColumnWidth: 60px;
+$gridGutterWidth: 20px;
+$gridRowWidth: ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
+$gridColumnWidth1200: 70px;
+$gridGutterWidth1200: 30px;
+$gridRowWidth1200: ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
+$gridColumnWidth768: 42px;
+$gridGutterWidth768: 20px;
+$gridRowWidth768: ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
+$fluidGridColumnWidth: math.percentage(math.div($gridColumnWidth, $gridRowWidth));
+$fluidGridGutterWidth: math.percentage(math.div($gridGutterWidth, $gridRowWidth));
+$fluidGridColumnWidth1200: math.percentage(math.div($gridColumnWidth1200, $gridRowWidth1200));
+$fluidGridGutterWidth1200: math.percentage(math.div($gridGutterWidth1200, $gridRowWidth1200));
+$fluidGridColumnWidth768: math.percentage(math.div($gridColumnWidth768, $gridRowWidth768));
+$fluidGridGutterWidth768: math.percentage(math.div($gridGutterWidth768, $gridRowWidth768));

@@ -4,10 +4,10 @@
 
 // Simplex 2.3.2 — Bootswatch overrides (converted from LESS)
 
-$box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+$box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
 
 // Typography
-@import url('//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+@import '//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700';
 
 // Scaffolding
 hr { border-bottom: none; }
@@ -78,8 +78,8 @@ hr { border-bottom: none; }
 
     .navbar-form,
     .navbar-search {
-      border-top: 1px solid rgba(128, 128, 128, 0.3);
-      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+      border-top: 1px solid rgb(128 128 128 / 30%);
+      border-bottom: 1px solid rgb(128 128 128 / 30%);
     }
   }
 
@@ -87,10 +87,10 @@ hr { border-bottom: none; }
     .nav li > a {
       color: $white;
 
-      &:hover { background-color: rgba(255, 255, 255, 0.1) !important; }
+      &:hover { background-color: rgb(255 255 255 / 10%) !important; }
     }
 
-    .nav-header { color: rgba(255, 255, 255, 0.7); }
+    .nav-header { color: rgb(255 255 255 / 70%); }
   }
 }
 
@@ -261,8 +261,8 @@ div.subnav {
 
 .breadcrumb {
   background-color: $white;
-  border: 0px solid transparent;
-  box-shadow: $box-shadow, -1px -1px 0 rgba(0, 0, 0, 0.1);
+  border: 0 solid transparent;
+  box-shadow: $box-shadow, -1px -1px 0 rgb(0 0 0 / 10%);
 
   li {
     padding-top: 2px;
@@ -344,13 +344,13 @@ i[class^="icon-"] {
 }
 
 .well {
-  box-shadow: $box-shadow, -1px -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow, -1px -1px 0 rgb(0 0 0 / 10%);
   border: none;
 }
 
 .hero-unit {
   background-color: $navbarBackground;
-  box-shadow: $box-shadow, -1px -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow, -1px -1px 0 rgb(0 0 0 / 10%);
 }
 
 .thumbnail {

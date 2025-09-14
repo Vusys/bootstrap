@@ -5,11 +5,11 @@
 // Cyborg 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url('//fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import '//fonts.googleapis.com/css?family=Droid+Sans:400,700';
 
 label, input, button, select, textarea,
-.navbar .search-query:-moz-placeholder,
-.navbar .search-query::-webkit-input-placeholder {
+.navbar .search-query:placeholder,
+.navbar .search-query::input-placeholder {
   font-family: 'Droid Sans', sans-serif;
   color: $gray;
 }
@@ -27,6 +27,7 @@ html { min-height: 100%; }
 
 body {
   min-height: 100%;
+
   // approximate of LESS vertical gradient
   background-image: linear-gradient(to bottom, $bodyBackground, #252A30);
 }
@@ -43,7 +44,7 @@ hr { border-bottom: none; }
   }
 
   .brand {
-    padding: 15px 20px 15px;
+    padding: 15px 20px;
     color: $grayLighter;
     font-weight: normal;
     text-shadow: none;
@@ -82,6 +83,7 @@ hr { border-bottom: none; }
     line-height: normal;
     color: $grayLight;
     text-shadow: none;
+
     // placeholder mixin equivalent
     &::placeholder { color: $gray; }
   }
@@ -114,12 +116,13 @@ hr { border-bottom: none; }
       border-bottom: none;
     }
 
-    .nav-header { color: rgba(128, 128, 128, 0.6); }
+    .nav-header { color: rgb(128 128 128 / 60%); }
   }
 
   .navbar-inverse .nav-collapse {
     .nav li > a:hover { background-color: #111; }
     .nav .active > a { background-color: #111; }
+
     .nav li.dropdown.open > .dropdown-toggle,
     .nav li.dropdown.active > .dropdown-toggle,
     .nav li.dropdown.open.active > .dropdown-toggle { background-color: #111; }
@@ -243,7 +246,7 @@ div.subnav {
   ul > .disabled > a,
   ul > .disabled > a:hover,
   ul > .disabled > span,
-  ul > .disabled > span:hover { background-color: rgba(0, 0, 0, 0.2); }
+  ul > .disabled > span:hover { background-color: rgb(0 0 0 / 20%); }
 }
 
 .pager {
@@ -262,7 +265,9 @@ div.subnav {
 // Buttons
 .btn {
   box-shadow: 1px 1px 2px #111;
+
   @include button-background(color.adjust($gray, $lightness: -20%), color.adjust($gray, $lightness: -30%));
+
   color: $white;
   text-shadow: none;
 
@@ -307,7 +312,7 @@ input:focus,
 textarea:focus,
 input.focused,
 textarea.focused {
-  border-color: rgba(82, 168, 236, 1);
+  border-color: rgb(82 168 236 / 100%);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
 }
@@ -317,12 +322,13 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
   box-shadow: none; // override for file inputs
-  @include tab-focus();
+
+  @include tab-focus;
 }
 
 legend, label {
   color: $textColor;
-  border-bottom: 0px solid #222;
+  border-bottom: 0 solid #222;
 }
 
 .form-actions { border-top: 1px solid #222; }
@@ -348,7 +354,7 @@ legend, label {
 }
 
 // Dropdowns
-.dropdown-menu { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); }
+.dropdown-menu { box-shadow: 0 2px 4px rgb(0 0 0 / 80%); }
 
 // Alerts, labels, badges
 .alert,
@@ -389,7 +395,7 @@ legend, label {
 .well, .hero-unit {
   border-radius: 1px;
   border-top: solid 1px color.adjust($grayDark, $lightness: 5%);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 80%);
 }
 
 .thumbnail { border-color: $grayDark; }
@@ -417,7 +423,7 @@ legend, label {
 
 .footer { border-top: 1px solid $grayDark; }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   div.subnav .nav > li + li > a,
   div.subnav .nav > li:first-child > a {
     border-top: 1px solid $grayDark;

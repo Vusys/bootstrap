@@ -48,7 +48,7 @@ blockquote {
 }
 
 // Dropdown
-.dropdown-menu { box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+.dropdown-menu { box-shadow: 0 4px 20px rgb(0 0 0 / 40%); }
 
 // Footer separators
 .footer { border-top: 1px solid color.adjust($grayDark, $lightness: -4%); }
