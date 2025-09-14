@@ -14,3 +14,6 @@ jobs:
           debug: true
           directory: 'docs'
           deploy-to: 'pages'
+          env: |
+            SITE_NAME=Bootstrap
+            SITE_URL=https://vusys.github.io/bootstrap
