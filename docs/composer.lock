@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be7e1b5032721b6b6fb677728f0549bf",
+    "content-hash": "d372b46b65865f861fa76dfdbdc88bf9",
     "packages": [
         {
             "name": "brick/math",
@@ -364,6 +364,57 @@
                 }
             ],
             "time": "2024-10-09T13:47:03+00:00"
+        },
+        {
+            "name": "edent/pretty-print-html",
+            "version": "2025-04-18",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/edent/pretty-print-html-using-php.git",
+                "reference": "4451ba5a2f8eb5923a109a0857798438b924a933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/edent%2Fpretty-print-html-using-php/repository/archive.zip?sha=4451ba5a2f8eb5923a109a0857798438b924a933",
+                "reference": "4451ba5a2f8eb5923a109a0857798438b924a933",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Edent\\PrettyPrintHtml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Terence Eden",
+                    "email": "pretty-print-html@shkspr.mobi",
+                    "homepage": "https://shkspr.mobi/blog/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pretty Print HTML using PHP.",
+            "homepage": "https://gitlab.com/edent/pretty-print-html-using-php/",
+            "keywords": [
+                "HTML5",
+                "html",
+                "prettyprint"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/edent/pretty-print-html-using-php/-/issues",
+                "source": "https://gitlab.com/edent/pretty-print-html-using-php/-/tree/2025-04-18"
+            },
+            "time": "2025-04-18T11:03:20+00:00"
         },
         {
             "name": "filp/whoops",
@@ -6531,7 +6582,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.3"
+        "php": "^8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"

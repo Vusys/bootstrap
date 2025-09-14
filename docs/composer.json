@@ -24,7 +24,8 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
+        "edent/pretty-print-html": "2025-04-18",
         "hyde/framework": "^1.8",
         "laravel-zero/framework": "^10.0"
     },

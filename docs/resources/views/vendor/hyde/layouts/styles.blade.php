@@ -20,4 +20,5 @@
 <link rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap-responsive.min.css') }}">
 <link rel="stylesheet" href="{{ Asset::mediaLink('css/docs.css') }}">
+<link rel="stylesheet" href="{{ Asset::mediaLink('js/google-code-prettify/prettify.css') }}">
 @stack('styles')

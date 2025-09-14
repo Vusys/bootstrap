@@ -49,7 +49,8 @@
 
                 <h2>Example</h2>
                 <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown JavaScript plugin</a>.</p>
-                <div class="bs-docs-example">
+
+                <x-example>
                     <div class="dropdown clearfix">
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                             <li><a tabindex="-1" href="#">Action</a></li>
@@ -59,16 +60,7 @@
                             <li><a tabindex="-1" href="#">Separated link</a></li>
                         </ul>
                     </div>
-                </div>
-                <pre class="prettyprint linenums">
-&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="divider"&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+                </x-example>
 
                 <h2>Markup</h2>
                 <p>Looking at just the dropdown menu, here's the required HTML. You need to wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then just create the menu.</p>
@@ -99,7 +91,24 @@
 
                 <h3>Disabled menu options</h3>
                 <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
-                <div class="bs-docs-example">
+{{--                <div class="bs-docs-example">--}}
+{{--                    <div class="dropdown clearfix">--}}
+{{--                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">--}}
+{{--                            <li><a tabindex="-1" href="#">Regular link</a></li>--}}
+{{--                            <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>--}}
+{{--                            <li><a tabindex="-1" href="#">Another link</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <pre class="prettyprint linenums">--}}
+{{--&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;--}}
+{{--  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;--}}
+{{--  &lt;li class="disabled"&gt;&lt;a tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;--}}
+{{--  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;--}}
+{{--&lt;/ul&gt;--}}
+{{--</pre>--}}
+
+                <x-example>
                     <div class="dropdown clearfix">
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                             <li><a tabindex="-1" href="#">Regular link</a></li>
@@ -107,14 +116,8 @@
                             <li><a tabindex="-1" href="#">Another link</a></li>
                         </ul>
                     </div>
-                </div>
-                <pre class="prettyprint linenums">
-&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="disabled"&gt;&lt;a tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+                </x-example>
+
 
                 <h3>Sub menus on dropdowns</h3>
                 <p>Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.</p>
