@@ -179,21 +179,21 @@
                 <ul class="thumbnails bootstrap-examples">
                     <li class="span3">
                         <a class="thumbnail" href="examples/starter-template.html">
-                            <img src="assets/img/examples/bootstrap-example-starter.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-starter.png" alt="">
                         </a>
                         <h4>Starter template</h4>
                         <p>A barebones HTML document with all the Bootstrap CSS and JavaScript included.</p>
                     </li>
                     <li class="span3">
                         <a class="thumbnail" href="examples/hero.html">
-                            <img src="assets/img/examples/bootstrap-example-marketing.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-marketing.png" alt="">
                         </a>
                         <h4>Basic marketing site</h4>
                         <p>Featuring a hero unit for a primary message and three supporting elements.</p>
                     </li>
                     <li class="span3">
                         <a class="thumbnail" href="examples/fluid.html">
-                            <img src="assets/img/examples/bootstrap-example-fluid.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-fluid.png" alt="">
                         </a>
                         <h4>Fluid layout</h4>
                         <p>Uses our new responsive, fluid grid system to create a seamless liquid layout.</p>
@@ -201,21 +201,21 @@
 
                     <li class="span3">
                         <a class="thumbnail" href="examples/marketing-narrow.html">
-                            <img src="assets/img/examples/bootstrap-example-marketing-narrow.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-marketing-narrow.png" alt="">
                         </a>
                         <h4>Narrow marketing</h4>
                         <p>Slim, lightweight marketing template for small projects or teams.</p>
                     </li>
                     <li class="span3">
                         <a class="thumbnail" href="examples/justified-nav.html">
-                            <img src="assets/img/examples/bootstrap-example-justified-nav.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-justified-nav.png" alt="">
                         </a>
                         <h4>Justified nav</h4>
                         <p>Marketing page with equal-width navigation links in a modified navbar.</p>
                     </li>
                     <li class="span3">
                         <a class="thumbnail" href="examples/signin.html">
-                            <img src="assets/img/examples/bootstrap-example-signin.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-signin.png" alt="">
                         </a>
                         <h4>Sign in</h4>
                         <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
@@ -223,14 +223,14 @@
 
                     <li class="span3">
                         <a class="thumbnail" href="examples/sticky-footer.html">
-                            <img src="assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-sticky-footer.png" alt="">
                         </a>
                         <h4>Sticky footer</h4>
                         <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
                     </li>
                     <li class="span3">
                         <a class="thumbnail" href="examples/carousel.html">
-                            <img src="assets/img/examples/bootstrap-example-carousel.png" alt="">
+                            <img src="media/img/examples/bootstrap-example-carousel.png" alt="">
                         </a>
                         <h4>Carousel jumbotron</h4>
                         <p>A more interactive riff on the basic marketing site featuring a prominent carousel.</p>
