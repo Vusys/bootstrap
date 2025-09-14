@@ -1,0 +1,15 @@
+@use "sass:color";
+@use "../../bootstrap/variables" as *;
+
+// Minimal theme shims; most styles come from variable overrides.
+// Add subtle neon glow to interactive elements
+.btn,
+.navbar .brand,
+.navbar .nav > li > a,
+.label,
+.badge { text-shadow: 0 0 6px rgba(255, 20, 147, 0.4); }
+
+.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
+.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
+.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
+.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }

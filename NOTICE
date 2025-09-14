@@ -9,6 +9,11 @@ Portions of this code are derived from those projects and retain their
 original copyright notices. All new contributions to this fork are licensed
 under the MIT License.
 
+The following themes were adapted from Bootswatch, which is licensed under the Apache License 2.0.
+Amelia, Cerulean, Cosmo, Cyborg, Flatly, Journal, Readable, Simplex, Slate, Spacelab, Spruce, Superhero, United.
+
+
 Original project:
 - Bootstrap: https://getbootstrap.com/
-- bootstrap-sass: https://github.com/twbs/bootstrap-sass
+- Bootstrap-sass: https://github.com/twbs/bootstrap-sass/tree/061ef3280711a36580f278da889658c6a79416e7
+- Bootswatch: https://github.com/thomaspark/bootswatch/tree/a9aab510f11515c7dec294e7b24e838ff583e15a

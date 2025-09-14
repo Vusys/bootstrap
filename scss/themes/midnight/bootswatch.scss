@@ -1,0 +1,62 @@
+@use "sass:color";
+@use "../../bootstrap/mixins" as *;
+@use "../../bootstrap/variables" as *;
+
+// Midnight 2.4.0 — Bootswatch-like overrides (minimal)
+
+// Typography tweaks
+.muted { color: $grayLight; }
+
+blockquote {
+  border-left: 3px solid color.adjust($blue, $lightness: -5%);
+  &.pull-right { border-right: 3px solid color.adjust($blue, $lightness: -5%); }
+}
+
+// Navbar refinements
+.navbar {
+  .navbar-inner {
+    background-image: none;
+    box-shadow: none;
+    border-bottom: 1px solid color.adjust($grayDark, $lightness: -4%);
+  }
+
+  .brand,
+  .nav > li > a {
+    text-shadow: none;
+    color: $navbarLinkColor;
+    &:hover { color: $navbarLinkColorHover; }
+  }
+}
+
+// Pills/Tabs hover contrast
+.nav-tabs li > a:hover,
+.nav-pills li > a:hover { background-color: color.adjust($blue, $lightness: -5%); color: $white; }
+
+// Tables
+.table {
+  border-color: $tableBorder;
+  tbody tr:hover td { background-color: $tableBackgroundHover; }
+}
+
+// Buttons
+.btn { text-shadow: none; }
+
+// Progress
+.progress {
+  background-image: none;
+  background-color: color.adjust($grayDark, $lightness: -4%);
+}
+
+// Dropdown
+.dropdown-menu { box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+
+// Footer separators
+.footer { border-top: 1px solid color.adjust($grayDark, $lightness: -4%); }
+
+// Align split button dropdown toggle height with buttons
+.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
+.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
+.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
+.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }
+
+
