@@ -103,7 +103,10 @@ div.subnav {
     box-shadow: none;
   }
 
-  &-fixed { top: $navbarHeight + 1; margin: 0; }
+  &-fixed {
+    top: $navbarHeight + 1;
+    margin: 0;
+  }
 }
 
 // Nav
@@ -263,7 +266,26 @@ div.subnav {
   & > .btn:last-child,
   & > .dropdown-toggle { border-radius: 0; }
 
-  & > .btn + .dropdown-toggle { box-shadow: none; }
+  & > .btn + .dropdown-toggle {
+    box-shadow: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  & > .btn-small + .dropdown-toggle {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  & > .btn-mini + .dropdown-toggle {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  & > .btn-large + .dropdown-toggle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 // Tables
@@ -443,7 +465,3 @@ a.thumbnail {
 }
 
 // Align split button dropdown toggle height with buttons
-.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
-.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
-.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
-.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }
