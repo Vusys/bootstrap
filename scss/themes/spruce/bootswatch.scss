@@ -5,7 +5,7 @@
 // Spruce 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url(//fonts.googleapis.com/css?family=Crete+Round);
+@import "//fonts.googleapis.com/css?family=Crete+Round";
 
 h1, h2, h3, h4, h5, h6 {
   small {
@@ -72,7 +72,7 @@ blockquote {
     line-height: inherit;
   }
 
-  .divider-vertical { border-color: rgba(0, 0, 0, 0.2); }
+  .divider-vertical { border-color: rgb(0 0 0 / 20%); }
 
   .btn-navbar { margin-top: 14px; }
 
@@ -85,7 +85,7 @@ blockquote {
 
   .navbar-search .search-query {
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(255 255 255 / 40%);
     line-height: normal;
     color: $white;
   }
@@ -110,7 +110,7 @@ blockquote {
         &:hover { background-color: $navbarInverseBackground; }
       }
 
-      .divider { border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .divider { border-bottom: 1px solid rgb(0 0 0 / 20%); }
 
       .nav-header { color: $gray; }
     }
@@ -127,7 +127,7 @@ blockquote {
   }
 
   .navbar-inverse .nav-collapse {
-    .nav li > a:hover { background-color: rgba(0, 0, 0, 0.06) !important; }
+    .nav li > a:hover { background-color: rgb(0 0 0 / 6%) !important; }
   }
 
   .nav-collapse .navbar-form,

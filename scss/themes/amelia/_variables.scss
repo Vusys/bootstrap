@@ -31,9 +31,9 @@ $linkColor: color.adjust($yellow, $lightness: 15%);
 $linkColorHover: $linkColor;
 
 // Typography
-$sansFontFamily: 'Cabin', Verdana, sans-serif;
-$serifFontFamily: Georgia, "Times New Roman", Times, serif;
-$monoFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
+$sansFontFamily: 'Cabin', verdana, sans-serif;
+$serifFontFamily: georgia, "Times New Roman", times, serif;
+$monoFontFamily: menlo, monaco, consolas, "Courier New", monospace;
 $baseFontSize: 14px;
 $baseFontFamily: $sansFontFamily;
 $baseLineHeight: 20px;

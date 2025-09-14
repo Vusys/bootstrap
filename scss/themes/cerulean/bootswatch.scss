@@ -5,14 +5,14 @@
 // Cerulean 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url(//fonts.googleapis.com/css?family=Telex);
+@import "//fonts.googleapis.com/css?family=Telex";
 
 // Navbar
 .navbar {
   .brand {
     padding: 14px 20px 16px;
     font-family: $headingsFontFamily;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
   }
 
   li { line-height: 20px; }
@@ -20,7 +20,7 @@
   .nav > li > a {
     padding: 16px 10px 14px;
     font-family: $headingsFontFamily;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
   }
 
   .search-query {
@@ -31,8 +31,8 @@
   .navbar-text {
     padding: 19px 10px 18px;
     line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    color: rgb(0 0 0 / 50%);
+    text-shadow: 1px 1px 0 rgb(255 255 255 / 30%);
   }
 
   &-inverse .navbar-search .search-query { color: $textColor; }
@@ -44,7 +44,7 @@
       font-family: $headingsFontFamily;
       font-weight: normal;
       color: $white;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
 
       &:hover { background-color: #2B7CAC; }
     }
@@ -68,18 +68,18 @@
     .nav li > a {
       color: $navbarInverseLinkColor;
 
-      &:hover { background-color: rgba(0, 0, 0, 0.1); }
+      &:hover { background-color: rgb(0 0 0 / 10%); }
     }
 
     .nav .active > a,
     .nav > li > a:hover,
-    .dropdown-menu a:hover { background-color: rgba(0, 0, 0, 0.1) !important; }
+    .dropdown-menu a:hover { background-color: rgb(0 0 0 / 10%) !important; }
   }
 }
 
 div.subnav {
   font-family: $headingsFontFamily;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 1px 1px 0 rgb(255 255 255 / 20%);
 
   &-fixed { top: $navbarHeight + 1; }
 }
@@ -88,7 +88,7 @@ div.subnav {
 .btn {
   // approximate of LESS vertical-three-colors gradient
   background-image: linear-gradient(to bottom, $white, $white 5%, color.adjust($white, $lightness: 0%));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
 
   &:hover { background-position: 0 0; }
 }

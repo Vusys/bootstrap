@@ -5,7 +5,7 @@
 // Superhero 2.3.2 — Bootswatch overrides (converted from LESS)
 
 // Typography
-@import url('//fonts.googleapis.com/css?family=Oswald|Noticia+Text');
+@import '//fonts.googleapis.com/css?family=Oswald|Noticia+Text';
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, h6 {
   font-family: $headingsFontFamily;
@@ -322,7 +322,7 @@ div.subnav {
 .btn:hover {
   text-shadow: none;
   background-image: none;
-  box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 2px 0 rgb(0 0 0 / 20%);
   border: none;
 }
 
@@ -431,6 +431,7 @@ label {
 .alert .alert-heading { color: $orange; }
 
 .alert-success { background-color: $successText; }
+
 .alert-danger,
 .alert-error { background-color: $errorText; }
 .alert-info { background-color: $infoText; }
@@ -475,7 +476,7 @@ label {
   &-footer { border-radius: 0 0 4px 4px; }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   div.subnav {
     .nav > li {
       &:first-child > a,

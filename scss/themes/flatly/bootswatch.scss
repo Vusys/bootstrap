@@ -5,7 +5,7 @@
 // Flatness by Jenil (www.jgog.in) — Bootswatch 2.3.2 overrides (converted from LESS)
 
 // Typography
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+@import "http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic";
 
 h1 { font-size: 48px; font-weight: 900; }
 h2 { font-size: 36px; font-weight: 700; }
@@ -165,7 +165,7 @@ div.subnav {
   &:active,
   &.active {
     box-shadow: none;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255 255 255 / 75%);
   }
 
   &.disabled,
@@ -198,6 +198,7 @@ input[type="color"],
   text-indent: 1px;
   border-radius: 6px;
   box-shadow: none;
+
   // placeholder mixin equivalent
   &::placeholder { color: #acb6c0; }
 
@@ -335,7 +336,7 @@ legend {
 
 .close { text-shadow: none; }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   div.subnav {
     .nav > li:first-child > a,
     .nav > li + li > a {
@@ -348,7 +349,7 @@ legend {
   }
 }
 
-@media (max-width: 979px) {
+@media (width <= 979px) {
   .navbar .nav-collapse .nav > li > a {
     color: $white;
 
