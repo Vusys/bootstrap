@@ -23,6 +23,9 @@ todo
 Bootstrap v2.3.2 was originally released under the Apache License v2.0.  
 bootstrap-sass was released under the MIT License.
 
+The following themes were adapted from Bootswatch, which is licensed under the Apache License 2.0.
+Amelia, Cerulean, Cosmo, Cyborg, Flatly, Journal, Readable, Simplex, Slate, Spacelab, Spruce, Superhero, United.
+
 This fork includes code from both projects. Attribution is preserved in file headers where required.  
 See the [NOTICE](NOTICE) file for details of original authors and licenses.
 

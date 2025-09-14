@@ -1,0 +1,543 @@
+@use "sass:color";
+@use "../../bootstrap/mixins" as *;
+@use "../../bootstrap/variables" as *;
+
+// Amelia 2.3.2 — Bootswatch overrides (converted from LESS)
+
+// Typography
+@import '//fonts.googleapis.com/css?family=Lobster|Cabin:400,700';
+
+h6 {
+  color: $textColor;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-family: $baseFontFamily;
+  color: $textColor;
+}
+
+code, pre {
+  background-color: rgb(255 255 255 / 30%);
+  padding: 2px;
+}
+
+blockquote {
+  border-left-color: color.adjust(#147E88, $lightness: 12%);
+
+  &.pull-right {
+    border-right-color: color.adjust(#147E88, $lightness: 12%);
+  }
+
+  small {
+    color: rgb(255 255 255 / 60%);
+  }
+}
+
+.muted { color: rgb(255 255 255 / 60%); }
+
+// Scaffolding
+body {
+  // approximate of LESS radial gradient helper
+  background-image: radial-gradient(circle, color.adjust(#0F8790, $lightness: 7%), #0F8790);
+}
+
+hr { border-bottom: none; }
+
+.page-header {
+  margin: 30px 0 15px;
+  border-bottom: 0 solid transparent;
+}
+
+// Navbar
+.navbar {
+  .navbar-inner { border-radius: 0; }
+
+  .brand {
+    padding: 15px 20px 14px;
+    font-family: $headingsFontFamily;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .nav > li > a {
+    padding-top: 17px;
+    padding-bottom: 14px;
+    text-shadow: none;
+  }
+
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .navbar .nav > .active > a:focus {
+    box-shadow: none;
+  }
+
+  .navbar-search { margin-top: 10px; }
+
+  .navbar-search .search-query {
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .navbar-text {
+    margin: 17px 15px 14px;
+    line-height: 20px;
+  }
+
+  .btn,
+  .btn-group { padding: 4px; }
+
+  &-inverse {
+    .dropdown-menu li > a:hover,
+    .dropdown-menu li > a:focus,
+    .dropdown-submenu:hover > a {
+      background-image: none;
+      background-color: $yellow;
+    }
+  }
+}
+
+@media (max-width: $navbarCollapseWidth) {
+  .navbar .nav-collapse {
+    .nav li > a {
+      color: $textColor;
+      border-radius: 0;
+
+      &:hover { background-color: color.adjust($navbarBackground, $lightness: 10%); }
+    }
+
+    .dropdown-menu li > a:hover,
+    .dropdown-menu li > a:focus,
+    .dropdown-submenu:hover > a { background-image: none; }
+
+    .navbar-form,
+    .navbar-search {
+      box-shadow: none;
+      border: none;
+    }
+
+    .navbar-search .search-query { border: 2px solid $textColor; }
+    .nav-header { color: rgb(255 255 255 / 50%); }
+  }
+
+  .navbar-inverse .nav-collapse {
+    .nav > li > a,
+    .dropdown-menu a { color: $navbarInverseLinkColor !important; }
+
+    .nav li > a:hover,
+    .dropdown-menu a:hover { background-color: color.adjust($navbarInverseBackground, $lightness: 10%) !important; }
+  }
+}
+
+div.subnav {
+  margin: 0 1px;
+  background: rgb(42 99 105 / 90%) none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  .nav > li > a {
+    color: $textColor;
+    border-color: transparent;
+  }
+
+  .nav > li:first-child > a,
+  .nav > li:first-child > a:hover { border-radius: 0; }
+
+  .nav > .active > a {
+    background-color: rgb(255 255 255 / 40%);
+    border-color: transparent;
+    color: $textColor;
+    box-shadow: none;
+  }
+
+  .nav > li > a:hover,
+  .nav > .active > a:hover {
+    border-right-color: transparent;
+    background-color: rgb(255 255 255 / 40%);
+    color: $textColor;
+  }
+
+  .nav > li.open > a {
+    border-color: transparent;
+    background-color: rgb(255 255 255 / 40%);
+  }
+
+  &-fixed {
+    top: $navbarHeight + 1;
+    margin: 0;
+  }
+}
+
+@media (width <= 767px) {
+  div.subnav .nav > li + li > a { border-top: 1px solid rgb(255 255 255 / 40%); }
+}
+
+// Nav
+.nav-tabs,
+.nav-pills {
+  border-color: transparent;
+
+  & > li > a {
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+
+  & > li > a:hover {
+    background-color: #8AD5DC;
+    border-color: transparent;
+    text-shadow: none;
+  }
+
+  & > .active > a,
+  & > .active > a:hover {
+    background-color: #8AD5DC;
+    border-color: transparent;
+    color: $textColor;
+    text-shadow: none;
+  }
+
+  & > .disabled > a:hover {
+    background: none;
+    color: $grayLighter;
+  }
+
+  & > .open > .dropdown-toggle {
+    background-color: #8AD5DC;
+    color: $linkColor;
+    border-color: transparent;
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
+
+  & > li > a {
+    background-color: #3CB9C6;
+  }
+
+  &.nav-stacked {
+    li > a:first-child,
+    li > a:last-child { border-radius: 0; }
+
+    li > a,
+    li > a:hover,
+    li.active > a,
+    li.active > a:hover { border-color: transparent; }
+  }
+}
+
+.nav-list {
+  .nav-header {
+    text-shadow: none;
+    color: $textColor;
+  }
+  li > a { text-shadow: none; }
+
+  li.active > a,
+  li > a:hover,
+  li.active > a:hover {
+    background-color: #8AD5DC;
+    text-shadow: none;
+  }
+
+  .divider {
+    background-color: rgb(255 255 255 / 30%);
+    border-bottom: none;
+  }
+}
+
+.breadcrumb, .pager > li > a {
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.breadcrumb {
+  background-color: #3CB9C6;
+  background-image: none;
+  li { text-shadow: none; }
+  .active { color: $white; }
+
+  & > li > a.divider,
+  & > li > span.divider { color: $grayLighter; }
+}
+
+.pagination {
+  ul  {
+    background-color: $paginationBackground;
+    background-image: none;
+    border-radius: 0;
+  }
+
+  ul > li > a:hover {
+    background-color: rgb(255 255 255 / 40%);
+    color: $linkColor;
+  }
+
+  ul > li:first-child > a,
+  ul > li:last-child > a {
+    border-radius: 0;
+  }
+
+  ul > .disabled > a,
+  ul > .disabled > a:hover,
+  ul > .disabled > span,
+  ul > .disabled > span:hover { color: $textColor; }
+
+  ul > .active > a,
+  ul > .active > a:hover,
+  ul > .active > span,
+  ul > .active > span:hover {
+    background-color: rgb(255 255 255 / 40%);
+    color: $textColor;
+  }
+}
+
+.pager {
+  li > a {
+    background-color: #3CB9C6;
+    &:hover { background-color: #8AD5DC; }
+  }
+
+  .disabled a,
+  .disabled a:hover {
+    background-color: #3CB9C6;
+    color: $white;
+  }
+}
+
+// Buttons
+@mixin button-background-custom($color) {
+  background-color: $color;
+  border-color: transparent;
+
+  &:hover,
+  &:active,
+  &.active,
+  &.disabled,
+  &[disabled] {
+    background-color: color.adjust($color, $lightness: -5%);
+    text-shadow: none;
+  }
+
+  &:active,
+  &.active {
+    background-color: color.adjust($color, $lightness: -15%);
+
+    // IE6-9 fallback
+    background-color: color.adjust($color, $lightness: -15%) \9;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  padding: 12px 16px;
+  border-radius: 0;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+
+  @include button-background-custom($btnBackground);
+}
+.btn-large { padding: $paddingLarge; }
+.btn-small { padding: $paddingSmall; }
+.btn-mini { padding: $paddingMini; }
+
+.btn-group .btn:first-child {
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.btn-group .btn:last-child,
+.btn-group .dropdown-toggle {
+  border-radius: 0;
+}
+
+.btn-group .dropdown-toggle,
+.btn-group.open .dropdown-toggle,
+.btn.open .dropdown-toggle {
+  box-shadow: none;
+}
+.btn-primary { @include button-background-custom($btnPrimaryBackground); }
+.btn-info { @include button-background-custom($btnInfoBackground); }
+.btn-success { @include button-background-custom($btnSuccessBackground); }
+.btn-warning { @include button-background-custom($btnWarningBackground); }
+.btn-danger { @include button-background-custom($btnDangerBackground); }
+.btn-inverse { @include button-background-custom($btnInverseBackground); }
+.btn-link { @include button-background-custom($btnPrimaryBackground); }
+.btn-small [class^="icon-"] { margin-top: 1px; }
+.add-on [class^="icon-"] { margin-left: 5px; }
+
+// Ensure split button dropdowns match theme button height
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// Tables
+.table th, .table td,
+.table tbody + tbody {
+  border-top: 0 solid transparent;
+}
+.table-bordered { border-radius: 0; }
+
+.table tbody {
+  tr.success td { background-color: $green; }
+  tr.error td { background-color: $red; }
+  tr.info td { background-color: $blue; }
+}
+
+// Forms
+legend { font-family: $headingsFontFamily; }
+
+legend, label, .help-block, .input-file {
+  border: 0 solid transparent;
+  color: inherit;
+}
+
+input, textarea, .uneditable-input {
+  border: 0 solid transparent;
+  padding: 10px;
+}
+.uneditable-input { padding-bottom: 30px; }
+select { border: 0 solid transparent; }
+button { margin-left: 12px; }
+
+input, textarea, .search-query, .uneditable-input,
+.input-append input, .input-append .uneditable-input,
+.input-prepend input, .input-prepend .uneditable-input {
+  border-color: transparent;
+  box-shadow: none;
+}
+.form-actions { border-top: 0 solid transparent; }
+.control-group.warning { @include form-field-state($yellow, color.adjust($yellow, $lightness: 30%), $warningBackground); }
+.control-group.error { @include form-field-state($orange, color.adjust($orange, $lightness: 30%), $errorBackground); }
+.control-group.success { @include form-field-state($green, color.adjust($green, $lightness: 20%), $successBackground); }
+.control-group.info { @include form-field-state($purple, color.adjust($purple, $lightness: 20%), $infoBackground); }
+
+.control-group.warning .control-label,
+.control-group.warning .help-block,
+.control-group.warning .help-inline { color: color.adjust($yellow, $lightness: 30%); }
+
+.control-group.error .control-label,
+.control-group.error .help-block,
+.control-group.error .help-inline { color: color.adjust($orange, $lightness: 30%); }
+
+.control-group.success .control-label,
+.control-group.success .help-block,
+.control-group.success .help-inline { color: color.adjust($green, $lightness: 20%); }
+
+.control-group.info .control-label,
+.control-group.info .help-block,
+.control-group.info .help-inline { color: color.adjust($purple, $lightness: 20%); }
+
+.input-prepend .add-on,
+.input-append .add-on {
+  height: 20px;
+  padding-top: 4px;
+  background-color: $grayLighter;
+  border-color: transparent;
+  border-radius: 0;
+  color: $gray;
+  text-shadow: none;
+}
+
+.input-append .btn,
+.input-prepend .btn {
+  padding: 4px 10px;
+}
+
+// Alerts, labels, badges
+.alert {
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 {
+  color: $textColor;
+}
+.alert-heading { color: $textColor; }
+
+.label,
+.badge {
+  background-color: $blue;
+}
+.label-success, .badge-success { background-color: $green; }
+.label-important, .badge-important { background-color: $red; }
+.label-warning, .badge-warning { background-color: $orange; }
+.label-info, .badge-info { background-color: $purple; }
+.label-inverse, .badge-inverse { background-color: $btnInverseBackground; }
+
+// Misc
+.progress, .well, pre, code {
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+.well { background-image: none; }
+.hero-unit { border-radius: 0; }
+
+.thumbnail {
+  border: 0 solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.progress {
+  background-image: none;
+  background-color: #27666D;
+}
+
+.progress .bar {
+  box-shadow: none;
+  background-image: none;
+  background-color: $yellow;
+}
+.progress .bar-success { background-color: $green; }
+.progress .bar-warning { background-color: $orange; }
+.progress .bar-error { background-color: $red; }
+.modal { border-radius: 0; }
+
+.modal-header {
+  background-color: $navbarBackground;
+  color: $white;
+}
+.modal-body { color: $grayDark; }
+.modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6, .modal-body legend { color: $red; }
+.modal-body label, .modal-body .input-file { color: $grayDark; }
+.modal-body .help-block, .modal-body .help-inline { color: $grayLight; }
+.modal-body textarea, .modal-body input, .modal-body .uneditable-input { border: 1px solid $grayLight; }
+
+.popover {
+  padding: 0;
+  border-radius: 0;
+  color: $grayDark;
+}
+
+.popover .popover-title {
+  border-radius: 0;
+  color: $white;
+}
+
+
