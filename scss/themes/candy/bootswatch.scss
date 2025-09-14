@@ -7,7 +7,10 @@
 // Typography
 @import '//fonts.googleapis.com/css?family=Lato:300,400,700';
 
-body { font-family: $baseFontFamily; line-height: $baseLineHeight; }
+body {
+  font-family: $baseFontFamily;
+  line-height: $baseLineHeight;
+}
 
 // Buttons — reproduce gradients and borders from candy.css
 .btn {
@@ -81,32 +84,84 @@ input[type="color"],
 }
 
 // Fix heights of split dropdown toggles to match corresponding button heights
-.btn-group > .btn + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
-.btn-group > .btn-small + .dropdown-toggle { padding-top: 6px; padding-bottom: 6px; }
-.btn-group > .btn-mini + .dropdown-toggle { padding-top: 3px; padding-bottom: 3px; }
-.btn-group > .btn-large + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 
 // Navbar — candy uses blue brand bar
 .navbar {
-  .navbar-inner { background-image: none; box-shadow: none; }
-  .brand, .nav > li > a { color: $navbarLinkColor; text-shadow: none; }
-  .brand { padding: 14px 20px; line-height: 22px; }
-  .nav > li > a { padding: 14px 15px; line-height: 22px; }
+  .navbar-inner {
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .brand, .nav > li > a {
+    color: $navbarLinkColor;
+    text-shadow: none;
+  }
+
+  .brand {
+    padding: 14px 20px;
+    line-height: 22px;
+  }
+
+  .nav > li > a {
+    padding: 14px 15px;
+    line-height: 22px;
+  }
 }
 
 // Ensure inverse variant is blue (brand) while default stays white
 .navbar-inverse {
   .navbar-inner { background-color: $navbarInverseBackground; }
+
   .brand, .nav > li > a { color: $navbarInverseLinkColor; }
 }
 
 // Tables hover tones
-.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th { background-color: $tableBackgroundHover; }
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+  background-color: $tableBackgroundHover;
+}
 
 // Alerts
-.alert-success { background-color: $successBackground; color: $successText; border: none; }
-.alert-info    { background-color: $infoBackground;    color: $infoText;    border: none; }
-.alert-warning { background-color: $warningBackground; color: $warningText; border: none; }
-.alert-danger  { background-color: $errorBackground;   color: $errorText;   border: none; }
+.alert-success {
+  background-color: $successBackground;
+  color: $successText;
+  border: none;
+}
+
+.alert-info    {
+  background-color: $infoBackground;
+  color: $infoText;
+  border: none;
+}
+
+.alert-warning {
+  background-color: $warningBackground;
+  color: $warningText;
+  border: none;
+}
+
+.alert-danger  {
+  background-color: $errorBackground;
+  color: $errorText;
+  border: none;
+}
 
 

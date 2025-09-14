@@ -30,7 +30,10 @@ blockquote {
 
 // Pills/Tabs hover contrast
 .nav-tabs li > a:hover,
-.nav-pills li > a:hover { background-color: color.adjust($blue, $lightness: -5%); color: $white; }
+.nav-pills li > a:hover {
+  background-color: color.adjust($blue, $lightness: -5%);
+  color: $white;
+}
 
 // Tables
 .table {
@@ -54,9 +57,24 @@ blockquote {
 .footer { border-top: 1px solid color.adjust($grayDark, $lightness: -4%); }
 
 // Align split button dropdown toggle height with buttons
-.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
-.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
-.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
-.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 

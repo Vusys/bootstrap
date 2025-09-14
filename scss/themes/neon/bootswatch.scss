@@ -9,7 +9,22 @@
 .label,
 .badge { text-shadow: 0 0 6px rgb(255 20 147 / 40%); }
 
-.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
-.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
-.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
-.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
