@@ -3011,26 +3011,26 @@ button.close {
   cursor: pointer;
   color: #333;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: rgb(244.8, 244.8, 244.8);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgb(229.5, 229.5, 229.5)));
-  background-image: -webkit-linear-gradient(top, #fff, rgb(229.5, 229.5, 229.5));
-  background-image: -moz-linear-gradient(top, #fff, rgb(229.5, 229.5, 229.5));
-  background-image: -o-linear-gradient(top, #fff, rgb(229.5, 229.5, 229.5));
-  background-image: linear-gradient(to bottom, #fff, rgb(229.5, 229.5, 229.5));
+  background-color: whitesmoke;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #fff, #e6e6e6);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFE6E6E6", GradientType=0);
-  border-color: rgb(229.5, 229.5, 229.5) rgb(229.5, 229.5, 229.5) rgb(191.25, 191.25, 191.25);
+  border-color: #e6e6e6 #e6e6e6 rgb(191.75, 191.75, 191.75);
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: rgb(229.5, 229.5, 229.5); /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  *background-color: #e6e6e6; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
   color: #333;
-  background-color: rgb(229.5, 229.5, 229.5);
-  *background-color: rgb(216.75, 216.75, 216.75);
+  background-color: #e6e6e6;
+  *background-color: rgb(217.25, 217.25, 217.25);
 }
 .btn:active, .btn.active {
-  background-color: #cccccc \9 ;
+  background-color: rgb(204.5, 204.5, 204.5) \9 ;
 }
 .btn {
   border: 1px solid #ccc;
@@ -3176,12 +3176,12 @@ input[type=button].btn-block {
 .btn-warning {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgb(249.6559055118, 167.2543307087, 50.2440944882);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(250.7598425197, 180.0905511811, 79.7401574803)), to(#f89406));
-  background-image: -webkit-linear-gradient(top, rgb(250.7598425197, 180.0905511811, 79.7401574803), #f89406);
-  background-image: -moz-linear-gradient(top, rgb(250.7598425197, 180.0905511811, 79.7401574803), #f89406);
-  background-image: -o-linear-gradient(top, rgb(250.7598425197, 180.0905511811, 79.7401574803), #f89406);
-  background-image: linear-gradient(to bottom, rgb(250.7598425197, 180.0905511811, 79.7401574803), #f89406);
+  background-color: rgb(249.8, 167.2, 50.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFBB450", endColorstr="#FFF89406", GradientType=0);
   border-color: #f89406 #f89406 rgb(173.3070866142, 103.4251968504, 4.1929133858);
@@ -3500,7 +3500,7 @@ input[type=submit].btn.btn-mini {
           box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .btn-group.open .btn.dropdown-toggle {
-  background-color: rgb(229.5, 229.5, 229.5);
+  background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
   background-color: #0044cc;
