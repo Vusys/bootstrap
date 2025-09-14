@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.3",
         "hyde/framework": "^1.8",
         "laravel-zero/framework": "^10.0"
     },
