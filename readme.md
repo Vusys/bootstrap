@@ -1,10 +1,14 @@
-# Bootstrap v2.4.0
+# [Bootstrap v2.4.0](https://vusys.github.io/bootstrap)
 
 Bryan's esoteric fork of Bootstrap v2.3.2, now compiled with Gulp 5.
 
 # Roadmap
 
-- Finish porting docs
+- Finish updating docs
+- Remove `no-descending-specificity` from linter 
+- Port future components:
+  - List Groups
+- Port [Bootswatch themes](https://github.com/thomaspark/bootswatch/releases/tag/v2.3.2)
 
 ## Quick start
 
