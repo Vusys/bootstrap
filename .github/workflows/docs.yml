@@ -9,3 +9,4 @@ jobs:
         with:
           debug: true
           directory: 'docs'
+          deploy-to: 'pages'
