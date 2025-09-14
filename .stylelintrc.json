@@ -8,7 +8,9 @@
         "color-hex-length": "short",
         "selector-class-pattern": null,
         "scss/at-import-no-partial-leading-underscore": null,
-        "scss/dollar-variable-pattern": null
+        "scss/dollar-variable-pattern": null,
+        "no-descending-specificity": null,
+        "selector-id-pattern": null
       }
     }
   ]
