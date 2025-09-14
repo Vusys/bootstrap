@@ -11,6 +11,7 @@ import { deleteAsync } from 'del';
 import concat from 'gulp-concat';
 import terser from 'gulp-terser';
 import header from 'gulp-header';
+import tap from 'gulp-tap';
 import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
@@ -25,6 +26,11 @@ const paths = {
             'scss/bootstrap-responsive.scss',
         ],
         all: 'scss/**/*.scss',
+    },
+    themes: {
+        entries: 'scss/themes/*.scss',
+        all: 'scss/themes/**/*.scss',
+        dist: 'dist/themes',
     },
     js: {
         order: [
@@ -83,6 +89,59 @@ function stylesDist() {
         .pipe(dest(paths.dist.css));
 }
 
+function stylesThemes() {
+    return src(paths.themes.entries, { allowEmpty: true })
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(postcss([autoprefixer({
+            overrideBrowserslist: [
+                'ie >= 7',
+                'chrome >= 4',
+                'safari >= 4',
+                'ios_saf >= 4',
+                'android >= 2.1',
+                'firefox >= 3.6',
+                'opera >= 10',
+            ],
+            remove: false,
+        })]))
+        .pipe(tap((file) => {
+            const themeName = file.basename.replace(/-responsive$/, '');
+            const isResponsive = file.basename.includes('-responsive');
+            const themeDisplayName = themeName.charAt(0).toUpperCase() + themeName.slice(1);
+            const responsiveSuffix = isResponsive ? ' (Responsive)' : '';
+            
+            let content = file.contents.toString();
+            
+            // Replace only the Bootstrap title line in the header
+            content = content.replace(/\* (?:Bootstrap|Bootstrap Responsive) v[\d.]+/, `* ${themeDisplayName}${responsiveSuffix} Theme for Bootstrap v${pkg.version}`);
+            
+            file.contents = Buffer.from(content);
+        }))
+        .pipe(dest(paths.themes.dist))
+        .pipe(cleanCSS({
+            compatibility: 'ie7',
+            level: { 1: { specialComments: 'all' } },
+        }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(tap((file) => {
+            const themeName = file.basename.replace(/-responsive$/, '').replace(/\.min$/, '');
+            const isResponsive = file.basename.includes('-responsive');
+            const themeDisplayName = themeName.charAt(0).toUpperCase() + themeName.slice(1);
+            const responsiveSuffix = isResponsive ? ' (Responsive)' : '';
+            
+            let content = file.contents.toString();
+            
+            // Replace only the Bootstrap title line in the header for minified files
+            content = content.replace(/\* (?:Bootstrap|Bootstrap Responsive) v[\d.]+/, `* ${themeDisplayName}${responsiveSuffix} Theme for Bootstrap v${pkg.version}`);
+            
+            file.contents = Buffer.from(content);
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest(paths.themes.dist));
+}
+
 function images() {
     return src(paths.images, { allowEmpty: true, encoding: false, buffer: true })
         .pipe(dest(paths.dist.img));
@@ -108,17 +167,19 @@ function scriptsDist() {
 
 function watchFiles() {
     gulpWatch(paths.scss.all, series(stylesDist ));
+    gulpWatch(paths.themes.all, series(stylesThemes));
     gulpWatch(paths.js.all, series(scriptsDist ));
     gulpWatch(paths.images, series(images));
 }
 
 export const build = series(
     clean,
-    parallel(stylesDist, images, scriptsDist),
+    parallel(stylesDist, stylesThemes, images, scriptsDist),
 );
 
 export { clean };
 export const styles = stylesDist;
+export const stylesThemesBuild = stylesThemes;
 export const scripts = scriptsDist;
 export const watch = watchFiles;
 export default build;

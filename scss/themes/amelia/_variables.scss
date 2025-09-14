@@ -1,0 +1,182 @@
+@use "sass:color";
+@use "sass:math";
+
+// Amelia 2.3.2 — variable overrides translated from LESS to SCSS
+
+// Grays
+$black: #000;
+$grayDarker: #111;
+$grayDark: #444;
+$gray: #555;
+$grayLight: #aaa;
+$grayLighter: #ddd;
+$white: #fff;
+
+// Accent colors
+$blue: #00BCE1;
+$blueDark: #1269B0;
+$green: #48CA3B;
+$red: #AD1D28;
+$yellow: #DEBB27;
+$orange: #DF6E1E;
+$pink: #FFBCB9;
+$purple: #4D3A7D;
+
+// Scaffolding
+$bodyBackground: #003F4D;
+$textColor: #E1F0F0;
+
+// Links
+$linkColor: color.adjust($yellow, $lightness: 15%);
+$linkColorHover: $linkColor;
+
+// Typography
+$sansFontFamily: 'Cabin', Verdana, sans-serif;
+$serifFontFamily: Georgia, "Times New Roman", Times, serif;
+$monoFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
+$baseFontSize: 14px;
+$baseFontFamily: $sansFontFamily;
+$baseLineHeight: 20px;
+$altFontFamily: $serifFontFamily;
+$headingsFontFamily: 'Lobster', cursive;
+$headingsFontWeight: normal;
+$headingsColor: inherit;
+
+// Component sizing
+$fontSizeLarge: $baseFontSize * 1.25; // ~18px
+$fontSizeSmall: $baseFontSize * 0.85; // ~12px
+$fontSizeMini: $baseFontSize * 0.75; // ~11px
+$paddingLarge: 20px 24px; // 58px
+$paddingSmall: 8px 12px;  // 34px
+$paddingMini: 4px 8px;   // 28px
+$baseBorderRadius: 0;
+$borderRadiusLarge: 6px;
+$borderRadiusSmall: 3px;
+
+// Tables
+$tableBackground: color.adjust(#147E88, $lightness: 10%);
+$tableBackgroundAccent: color.adjust(#147E88, $lightness: 15%);
+$tableBackgroundHover: rgb(255 255 255 / 40%);
+$tableBorder: color.adjust(#147E88, $lightness: 12%);
+
+// Buttons
+$btnBackground: $grayLighter;
+$btnBackgroundHighlight: $grayLighter;
+$btnBorder: rgb(0 0 0 / 0%);
+$btnPrimaryBackground: $red;
+$btnPrimaryBackgroundHighlight: $btnPrimaryBackground;
+$btnInfoBackground: $purple;
+$btnInfoBackgroundHighlight: $purple;
+$btnSuccessBackground: $green;
+$btnSuccessBackgroundHighlight: $green;
+$btnWarningBackground: $orange;
+$btnWarningBackgroundHighlight: $orange;
+$btnDangerBackground: $yellow;
+$btnDangerBackgroundHighlight: $yellow;
+$btnInverseBackground: #27666D;
+$btnInverseBackgroundHighlight: #27666D;
+
+// Forms
+$inputBackground: $white;
+$inputBorder: transparent;
+$inputBorderRadius: $baseBorderRadius;
+$inputDisabledBackground: $grayLighter;
+$formActionsBackground: transparent;
+
+// Dropdowns
+$dropdownBackground: $white;
+$dropdownBorder: rgb(0 0 0 / 20%);
+$dropdownDividerTop: #e5e5e5;
+$dropdownDividerBottom: $white;
+$dropdownLinkColor: $grayDark;
+$dropdownLinkColorHover: $white;
+$dropdownLinkColorActive: $white;
+$dropdownLinkBackgroundActive: $red;
+$dropdownLinkBackgroundHover: $red;
+
+// Z-index (unchanged from core except tooltip)
+$zindexDropdown: 1000;
+$zindexPopover: 1010;
+$zindexTooltip: 1020; // matches Amelia
+$zindexFixedNavbar: 1030;
+$zindexModalBackdrop: 1040;
+$zindexModal: 1050;
+
+// Sprite icons path
+$iconSpritePath: "../img/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../img/glyphicons-halflings-white.png";
+
+// Misc
+$placeholderText: $grayLight;
+$hrBorder: rgb(255 255 255 / 30%);
+$horizontalComponentOffset: 180px;
+$wellBackground: #3CB9C6;
+
+// Navbar
+$navbarCollapseWidth: 979px;
+$navbarCollapseDesktopWidth: $navbarCollapseWidth + 1;
+$navbarHeight: 50px;
+$navbarBackground: $red;
+$navbarBackgroundHighlight: $red;
+$navbarBorder: color.adjust($navbarBackground, $lightness: -12%);
+$navbarText: $white;
+$navbarLinkColor: $white;
+$navbarLinkColorHover: $white;
+$navbarLinkColorActive: $navbarLinkColorHover;
+$navbarLinkBackgroundHover: color.adjust($navbarBackground, $lightness: 10%);
+$navbarLinkBackgroundActive: color.adjust($navbarBackground, $lightness: 10%);
+$navbarBrandColor: $navbarLinkColor;
+
+// Inverted navbar
+$navbarInverseBackground: $yellow;
+$navbarInverseBackgroundHighlight: $yellow;
+$navbarInverseBorder: rgb(0 0 0 / 10%);
+$navbarInverseText: $white;
+$navbarInverseLinkColor: $white;
+$navbarInverseLinkColorHover: $white;
+$navbarInverseLinkColorActive: $white;
+$navbarInverseLinkBackgroundHover: rgb(255 255 255 / 20%);
+$navbarInverseLinkBackgroundActive: rgb(255 255 255 / 20%);
+$navbarInverseSearchBackground: color.adjust($navbarInverseBackground, $lightness: 25%);
+$navbarInverseSearchBackgroundFocus: $white;
+$navbarInverseSearchBorder: $navbarInverseBackground;
+$navbarInverseSearchPlaceholderColor: $white;
+$navbarInverseBrandColor: $navbarInverseLinkColor;
+
+// Pagination
+$paginationBackground: #3CB9C6;
+$paginationBorder: transparent;
+$paginationActiveBackground: rgb(255 255 255 / 40%);
+
+// Hero unit
+$heroUnitBackground: #3CB9C6;
+$heroUnitHeadingColor: inherit;
+$heroUnitLeadColor: inherit;
+
+// Form states and alerts
+$warningText: $textColor;
+$warningBackground: $orange;
+$warningBorder: color.adjust(color.adjust($warningBackground, $hue: -10deg), $lightness: -3%);
+$errorText: $textColor;
+$errorBackground: $red;
+$errorBorder: color.adjust(color.adjust($errorBackground, $hue: -10deg), $lightness: -3%);
+$successText: $textColor;
+$successBackground: $green;
+$successBorder: color.adjust(color.adjust($successBackground, $hue: -10deg), $lightness: -5%);
+$infoText: $textColor;
+$infoBackground: $purple;
+$infoBorder: color.adjust(color.adjust($infoBackground, $hue: -10deg), $lightness: -7%);
+
+// Tooltips and popovers
+$tooltipColor: #fff;
+$tooltipBackground: #000;
+$tooltipArrowWidth: 5px;
+$tooltipArrowColor: $tooltipBackground;
+$popoverBackground: #fff;
+$popoverArrowWidth: 10px;
+$popoverArrowColor: #fff;
+$popoverTitleBackground: $navbarBackground;
+$popoverArrowOuterWidth: $popoverArrowWidth + 1;
+$popoverArrowOuterColor: rgb(0 0 0 / 25%);
+
+

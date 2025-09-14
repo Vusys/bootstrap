@@ -1,0 +1,28 @@
+@use "sass:color";
+@use "../../bootstrap/mixins" as *;
+@use "../../bootstrap/variables" as *;
+
+// Readable 2.3.2 — Bootswatch overrides (converted from LESS)
+
+// Typography
+@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
+// Subnav
+div.subnav {
+  .nav > li > a,
+  .nav > .active > a,
+  .nav > .active > a:hover { color: $textColor; }
+
+  &-fixed { top: $navbarHeight + 1; }
+}
+
+// Misc
+.hero-unit {
+  h1, h2, h3, h4, h5, h6 { margin: 13px 0; }
+}
+
+// Align split button dropdown toggle height with buttons
+.btn-group > .btn + .dropdown-toggle { padding-top: 12px; padding-bottom: 12px; }
+.btn-group > .btn-small + .dropdown-toggle { padding-top: 8px; padding-bottom: 8px; }
+.btn-group > .btn-mini + .dropdown-toggle { padding-top: 4px; padding-bottom: 4px; }
+.btn-group > .btn-large + .dropdown-toggle { padding-top: 20px; padding-bottom: 20px; }
