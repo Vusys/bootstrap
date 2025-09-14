@@ -1,0 +1,167 @@
+@use "sass:color";
+@use "../../bootstrap/mixins" as *;
+@use "../../bootstrap/variables" as *;
+
+// Candy — Bootswatch overrides (ported from candy.css)
+
+// Typography
+@import '//fonts.googleapis.com/css?family=Lato:300,400,700';
+
+body {
+  font-family: $baseFontFamily;
+  line-height: $baseLineHeight;
+}
+
+// Buttons — reproduce gradients and borders from candy.css
+.btn {
+  border-radius: $baseBorderRadius;
+  text-shadow: none;
+}
+
+// Inputs — soften border and focus treatment
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border-color: $inputBorder;
+
+  &:focus {
+    border-color: rgb(0 138 206 / 60%); // subtle candy blue
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 7.5%), 0 0 6px rgb(0 138 206 / 35%);
+  }
+}
+
+.btn-primary {
+  color: $white;
+  border: 1px solid $blueDark;
+  background-color: $btnPrimaryBackground;
+  background-image: linear-gradient(to bottom, $btnPrimaryBackground 0%, $btnPrimaryBackgroundHighlight 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+.btn-success {
+  color: $white;
+  border: 1px solid $green;
+  background-color: $btnSuccessBackground;
+  background-image: linear-gradient(to bottom, $btnSuccessBackground 0%, $btnSuccessBackgroundHighlight 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+.btn-info {
+  color: $white;
+  border: 1px solid $purple;
+  background-color: $btnInfoBackground;
+  background-image: linear-gradient(to bottom, $btnInfoBackground 0%, $btnInfoBackgroundHighlight 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+.btn-warning {
+  color: $white;
+  border: 1px solid $yellow;
+  background-color: $btnWarningBackground;
+  background-image: linear-gradient(to bottom, $btnWarningBackground 0%, $btnWarningBackgroundHighlight 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+.btn-danger {
+  color: $white;
+  border: 1px solid $red;
+  background-color: $btnDangerBackground;
+  background-image: linear-gradient(to bottom, $btnDangerBackground 0%, $btnDangerBackgroundHighlight 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+// Fix heights of split dropdown toggles to match corresponding button heights
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+// Navbar — candy uses blue brand bar
+.navbar {
+  .navbar-inner {
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .brand, .nav > li > a {
+    color: $navbarLinkColor;
+    text-shadow: none;
+  }
+
+  .brand {
+    padding: 14px 20px;
+    line-height: 22px;
+  }
+
+  .nav > li > a {
+    padding: 14px 15px;
+    line-height: 22px;
+  }
+}
+
+// Ensure inverse variant is blue (brand) while default stays white
+.navbar-inverse {
+  .navbar-inner { background-color: $navbarInverseBackground; }
+
+  .brand, .nav > li > a { color: $navbarInverseLinkColor; }
+}
+
+// Tables hover tones
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+  background-color: $tableBackgroundHover;
+}
+
+// Alerts
+.alert-success {
+  background-color: $successBackground;
+  color: $successText;
+  border: none;
+}
+
+.alert-info    {
+  background-color: $infoBackground;
+  color: $infoText;
+  border: none;
+}
+
+.alert-warning {
+  background-color: $warningBackground;
+  color: $warningText;
+  border: none;
+}
+
+.alert-danger  {
+  background-color: $errorBackground;
+  color: $errorText;
+  border: none;
+}
+
+

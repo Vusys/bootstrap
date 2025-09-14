@@ -1,0 +1,24 @@
+@use "sass:color";
+@use "../../bootstrap/variables" as *;
+
+// Minimal theme shims; most styles come from variable overrides.
+// Align split button dropdown toggle height with buttons.
+.btn-group > .btn + .dropdown-toggle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
