@@ -85,7 +85,7 @@ $tableBorder: #ddd !default; // table and cell border
 // Buttons
 // -------------------------
 $btnBackground: $white !default;
-$btnBackgroundHighlight: color.adjust($white, $lightness: -10%) !default;
+$btnBackgroundHighlight: #e6e6e6 !default;
 $btnBorder: #ccc !default;
 $btnPrimaryBackground: $linkColor !default;
 $btnPrimaryBackgroundHighlight: color.adjust($btnPrimaryBackground, $hue: 20deg) !default;
@@ -93,7 +93,7 @@ $btnInfoBackground: #5bc0de !default;
 $btnInfoBackgroundHighlight: #2f96b4 !default;
 $btnSuccessBackground: #62c462 !default;
 $btnSuccessBackgroundHighlight: #51a351 !default;
-$btnWarningBackground: color.adjust($orange, $lightness: 15%) !default;
+$btnWarningBackground: #fbb450 !default;
 $btnWarningBackgroundHighlight: $orange !default;
 $btnDangerBackground: #ee5f5b !default;
 $btnDangerBackgroundHighlight: #bd362f !default;
