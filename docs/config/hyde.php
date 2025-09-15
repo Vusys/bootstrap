@@ -26,6 +26,21 @@ use Hyde\Facades\Author;
 use Hyde\Enums\Feature;
 use Hyde\Facades\Meta;
 
+// Derive site version at build-time from the repository package.json, with ENV override
+$__derivedSiteVersion = (function () {
+    $path = __DIR__ . '/../../package.json';
+    if (is_file($path)) {
+        $contents = @file_get_contents($path);
+        if ($contents !== false) {
+            $json = json_decode($contents, true);
+            if (json_last_error() === JSON_ERROR_NONE && isset($json['version']) && is_string($json['version'])) {
+                return $json['version'];
+            }
+        }
+    }
+    return null;
+})();
+
 return [
 
     /*
@@ -39,6 +54,9 @@ return [
     */
 
     'name' => env('SITE_NAME', 'Bootstrap'),
+
+    // Project version, used in templates like the index page
+    'site_version' => env('SITE_VERSION', $__derivedSiteVersion ?? 'dev'),
 
     /*
     |--------------------------------------------------------------------------

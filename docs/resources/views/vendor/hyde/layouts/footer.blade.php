@@ -15,15 +15,19 @@
 
 <footer class="footer">
     <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Maintained by Vusys. An esoteric fork of Bootstrap v2.3.2.</p>
+        <p>
+            Includes original work from <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> (Apache‑2.0),
+            <a href="https://github.com/twbs/bootstrap-sass/tree/061ef3280711a36580f278da889658c6a79416e7" target="_blank">Bootstrap for Sass</a> (MIT),
+            <a href="https://github.com/thomaspark/bootswatch/tree/a9aab510f11515c7dec294e7b24e838ff583e15a" target="_blank">Bootswatch</a> (Apache‑2.0).
+        </p>
+        <p><a href="https://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
-            <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+            <li><a href="https://vusys.github.io/bootstrap">Home</a></li>
             <li class="muted">&middot;</li>
-            <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+            <li><a href="https://github.com/vusys/bootstrap/issues">Issues</a></li>
             <li class="muted">&middot;</li>
-            <li><a href="https://github.com/twbs/bootstrap/releases">Changelog</a></li>
+            <li><a href="https://github.com/vusys/bootstrap/releases">Releases</a></li>
         </ul>
     </div>
 </footer>
