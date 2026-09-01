@@ -24,7 +24,6 @@
                 <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
                 <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
                 <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-                <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
                 <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
             </ul>
         </div>
@@ -43,13 +42,13 @@
                 <div class="row-fluid">
                     <div class="span6">
                         <h2>Download compiled</h2>
-                        <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-                        <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip">Download Bootstrap</a></p>
+                        <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, images, and themes. No source files or build step required.</p>
+                        <p><a class="btn btn-large btn-primary" href="https://github.com/Vusys/bootstrap/releases">Download Bootstrap</a></p>
                     </div>
                     <div class="span6">
                         <h2>Download source</h2>
-                        <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-                        <p><a class="btn btn-large" href="https://github.com/twbs/bootstrap/zipball/master" >Download Bootstrap source</a></p>
+                        <p>Get the Sass and JavaScript source, along with the build scripts, by downloading the latest version directly from GitHub.</p>
+                        <p><a class="btn btn-large" href="https://github.com/Vusys/bootstrap/archive/refs/heads/master.zip">Download Bootstrap source</a></p>
                     </div>
                 </div>
             </section>
@@ -69,14 +68,22 @@
   ├── css/
   │   ├── bootstrap.css
   │   ├── bootstrap.min.css
+  │   ├── bootstrap-responsive.css
+  │   └── bootstrap-responsive.min.css
   ├── js/
   │   ├── bootstrap.js
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
+  │   └── bootstrap.min.js
+  ├── img/
+  │   ├── glyphicons-halflings.png
+  │   └── glyphicons-halflings-white.png
+  └── themes/
+      ├── amelia.css
+      ├── amelia.min.css
+      ├── amelia-responsive.css
+      ├── amelia-responsive.min.css
+      └── ... (20 themes, each with the same four files)
 </pre>
-                <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.</p>
+                <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>), each with a sourcemap alongside the minified file. The <code>themes/</code> folder holds 20 optional drop-in themes — see the <a href="https://github.com/Vusys/bootstrap#themes">readme</a> for the full list.</p>
                 <p>Please note that all JavaScript plugins require jQuery to be included.</p>
             </section>
 
@@ -169,87 +176,14 @@
 
 
 
-            <!-- Examples
-            ================================================== -->
-            <section id="examples">
-                <div class="page-header">
-                    <h1>5. Examples</h1>
-                </div>
-                <p class="lead">Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
-                <ul class="thumbnails bootstrap-examples">
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/starter-template.html">
-                            <img src="media/img/examples/bootstrap-example-starter.png" alt="">
-                        </a>
-                        <h4>Starter template</h4>
-                        <p>A barebones HTML document with all the Bootstrap CSS and JavaScript included.</p>
-                    </li>
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/hero.html">
-                            <img src="media/img/examples/bootstrap-example-marketing.png" alt="">
-                        </a>
-                        <h4>Basic marketing site</h4>
-                        <p>Featuring a hero unit for a primary message and three supporting elements.</p>
-                    </li>
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/fluid.html">
-                            <img src="media/img/examples/bootstrap-example-fluid.png" alt="">
-                        </a>
-                        <h4>Fluid layout</h4>
-                        <p>Uses our new responsive, fluid grid system to create a seamless liquid layout.</p>
-                    </li>
-
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/marketing-narrow.html">
-                            <img src="media/img/examples/bootstrap-example-marketing-narrow.png" alt="">
-                        </a>
-                        <h4>Narrow marketing</h4>
-                        <p>Slim, lightweight marketing template for small projects or teams.</p>
-                    </li>
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/justified-nav.html">
-                            <img src="media/img/examples/bootstrap-example-justified-nav.png" alt="">
-                        </a>
-                        <h4>Justified nav</h4>
-                        <p>Marketing page with equal-width navigation links in a modified navbar.</p>
-                    </li>
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/signin.html">
-                            <img src="media/img/examples/bootstrap-example-signin.png" alt="">
-                        </a>
-                        <h4>Sign in</h4>
-                        <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
-                    </li>
-
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/sticky-footer.html">
-                            <img src="media/img/examples/bootstrap-example-sticky-footer.png" alt="">
-                        </a>
-                        <h4>Sticky footer</h4>
-                        <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
-                    </li>
-                    <li class="span3">
-                        <a class="thumbnail" href="examples/carousel.html">
-                            <img src="media/img/examples/bootstrap-example-carousel.png" alt="">
-                        </a>
-                        <h4>Carousel jumbotron</h4>
-                        <p>A more interactive riff on the basic marketing site featuring a prominent carousel.</p>
-                    </li>
-                </ul>
-            </section>
-
-
-
-
             <!-- Next
             ================================================== -->
             <section id="what-next">
                 <div class="page-header">
                     <h1>What next?</h1>
                 </div>
-                <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
+                <p class="lead">Head to the docs for information, examples, and code snippets on every component.</p>
                 <a class="btn btn-large btn-primary" href="./scaffolding.html">Visit the Bootstrap docs</a>
-                <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;">Customize Bootstrap</a>
             </section>
 
 

@@ -16,7 +16,7 @@
                 <a href="http://github.com/vusys/bootstrap">GitHub project</a>
             </li>
             <li>
-                <a href="getting-started.html#examples">Examples</a>
+                <a href="getting-started.html">Getting started</a>
             </li>
             <li>
                 <a href="extend.html">Extend</a>

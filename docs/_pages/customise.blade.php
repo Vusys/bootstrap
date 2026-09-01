@@ -1,7 +1,7 @@
 @extends('hyde::layouts.app')
 @section('content')
 @php($title = "Customise")
-@php($navigation = ['priority' => 70])
+@php($navigation = ['hidden' => true])
 
 <!-- Masthead
 ================================================== -->

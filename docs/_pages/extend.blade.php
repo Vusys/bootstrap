@@ -7,7 +7,7 @@
 <header class="jumbotron subhead" id="overview">
     <div class="container">
         <h1>Extending Bootstrap</h1>
-        <p class="lead">Extend Bootstrap to take advantage of included styles and components, as well as LESS variables and mixins.</p>
+        <p class="lead">Extend Bootstrap to take advantage of included styles and components, as well as Sass variables and mixins.</p>
         <div>
 </header>
 
@@ -18,7 +18,7 @@
     <div class="row">
         <div class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#built-with-less"><i class="icon-chevron-right"></i> Built with LESS</a></li>
+                <li><a href="#built-with-sass"><i class="icon-chevron-right"></i> Built with Sass</a></li>
                 <li><a href="#compiling"><i class="icon-chevron-right"></i> Compiling Bootstrap</a></li>
                 <li><a href="#static-assets"><i class="icon-chevron-right"></i> Use as static assets</a></li>
             </ul>
@@ -27,41 +27,39 @@
 
 
 
-            <!-- BUILT WITH LESS
+            <!-- BUILT WITH SASS
             ================================================== -->
-            <section id="built-with-less">
+            <section id="built-with-sass">
                 <div class="page-header">
-                    <h1>Built with LESS</h1>
+                    <h1>Built with Sass</h1>
                 </div>
 
-                <img style="float: right; height: 36px; margin: 10px 20px 20px" src="assets/img/less-logo-large.png" alt="LESS CSS">
-                <p class="lead">Bootstrap is made with LESS at its core, a dynamic stylesheet language created by our good friend, <a href="http://cloudhead.io">Alexis Sellier</a>. It makes developing systems-based CSS faster, easier, and more fun.</p>
+                <p class="lead">This fork's source is Sass, compiled with <a href="https://sass-lang.com/dart-sass/">Dart Sass</a>. The original Bootstrap 2 was built with LESS; this fork migrated the whole <code>scss/</code> tree over when it moved to modern tooling, so anything you'd customize used to be a <code>.less</code> file and is now a <code>.scss</code> partial.</p>
 
-                <h3>Why LESS?</h3>
-                <p>One of Bootstrap's creators wrote a quick <a href="http://www.wordsbyf.at/2012/03/08/why-less/">blog post about this</a>, summarized here:</p>
+                <h3>Why Sass?</h3>
                 <ul>
-                    <li>Bootstrap compiles faster ~6x faster with Less compared to Sass</li>
-                    <li>Less is written in JavaScript, making it easier to us to dive in and patch compared to Ruby with Sass.</li>
-                    <li>Less is more; we want to feel like we're writing CSS and making Bootstrap approachable to all.</li>
+                    <li>LESS's own reference implementation (lessc) has been effectively unmaintained for years; Dart Sass is the actively developed reference implementation of Sass.</li>
+                    <li>The rest of this project's tooling — Gulp, ESLint, Stylelint — is npm-native, so a Node-based Sass compiler fits the same pipeline without a separate toolchain.</li>
+                    <li>Sass's module system (<code>@@use</code>/<code>@@forward</code>) gives the theme system in this fork proper namespacing, which LESS's <code>@@import</code> never had.</li>
                 </ul>
 
                 <h3>What's included?</h3>
-                <p>As an extension of CSS, LESS includes variables, mixins for reusable snippets of code, operations for simple math, nesting, and even color functions.</p>
+                <p>As an extension of CSS, Sass includes variables, mixins for reusable snippets of code, operations for simple math, nesting, and colour functions — the same category of features LESS offered, just with different syntax.</p>
 
                 <h3>Learn more</h3>
-                <p>Visit the official website at <a href="http://lesscss.org">http://lesscss.org</a> to learn more.</p>
+                <p>Visit the official website at <a href="https://sass-lang.com">https://sass-lang.com</a> to learn more.</p>
             </section>
 
 
 
-            <!-- COMPILING LESS AND BOOTSTRAP
+            <!-- COMPILING SASS AND BOOTSTRAP
             ================================================== -->
             <section id="compiling">
                 <div class="page-header">
-                    <h1>Compiling Bootstrap with Less</h1>
+                    <h1>Compiling Bootstrap with Sass</h1>
                 </div>
 
-                <p class="lead">Since our CSS is written with Less and utilizes variables and mixins, it needs to be compiled for final production implementation. Here's how.</p>
+                <p class="lead">Since our CSS is written with Sass and utilizes variables and mixins, it needs to be compiled for final production implementation. Here's how.</p>
 
                 <div class="alert alert-info">
                     <strong>Note:</strong> If you're submitting a pull request to GitHub with modified CSS, you <strong>must</strong> recompile the CSS via any of these methods.
@@ -70,26 +68,17 @@
                 <h2>Tools for compiling</h2>
 
                 <h3>Command line</h3>
-                <p>Follow <a href="https://github.com/twbs/bootstrap#developers">the instructions in the project readme</a> on GitHub for compiling via command line.</p>
-
-                <h3>JavaScript</h3>
-                <p><a href="http://lesscss.org/">Download the latest Less.js</a> and include the path to it (and Bootstrap) in the <code>&lt;head&gt;</code>.</p>
+                <p>Clone the repo and build it with the Gulp pipeline:</p>
                 <pre class="prettyprint">
-&lt;link rel="stylesheet/less" href="/path/to/bootstrap.less"&gt;
-&lt;script src="/path/to/less.js"&gt;&lt;/script&gt;
+git clone https://github.com/Vusys/bootstrap.git
+cd bootstrap
+npm ci
+npm run build
 </pre>
-                <p>To recompile the .less files, just save them and reload your page. Less.js compiles them and stores them in local storage.</p>
+                <p><code>npm run build</code> cleans <code>dist/</code>, then compiles <code>scss/bootstrap.scss</code> and every theme in <code>scss/themes/</code> with Dart Sass, runs them through Autoprefixer against the project's legacy browser matrix, and minifies with clean-css. Use <code>npm run watch</code> during development to rebuild on every file change. See the <a href="https://github.com/Vusys/bootstrap#compiling-css-and-javascript">readme</a> for the full list of npm scripts.</p>
 
-                <h3>Unofficial Mac app</h3>
-                <p><a href="http://incident57.com/less/">The unofficial Mac app</a> watches directories of .less files and compiles the code to local files after every save of a watched .less file. If you like, you can toggle preferences in the app for automatic minifying and which directory the compiled files end up in.</p>
-
-                <h3>More apps</h3>
-                <h4><a href="http://crunchapp.net/" target="_blank">Crunch</a></h4>
-                <p>Crunch is a great looking LESS editor and compiler built on Adobe Air.</p>
-                <h4><a href="http://incident57.com/codekit/" target="_blank">CodeKit</a></h4>
-                <p>Created by the same guy as the unofficial Mac app, CodeKit is a Mac app that compiles LESS, SASS, Stylus, and CoffeeScript.</p>
-                <h4><a href="http://wearekiss.com/simpless" target="_blank">Simpless</a></h4>
-                <p>Mac, Linux, and Windows app for drag and drop compiling of LESS files. Plus, the <a href="https://github.com/Paratron/SimpLESS" target="_blank">source code is on GitHub</a>.</p>
+                <h3>Editor and IDE plugins</h3>
+                <p>Most editors have a Sass/SCSS extension that can watch and compile <code>.scss</code> files on save — handy for quick experiments, but not a substitute for running the project's own Gulp build, which also handles Autoprefixer and minification.</p>
 
             </section>
 
