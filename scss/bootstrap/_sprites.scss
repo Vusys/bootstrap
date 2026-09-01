@@ -38,6 +38,8 @@
 .nav-pills > .active > a > [class*=" icon-"],
 .nav-list > .active > a > [class^="icon-"],
 .nav-list > .active > a > [class*=" icon-"],
+.list-group > li.active > .list-group-item > [class^="icon-"],
+.list-group > li.active > .list-group-item > [class*=" icon-"],
 .navbar-inverse .nav > .active > a > [class^="icon-"],
 .navbar-inverse .nav > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],

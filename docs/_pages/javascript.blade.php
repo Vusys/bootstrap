@@ -19,21 +19,21 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
-                <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
-                <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
-                <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
-                <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
-                <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
-                <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
-                <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
-                <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
-                <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
-                <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
-                <li><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
-                <li><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
-                <li><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#overview" class="list-group-item"><i class="icon-chevron-right"></i> Overview</a></li>
+                <li><a href="#transitions" class="list-group-item"><i class="icon-chevron-right"></i> Transitions</a></li>
+                <li><a href="#modals" class="list-group-item"><i class="icon-chevron-right"></i> Modal</a></li>
+                <li><a href="#dropdowns" class="list-group-item"><i class="icon-chevron-right"></i> Dropdown</a></li>
+                <li><a href="#scrollspy" class="list-group-item"><i class="icon-chevron-right"></i> Scrollspy</a></li>
+                <li><a href="#tabs" class="list-group-item"><i class="icon-chevron-right"></i> Tab</a></li>
+                <li><a href="#tooltips" class="list-group-item"><i class="icon-chevron-right"></i> Tooltip</a></li>
+                <li><a href="#popovers" class="list-group-item"><i class="icon-chevron-right"></i> Popover</a></li>
+                <li><a href="#alerts" class="list-group-item"><i class="icon-chevron-right"></i> Alert</a></li>
+                <li><a href="#buttons" class="list-group-item"><i class="icon-chevron-right"></i> Button</a></li>
+                <li><a href="#collapse" class="list-group-item"><i class="icon-chevron-right"></i> Collapse</a></li>
+                <li><a href="#carousel" class="list-group-item"><i class="icon-chevron-right"></i> Carousel</a></li>
+                <li><a href="#typeahead" class="list-group-item"><i class="icon-chevron-right"></i> Typeahead</a></li>
+                <li><a href="#affix" class="list-group-item"><i class="icon-chevron-right"></i> Affix</a></li>
             </ul>
         </div>
         <div class="span9">
@@ -123,7 +123,7 @@ $('#myModal').on('show', function (e) {
 
                 <h3>Static example</h3>
                 <p>A rendered modal with header, body, and set of actions in the footer.</p>
-                <div class="bs-docs-example" style="background-color: #f5f5f5;">
+                <div class="bs-docs-example well" style="background-color: #f5f5f5;">
                     <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -188,7 +188,7 @@ $('#myModal').on('show', function (e) {
                         <button class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
                 </div>
                 <pre class="prettyprint linenums">
@@ -331,7 +331,7 @@ $('#myModal').on('hidden', function () {
                 <p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
 
                 <h3>Within a navbar</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div id="navbar-example" class="navbar navbar-static">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto;">
@@ -376,7 +376,7 @@ $('#myModal').on('hidden', function () {
                 </div>
 
                 <h3>Within tabs</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-pills">
                         <li class="active"><a href="#">Regular link</a></li>
                         <li class="dropdown">
@@ -465,7 +465,7 @@ $('#myModal').on('hidden', function () {
 
                 <h2>Example in navbar</h2>
                 <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div id="navbarExample" class="navbar navbar-static">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto;">
@@ -580,7 +580,7 @@ $('[data-spy="scroll"]').each(function () {
 
                 <h2>Example tabs</h2>
                 <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul id="myTab" class="nav nav-tabs">
                         <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
                         <li><a href="#profile" data-toggle="tab">Profile</a></li>
@@ -704,13 +704,13 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
                 <p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
                 <p>For performance reasons, the tooltip and popover data-apis are opt in, meaning <strong>you must initialize them yourself</strong>.</p>
                 <p>Hover over the links below to see tooltips:</p>
-                <div class="bs-docs-example tooltip-demo">
+                <div class="bs-docs-example well tooltip-demo">
                     <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="A much longer tooltip belongs right here to demonstrate the max-width we apply.">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
                     </p>
                 </div>
 
                 <h3>Four directions</h3>
-                <div class="bs-docs-example tooltip-demo">
+                <div class="bs-docs-example well tooltip-demo">
                     <ul class="bs-docs-tooltip-examples">
                         <li><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</a></li>
                         <li><a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</a></li>
@@ -837,7 +837,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
                 <h3>Static popover</h3>
                 <p>Four options are available: top, right, bottom, and left aligned.</p>
-                <div class="bs-docs-example bs-docs-example-popover">
+                <div class="bs-docs-example well bs-docs-example-popover">
                     <div class="popover top">
                         <div class="arrow"></div>
                         <h3 class="popover-title">Popover top</h3>
@@ -875,12 +875,12 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
                 <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
 
                 <h3>Live demo</h3>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <a href="#" class="btn btn-large btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
                 </div>
 
                 <h4>Four directions</h4>
-                <div class="bs-docs-example tooltip-demo">
+                <div class="bs-docs-example well tooltip-demo">
                     <ul class="bs-docs-tooltip-examples">
                         <li><a href="#" class="btn" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on top">Popover on top</a></li>
                         <li><a href="#" class="btn" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</a></li>
@@ -1008,14 +1008,14 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
                 <h2>Example alerts</h2>
                 <p>Add dismiss functionality to all alert messages with this plugin.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert fade in">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
                     </div>
                 </div>
 
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert alert-block alert-error fade in">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <h4 class="alert-heading">Oh snap! You got an error!</h4>
@@ -1087,7 +1087,7 @@ $('#my-alert').bind('closed', function () {
 
                 <h4>Stateful</h4>
                 <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <button type="button" id="fat-btn" data-loading-text="loading..." class="btn btn-primary">
                         Loading state
                     </button>
@@ -1096,14 +1096,14 @@ $('#my-alert').bind('closed', function () {
 
                 <h4>Single toggle</h4>
                 <p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle</button>
                 </div>
                 <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
 
                 <h4>Checkbox</h4>
                 <p>Add <code>data-toggle="buttons-checkbox"</code> for checkbox style toggling on btn-group.</p>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <div class="btn-group" data-toggle="buttons-checkbox">
                         <button type="button" class="btn btn-primary">Left</button>
                         <button type="button" class="btn btn-primary">Middle</button>
@@ -1120,7 +1120,7 @@ $('#my-alert').bind('closed', function () {
 
                 <h4>Radio</h4>
                 <p>Add <code>data-toggle="buttons-radio"</code> for radio style toggling on btn-group.</p>
-                <div class="bs-docs-example" style="padding-bottom: 24px;">
+                <div class="bs-docs-example well" style="padding-bottom: 24px;">
                     <div class="btn-group" data-toggle="buttons-radio">
                         <button type="button" class="btn btn-primary">Left</button>
                         <button type="button" class="btn btn-primary">Middle</button>
@@ -1192,7 +1192,7 @@ $('#my-alert').bind('closed', function () {
                 <h2>Example accordion</h2>
                 <p>Using the collapse plugin, we built a simple accordion style widget:</p>
 
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="accordion" id="accordion2">
                         <div class="accordion-group">
                             <div class="accordion-heading">
@@ -1374,7 +1374,7 @@ $('#myCollapsible').on('hidden', function () {
 
                 <h2>Example carousel</h2>
                 <p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div id="myCarousel" class="carousel slide">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -1525,7 +1525,7 @@ $('.carousel').carousel({
 
                 <h2>Example</h2>
                 <p>A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.</p>
-                <div class="bs-docs-example" style="background-color: #f5f5f5;">
+                <div class="bs-docs-example well" style="background-color: #f5f5f5;">
                     <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
                 </div>
                 <pre class="prettyprint linenums">&lt;input type="text" data-provide="typeahead"&gt;</pre>

@@ -19,14 +19,14 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-                <li><a href="#code"><i class="icon-chevron-right"></i> Code</a></li>
-                <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
-                <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
-                <li><a href="#buttons"><i class="icon-chevron-right"></i> Buttons</a></li>
-                <li><a href="#images"><i class="icon-chevron-right"></i> Images</a></li>
-                <li><a href="#icons"><i class="icon-chevron-right"></i> Icons by Glyphicons</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#typography" class="list-group-item"><i class="icon-chevron-right"></i> Typography</a></li>
+                <li><a href="#code" class="list-group-item"><i class="icon-chevron-right"></i> Code</a></li>
+                <li><a href="#tables" class="list-group-item"><i class="icon-chevron-right"></i> Tables</a></li>
+                <li><a href="#forms" class="list-group-item"><i class="icon-chevron-right"></i> Forms</a></li>
+                <li><a href="#buttons" class="list-group-item"><i class="icon-chevron-right"></i> Buttons</a></li>
+                <li><a href="#images" class="list-group-item"><i class="icon-chevron-right"></i> Images</a></li>
+                <li><a href="#icons" class="list-group-item"><i class="icon-chevron-right"></i> Icons by Glyphicons</a></li>
             </ul>
         </div>
         <div class="span9">
@@ -40,7 +40,7 @@
 
                 <h2 id="headings">Headings</h2>
                 <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <h1>h1. Heading 1</h1>
                     <h2>h2. Heading 2</h2>
                     <h3>h3. Heading 3</h3>
@@ -51,7 +51,7 @@
 
                 <h2 id="body-copy">Body copy</h2>
                 <p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
                     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -60,7 +60,7 @@
 
                 <h3>Lead body copy</h3>
                 <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
                 </div>
                 <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
@@ -77,7 +77,7 @@
 
                 <h3><code>&lt;small&gt;</code></h3>
                 <p>For de-emphasizing inline or blocks of text, <small>use the small tag.</small></p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p><small>This line of text is meant to be treated as fine print.</small></p>
                 </div>
                 <pre class="prettyprint">
@@ -88,14 +88,14 @@
 
                 <h3>Bold</h3>
                 <p>For emphasizing a snippet of text with a heavier font-weight.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
                 </div>
                 <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</pre>
 
                 <h3>Italics</h3>
                 <p>For emphasizing a snippet of text with italics.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
                 </div>
                 <pre class="prettyprint">&lt;em&gt;rendered as italicized text&lt;/em&gt;</pre>
@@ -104,7 +104,7 @@
 
                 <h3>Alignment classes</h3>
                 <p>Easily realign text to components with text alignment classes.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p class="text-left">Left aligned text.</p>
                     <p class="text-center">Center aligned text.</p>
                     <p class="text-right">Right aligned text.</p>
@@ -117,7 +117,7 @@
 
                 <h3>Emphasis classes</h3>
                 <p>Convey meaning through color with a handful of emphasis utility classes.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
                     <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
                     <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -141,14 +141,14 @@
 
                 <h3><code>&lt;abbr&gt;</code></h3>
                 <p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
                 </div>
                 <pre class="prettyprint">&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;</pre>
 
                 <h3><code>&lt;abbr class="initialism"&gt;</code></h3>
                 <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
                 </div>
                 <pre class="prettyprint">&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;</pre>
@@ -162,7 +162,7 @@
 
                 <h3><code>&lt;address&gt;</code></h3>
                 <p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <address>
                         <strong>Twitter, Inc.</strong><br>
                         795 Folsom Ave, Suite 600<br>
@@ -197,7 +197,7 @@
 
                 <h3>Default blockquote</h3>
                 <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <blockquote>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     </blockquote>
@@ -213,7 +213,7 @@
 
                 <h4>Naming a source</h4>
                 <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <blockquote>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
@@ -228,7 +228,7 @@
 
                 <h4>Alternate displays</h4>
                 <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
-                <div class="bs-docs-example" style="overflow: hidden;">
+                <div class="bs-docs-example well" style="overflow: hidden;">
                     <blockquote class="pull-right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
@@ -249,7 +249,7 @@
 
                 <h3>Unordered</h3>
                 <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -276,7 +276,7 @@
 
                 <h3>Ordered</h3>
                 <p>A list of items in which the order <em>does</em> explicitly matter.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ol>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -296,7 +296,7 @@
 
                 <h3>Unstyled</h3>
                 <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="unstyled">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -323,7 +323,7 @@
 
                 <h3>Inline</h3>
                 <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="inline">
                         <li>Lorem ipsum</li>
                         <li>Phasellus iaculis</li>
@@ -338,7 +338,7 @@
 
                 <h3>Description</h3>
                 <p>A list of terms with their associated descriptions.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <dl>
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>
@@ -358,7 +358,7 @@
 
                 <h4>Horizontal description</h4>
                 <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <dl class="dl-horizontal">
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>
@@ -394,7 +394,7 @@
 
                 <h2>Inline</h2>
                 <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     For example, <code>&lt;section&gt;</code> should be wrapped as inline.
                 </div>
                 <pre class="prettyprint linenums">
@@ -403,7 +403,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h2>Basic block</h2>
                 <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
                 </div>
                 <pre class="prettyprint linenums" style="margin-bottom: 9px;">
@@ -426,7 +426,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h2>Default styles</h2>
                 <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table">
                         <thead>
                         <tr>
@@ -473,7 +473,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3><code>.table-striped</code></h3>
                 <p>Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table table-striped">
                         <thead>
                         <tr>
@@ -513,7 +513,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3><code>.table-bordered</code></h3>
                 <p>Add borders and rounded corners to the table.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table table-bordered">
                         <thead>
                         <tr>
@@ -557,7 +557,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3><code>.table-hover</code></h3>
                 <p>Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table table-hover">
                         <thead>
                         <tr>
@@ -596,7 +596,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3><code>.table-condensed</code></h3>
                 <p>Makes tables more compact by cutting cell padding in half.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table table-condensed">
                         <thead>
                         <tr>
@@ -677,7 +677,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                     </tr>
                     </tbody>
                 </table>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <table class="table">
                         <thead>
                         <tr>
@@ -833,7 +833,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h2>Default styles</h2>
                 <p>Individual form controls receive styling, but without any required base class on the <code>&lt;form&gt;</code> or large changes in markup. Results in stacked, left-aligned labels on top of form controls.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <fieldset>
                         <legend>Legend</legend>
                         <label>Label name</label>
@@ -869,7 +869,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Search form</h3>
                 <p>Add <code>.form-search</code> to the form and <code>.search-query</code> to the <code>&lt;input&gt;</code> for an extra-rounded text input.</p>
-                <form class="bs-docs-example form-search">
+                <form class="bs-docs-example well form-search">
                     <input type="text" class="input-medium search-query">
                     <button type="submit" class="btn">Search</button>
                 </form>
@@ -882,7 +882,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Inline form</h3>
                 <p>Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input type="text" class="input-small" placeholder="Email">
                     <input type="password" class="input-small" placeholder="Password">
                     <label class="checkbox">
@@ -909,7 +909,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                     <li>Add <code>.control-label</code> to the label</li>
                     <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
                 </ul>
-                <form class="bs-docs-example form-horizontal">
+                <form class="bs-docs-example well form-horizontal">
                     <div class="control-group">
                         <label class="control-label" for="inputEmail">Email</label>
                         <div class="controls">
@@ -966,7 +966,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h3>Inputs</h3>
                 <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
                 <p>Requires the use of a specified <code>type</code> at all times.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input type="text" placeholder="Text input">
                 </form>
                 <pre class="prettyprint linenums">
@@ -975,7 +975,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Textarea</h3>
                 <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <textarea rows="3"></textarea>
                 </form>
                 <pre class="prettyprint linenums">
@@ -985,7 +985,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h3>Checkboxes and radios</h3>
                 <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
                 <h4>Default (stacked)</h4>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <label class="checkbox">
                         <input type="checkbox" value="">
                         Option one is this and that&mdash;be sure to include why it's great
@@ -1018,7 +1018,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Inline checkboxes</h4>
                 <p>Add the <code>.inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <label class="checkbox inline">
                         <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
                     </label>
@@ -1043,7 +1043,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Selects</h3>
                 <p>Use the default option or specify a <code>multiple="multiple"</code> to show multiple options at once.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <select>
                         <option>1</option>
                         <option>2</option>
@@ -1090,7 +1090,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Default options</h4>
                 <p>Wrap an <code>.add-on</code> and an <code>input</code> with one of two classes to prepend or append text to an input.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-prepend">
                         <span class="add-on">@</span>
                         <input class="span2" id="prependedInput" type="text" placeholder="Username">
@@ -1114,7 +1114,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Combined</h4>
                 <p>Use both classes and two instances of <code>.add-on</code> to prepend and append an input.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <div class="input-prepend input-append">
                         <span class="add-on">$</span>
                         <input class="span2" id="appendedPrependedInput" type="text">
@@ -1131,7 +1131,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Buttons instead of text</h4>
                 <p>Instead of a <code>&lt;span&gt;</code> with text, use a <code>.btn</code> to attach a button (or two) to an input.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-append">
                         <input class="span2" id="appendedInputButton" type="text">
                         <button class="btn" type="button">Go!</button>
@@ -1143,7 +1143,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
   &lt;button class="btn" type="button"&gt;Go!&lt;/button&gt;
 &lt;/div&gt;
 </pre>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-append">
                         <input class="span2" id="appendedInputButtons" type="text">
                         <button class="btn" type="button">Search</button>
@@ -1160,7 +1160,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Button dropdowns</h4>
                 <p></p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-append">
                         <input class="span2" id="appendedDropdownButton" type="text">
                         <div class="btn-group">
@@ -1190,7 +1190,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 &lt;/div&gt;
 </pre>
 
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-prepend">
                         <div class="btn-group">
                             <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
@@ -1220,7 +1220,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 &lt;/div&gt;
 </pre>
 
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-prepend input-append">
                         <div class="btn-group">
                             <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
@@ -1270,7 +1270,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Segmented dropdown groups</h4>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="input-prepend">
                         <div class="btn-group">
                             <button class="btn" tabindex="-1">Action</button>
@@ -1318,7 +1318,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Search form</h4>
-                <form class="bs-docs-example form-search">
+                <form class="bs-docs-example well form-search">
                     <div class="input-append">
                         <input type="text" class="span2 search-query">
                         <button type="submit" class="btn">Search</button>
@@ -1346,7 +1346,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Block level inputs</h4>
                 <p>Make any <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element behave like a block level element.</p>
-                <form class="bs-docs-example" style="padding-bottom: 15px;">
+                <form class="bs-docs-example well" style="padding-bottom: 15px;">
                     <div class="controls">
                         <input class="input-block-level" type="text" placeholder=".input-block-level">
                     </div>
@@ -1356,7 +1356,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Relative sizing</h4>
-                <form class="bs-docs-example" style="padding-bottom: 15px;">
+                <form class="bs-docs-example well" style="padding-bottom: 15px;">
                     <div class="controls docs-input-sizes">
                         <input class="input-mini" type="text" placeholder=".input-mini">
                         <input class="input-small" type="text" placeholder=".input-small">
@@ -1380,7 +1380,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h4>Grid sizing</h4>
                 <p>Use <code>.span1</code> to <code>.span12</code> for inputs that match the same sizes of the grid columns.</p>
-                <form class="bs-docs-example" style="padding-bottom: 15px;">
+                <form class="bs-docs-example well" style="padding-bottom: 15px;">
                     <div class="controls docs-input-sizes">
                         <input class="span1" type="text" placeholder=".span1">
                         <input class="span2" type="text" placeholder=".span2">
@@ -1424,7 +1424,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <p>For multiple grid inputs per line, <strong>use the <code>.controls-row</code> modifier class for proper spacing</strong>. It floats the inputs to collapse white-space, sets the proper margins, and clears the float.</p>
-                <form class="bs-docs-example" style="padding-bottom: 15px;">
+                <form class="bs-docs-example well" style="padding-bottom: 15px;">
                     <div class="controls">
                         <input class="span5" type="text" placeholder=".span5">
                     </div>
@@ -1458,7 +1458,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Uneditable inputs</h3>
                 <p>Present data in a form that's not editable without using actual form markup.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <span class="input-xlarge uneditable-input">Some value here</span>
                 </form>
                 <pre class="prettyprint linenums">
@@ -1467,7 +1467,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Form actions</h3>
                 <p>End a form with a group of actions (buttons). When placed within a <code>.form-actions</code>, the buttons will automatically indent to line up with the form controls.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">Save changes</button>
                         <button type="button" class="btn">Cancel</button>
@@ -1483,7 +1483,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h3>Help text</h3>
                 <p>Inline and block level support for help text that appears around form controls.</p>
                 <h4>Inline help</h4>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input type="text"> <span class="help-inline">Inline help text</span>
                 </form>
                 <pre class="prettyprint linenums">
@@ -1491,7 +1491,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Block help</h4>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input type="text">
                     <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
                 </form>
@@ -1508,7 +1508,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Input focus</h3>
                 <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused...">
                 </form>
                 <pre class="prettyprint linenums">
@@ -1518,7 +1518,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h3>Invalid inputs</h3>
                 <p>Style inputs via default browser functionality with <code>:invalid</code>. Specify a <code>type</code>, add the <code>required</code> attribute if the field is not optional, and (if applicable) specify a <code>pattern</code>.</p>
                 <p>This is not available in versions of Internet Explorer 7-9 due to lack of support for CSS pseudo selectors.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input class="span3" type="email" placeholder="test@example.com" required>
                 </form>
                 <pre class="prettyprint linenums">
@@ -1527,7 +1527,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Disabled inputs</h3>
                 <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
-                <form class="bs-docs-example form-inline">
+                <form class="bs-docs-example well form-inline">
                     <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
                 </form>
                 <pre class="prettyprint linenums">
@@ -1537,7 +1537,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h3>Validation states</h3>
                 <p>Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.</p>
 
-                <form class="bs-docs-example form-horizontal">
+                <form class="bs-docs-example well form-horizontal">
                     <div class="control-group warning">
                         <label class="control-label" for="inputWarning">Input with warning</label>
                         <div class="controls">
@@ -1672,7 +1672,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h2>Button sizes</h2>
                 <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p>
                         <button type="button" class="btn btn-large btn-primary">Large button</button>
                         <button type="button" class="btn btn-large">Large button</button>
@@ -1709,7 +1709,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 &lt;/p&gt;
 </pre>
                 <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
                         <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
                         <button type="button" class="btn btn-large btn-block">Block level button</button>
@@ -1726,7 +1726,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Anchor element</h3>
                 <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
-                <p class="bs-docs-example">
+                <p class="bs-docs-example well">
                     <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
                     <a href="#" class="btn btn-large disabled">Link</a>
                 </p>
@@ -1741,7 +1741,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h3>Button element</h3>
                 <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
-                <p class="bs-docs-example">
+                <p class="bs-docs-example well">
                     <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
                     <button type="button" class="btn btn-large" disabled>Button</button>
                 </p>
@@ -1753,7 +1753,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
                 <h2>One class, multiple tags</h2>
                 <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-                <form class="bs-docs-example">
+                <form class="bs-docs-example well">
                     <a class="btn" href="">Link</a>
                     <button class="btn" type="submit">Button</button>
                     <input class="btn" type="button" value="Input">
@@ -1779,7 +1779,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 </div>
 
                 <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
-                <div class="bs-docs-example bs-docs-example-images">
+                <div class="bs-docs-example well bs-docs-example-images">
                     <img src="https://placecats.com/neo/140/140" class="img-rounded">
                     <img src="https://placecats.com/neo_banana/140/140"  class="img-circle">
                     <img src="https://placecats.com/bella/140/140"  class="img-polaroid">
@@ -1983,7 +1983,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <h4>Buttons</h4>
 
                 <h5>Button group in a button toolbar</h5>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar">
                         <div class="btn-group">
                             <a class="btn" href="#"><i class="icon-align-left"></i></a>
@@ -2005,7 +2005,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h5>Dropdown in a button group</h5>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-group">
                         <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
                         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
@@ -2033,7 +2033,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h5>Button sizes</h5>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <a class="btn btn-large" href="#"><i class="icon-star"></i> Star</a>
                     <a class="btn btn-small" href="#"><i class="icon-star"></i> Star</a>
                     <a class="btn btn-mini" href="#"><i class="icon-star"></i> Star</a>
@@ -2045,7 +2045,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Navigation</h4>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well" style="padding: 8px 0; margin-bottom: 0;">
                         <ul class="nav nav-list">
                             <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
@@ -2065,7 +2065,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
                 <h4>Form fields</h4>
-                <form class="bs-docs-example form-horizontal">
+                <form class="bs-docs-example well form-horizontal">
                     <div class="control-group">
                         <label class="control-label" for="inputIcon">Email address</label>
                         <div class="controls">

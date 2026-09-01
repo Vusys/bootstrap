@@ -19,11 +19,11 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#components"><i class="icon-chevron-right"></i> 1. Choose components</a></li>
-                <li><a href="#plugins"><i class="icon-chevron-right"></i> 2. Select jQuery plugins</a></li>
-                <li><a href="#variables"><i class="icon-chevron-right"></i> 3. Customize variables</a></li>
-                <li><a href="#download"><i class="icon-chevron-right"></i> 4. Download</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#components" class="list-group-item"><i class="icon-chevron-right"></i> 1. Choose components</a></li>
+                <li><a href="#plugins" class="list-group-item"><i class="icon-chevron-right"></i> 2. Select jQuery plugins</a></li>
+                <li><a href="#variables" class="list-group-item"><i class="icon-chevron-right"></i> 3. Customize variables</a></li>
+                <li><a href="#download" class="list-group-item"><i class="icon-chevron-right"></i> 4. Download</a></li>
             </ul>
         </div>
         <div class="span9">
