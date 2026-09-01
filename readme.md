@@ -19,6 +19,8 @@ npm run build
 
 Output lands in `dist/`: `dist/css`, `dist/js`, `dist/img`, and `dist/themes`, each with plain and minified (`.min`) versions plus sourcemaps.
 
+This isn't published to npm or any other package registry — there's no `bootstrap-legacy` package to `npm install`. The `npm` scripts above are only used to build the project from its own source; distribution is via the [Releases](https://github.com/Vusys/bootstrap/releases) zip or a plain git clone.
+
 ## Compiling CSS and JavaScript
 
 The build is a small Gulp pipeline (`gulpfile.mjs`):
