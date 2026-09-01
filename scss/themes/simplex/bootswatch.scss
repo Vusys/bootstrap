@@ -377,18 +377,3 @@ i[class^="icon-"] {
   padding-top: 0.6em; // matches .btn's own padding-top override above
   padding-bottom: 4px;
 }
-
-.btn-group > .btn-small + .dropdown-toggle {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.btn-group > .btn-mini + .dropdown-toggle {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.btn-group > .btn-large + .dropdown-toggle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}

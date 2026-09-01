@@ -268,23 +268,23 @@ div.subnav {
 
   & > .btn + .dropdown-toggle {
     box-shadow: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
-  
+
   & > .btn-small + .dropdown-toggle {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
-  
+
   & > .btn-mini + .dropdown-toggle {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
-  
+
   & > .btn-large + .dropdown-toggle {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 
