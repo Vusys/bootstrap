@@ -28,6 +28,7 @@
 {{--<script src="assets/js/google-code-prettify/prettify.js"></script>--}}
 <script src="{{ Asset::mediaLink('js/google-code-prettify/prettify.js') }}"></script>
 <script src="{{ Asset::mediaLink('js/application.js') }}"></script>
+<script src="{{ Asset::mediaLink('js/theme-switcher.js') }}"></script>
 
 {{--<script src="assets/js/application.js"></script>--}}
 

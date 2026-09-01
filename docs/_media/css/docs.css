@@ -1065,3 +1065,26 @@ form.bs-docs-example {
         padding-bottom: 20px;
     }
 }
+
+
+/* Demo-only theme switcher
+   Not part of the shipped framework, just a docs-site convenience for
+   previewing scss/themes/* against the current page. See
+   docs/_media/js/theme-switcher.js.
+-------------------------------------------------- */
+#theme-switcher .theme-switcher-current {
+    font-weight: bold;
+}
+/* Bootstrap 2 has no .dropdown-header of its own (that's a v3 addition).
+   Styled here for docs use only -- see https://github.com/Vusys/bootstrap/issues
+   for backporting this into scss/bootstrap/_dropdowns.scss proper. */
+.dropdown-menu .dropdown-header {
+    display: block;
+    padding: 3px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #999;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
