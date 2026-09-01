@@ -24,6 +24,7 @@
                 <li><a href="#buttonGroups" class="list-group-item"><i class="icon-chevron-right"></i> Button groups</a></li>
                 <li><a href="#buttonDropdowns" class="list-group-item"><i class="icon-chevron-right"></i> Button dropdowns</a></li>
                 <li><a href="#navs" class="list-group-item"><i class="icon-chevron-right"></i> Navs</a></li>
+                <li><a href="#list-group" class="list-group-item"><i class="icon-chevron-right"></i> List group</a></li>
                 <li><a href="#navbar" class="list-group-item"><i class="icon-chevron-right"></i> Navbar</a></li>
                 <li><a href="#breadcrumbs" class="list-group-item"><i class="icon-chevron-right"></i> Breadcrumbs</a></li>
                 <li><a href="#pagination" class="list-group-item"><i class="icon-chevron-right"></i> Pagination</a></li>
@@ -998,6 +999,43 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+
+            </section>
+
+
+
+            <!-- List group
+            ================================================== -->
+            <section id="list-group">
+                <div class="page-header">
+                    <h1>List group</h1>
+                </div>
+                <p>A boxed, bordered list of linked items, backported from Bootstrap 3. It's what powers this page's own sidebar, over on the left.</p>
+
+                <h3>Basic list group</h3>
+                <p>Wrap a <code>&lt;ul class="nav list-group"&gt;</code> around <code>&lt;li&gt;</code> items containing a <code>.list-group-item</code> link. Add <code>.active</code> or <code>.disabled</code> to an <code>&lt;li&gt;</code> for its states:</p>
+                <div class="bs-docs-example well">
+                    <div class="well" style="max-width: 340px; padding: 8px 0;">
+                        <ul class="nav list-group">
+                            <li><a href="#" class="list-group-item">Cras justo odio</a></li>
+                            <li class="active"><a href="#" class="list-group-item">Dapibus ac facilisis in</a></li>
+                            <li><a href="#" class="list-group-item">Morbi leo risus</a></li>
+                            <li class="disabled"><a href="#" class="list-group-item">Porta ac consectetur ac</a></li>
+                        </ul>
+                    </div> <!-- /well -->
+                </div>
+                <pre class="prettyprint linenums">
+&lt;ul class="nav list-group"&gt;
+  &lt;li&gt;&lt;a href="#" class="list-group-item"&gt;Cras justo odio&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#" class="list-group-item"&gt;Dapibus ac facilisis in&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="list-group-item"&gt;Morbi leo risus&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="disabled"&gt;&lt;a href="#" class="list-group-item"&gt;Porta ac consectetur ac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                <p>
+                    <span class="label label-info">Note</span>
+                    Unlike Bootstrap 3's <code>.list-group</code>, items stay wrapped in <code>&lt;li&gt;</code> elements &mdash; with <code>.active</code>/<code>.disabled</code> set on the <code>&lt;li&gt;</code>, same as <a href="#navs">nav lists</a> &mdash; and the container keeps the <code>.nav</code> class alongside <code>.list-group</code>. That keeps it compatible with <a href="./javascript.html#scrollspy">Scrollspy</a>, which expects that structure and toggles <code>.active</code> on the <code>&lt;li&gt;</code> itself.
+                </p>
 
             </section>
 
