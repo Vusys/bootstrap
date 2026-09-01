@@ -173,7 +173,11 @@ $wellBackground: #f5f5f5 !default;
 // than new hardcoded colors) so every existing theme's dark/light dropdown
 // already makes this correctly themed with zero per-theme changes.
 $listGroupBackground: $dropdownBackground !default;
-$listGroupBorder: $dropdownBorder !default;
+
+// Soft border derived from the item's own background (same approach as
+// $wellBackground's border below) rather than $dropdownBorder, which reads
+// too dark/hard against a plain white or near-white list.
+$listGroupBorder: color.adjust($listGroupBackground, $lightness: -7%) !default;
 $listGroupHoverBackground: $dropdownLinkBackgroundHover !default;
 $listGroupLinkColor: $dropdownLinkColor !default;
 $listGroupLinkColorHover: $dropdownLinkColorHover !default;
