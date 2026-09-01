@@ -64,7 +64,6 @@ The docs site is still largely the original Bootstrap 2.3.2 documentation and ha
 
 - Finish reworking the docs site for this fork (planned for v2.5.0)
 - Remove the `no-descending-specificity` stylelint suppression
-- Port List Groups (added in later Bootstrap versions, never made it into 2.3.2)
 
 ## Copyright and licence
 
