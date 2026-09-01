@@ -2,5 +2,21 @@ node_modules/
 dist/
 docs/_site
 docs/vendor
-docs/_media
 /docs/.env
+
+# docs/_media holds a mix of hand-authored/vendored docs assets (tracked)
+# and files copied straight from dist/ by `npm run docs:copy` (regenerated
+# in CI, not tracked). Only ignore the latter — keep this list in sync with
+# gulpfile.mjs's dist/{css,js,img} output and the docs:copy script.
+docs/_media/css/bootstrap.css
+docs/_media/css/bootstrap.min.css
+docs/_media/css/bootstrap.min.css.map
+docs/_media/css/bootstrap-responsive.css
+docs/_media/css/bootstrap-responsive.min.css
+docs/_media/css/bootstrap-responsive.min.css.map
+docs/_media/js/bootstrap.js
+docs/_media/js/bootstrap.min.js
+docs/_media/js/bootstrap.min.js.map
+docs/_media/img/glyphicons-halflings.png
+docs/_media/img/glyphicons-halflings-white.png
+docs/_media/themes/
