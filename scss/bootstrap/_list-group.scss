@@ -1,0 +1,67 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+// List groups
+// --------------------------------------------------
+// Backported from Bootstrap 3: a boxed, bordered list of linked items (e.g.
+// a docs sidebar nav), themed via $listGroup* variables instead of the
+// hardcoded colors a hand-rolled sidebar would otherwise need.
+
+// Kept to the same DOM shape as .nav-list -- <ul class="nav list-group">
+// with <li><a class="list-group-item"> children -- rather than Bootstrap
+// 3's flat <a class="list-group-item"> children, so plugins that expect
+// list items (like scrollspy, which toggles .active on the <li>) keep
+// working unchanged.
+
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: $baseLineHeight;
+  list-style: none;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 6.5%);
+}
+
+.list-group > li > .list-group-item {
+  display: block;
+  padding: 8px 15px;
+  margin-bottom: -1px; // collapse borders between items
+  background-color: $listGroupBackground;
+  border: 1px solid $listGroupBorder;
+  color: $listGroupLinkColor;
+}
+
+.list-group > li > .list-group-item:hover,
+.list-group > li > .list-group-item:focus {
+  text-decoration: none;
+  color: $listGroupLinkColorHover;
+  background-color: $listGroupHoverBackground;
+}
+
+// Round the first and last items to match the group's corners
+.list-group > li:first-child > .list-group-item {
+  border-top-left-radius: $baseBorderRadius;
+  border-top-right-radius: $baseBorderRadius;
+}
+
+.list-group > li:last-child > .list-group-item {
+  margin-bottom: 0;
+  border-bottom-left-radius: $baseBorderRadius;
+  border-bottom-right-radius: $baseBorderRadius;
+}
+
+// Active state -- e.g. the current section in a docs sidebar
+.list-group > li.active > .list-group-item,
+.list-group > li.active > .list-group-item:hover,
+.list-group > li.active > .list-group-item:focus {
+  z-index: 2; // Keep the active item's border above its siblings'
+  color: $listGroupActiveColor;
+  background-color: $listGroupActiveBackground;
+  border-color: $listGroupActiveBorder;
+}
+
+.list-group > li.disabled > .list-group-item,
+.list-group > li.disabled > .list-group-item:hover,
+.list-group > li.disabled > .list-group-item:focus {
+  color: $listGroupDisabledColor;
+  background-color: $listGroupDisabledBackground;
+}

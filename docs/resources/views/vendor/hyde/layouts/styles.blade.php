@@ -17,7 +17,7 @@
 
 {{-- Add any extra styles to include after the others --}}
 
-<link rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap-responsive.min.css') }}">
+<link id="bs-theme-css" rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap.min.css') }}">
+<link id="bs-theme-responsive-css" rel="stylesheet" href="{{ Asset::mediaLink('css/bootstrap-responsive.min.css') }}">
 <link rel="stylesheet" href="{{ Asset::mediaLink('css/docs.css') }}">
 @stack('styles')

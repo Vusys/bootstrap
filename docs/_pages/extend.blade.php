@@ -17,10 +17,10 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#built-with-sass"><i class="icon-chevron-right"></i> Built with Sass</a></li>
-                <li><a href="#compiling"><i class="icon-chevron-right"></i> Compiling Bootstrap</a></li>
-                <li><a href="#static-assets"><i class="icon-chevron-right"></i> Use as static assets</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#built-with-sass" class="list-group-item"><i class="icon-chevron-right"></i> Built with Sass</a></li>
+                <li><a href="#compiling" class="list-group-item"><i class="icon-chevron-right"></i> Compiling Bootstrap</a></li>
+                <li><a href="#static-assets" class="list-group-item"><i class="icon-chevron-right"></i> Use as static assets</a></li>
             </ul>
         </div>
         <div class="span9">

@@ -19,12 +19,12 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#global"><i class="icon-chevron-right"></i> Global styles</a></li>
-                <li><a href="#gridSystem"><i class="icon-chevron-right"></i> Grid system</a></li>
-                <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
-                <li><a href="#layouts"><i class="icon-chevron-right"></i> Layouts</a></li>
-                <li><a href="#responsive"><i class="icon-chevron-right"></i> Responsive design</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#global" class="list-group-item"><i class="icon-chevron-right"></i> Global styles</a></li>
+                <li><a href="#gridSystem" class="list-group-item"><i class="icon-chevron-right"></i> Grid system</a></li>
+                <li><a href="#fluidGridSystem" class="list-group-item"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
+                <li><a href="#layouts" class="list-group-item"><i class="icon-chevron-right"></i> Layouts</a></li>
+                <li><a href="#responsive" class="list-group-item"><i class="icon-chevron-right"></i> Responsive design</a></li>
             </ul>
         </div>
         <div class="span9">

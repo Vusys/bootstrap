@@ -19,21 +19,22 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdowns</a></li>
-                <li><a href="#buttonGroups"><i class="icon-chevron-right"></i> Button groups</a></li>
-                <li><a href="#buttonDropdowns"><i class="icon-chevron-right"></i> Button dropdowns</a></li>
-                <li><a href="#navs"><i class="icon-chevron-right"></i> Navs</a></li>
-                <li><a href="#navbar"><i class="icon-chevron-right"></i> Navbar</a></li>
-                <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> Breadcrumbs</a></li>
-                <li><a href="#pagination"><i class="icon-chevron-right"></i> Pagination</a></li>
-                <li><a href="#labels-badges"><i class="icon-chevron-right"></i> Labels and badges</a></li>
-                <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-                <li><a href="#thumbnails"><i class="icon-chevron-right"></i> Thumbnails</a></li>
-                <li><a href="#alerts"><i class="icon-chevron-right"></i> Alerts</a></li>
-                <li><a href="#progress"><i class="icon-chevron-right"></i> Progress bars</a></li>
-                <li><a href="#media"><i class="icon-chevron-right"></i> Media object</a></li>
-                <li><a href="#misc"><i class="icon-chevron-right"></i> Misc</a></li>
+            <ul class="nav list-group bs-docs-sidenav">
+                <li><a href="#dropdowns" class="list-group-item"><i class="icon-chevron-right"></i> Dropdowns</a></li>
+                <li><a href="#buttonGroups" class="list-group-item"><i class="icon-chevron-right"></i> Button groups</a></li>
+                <li><a href="#buttonDropdowns" class="list-group-item"><i class="icon-chevron-right"></i> Button dropdowns</a></li>
+                <li><a href="#navs" class="list-group-item"><i class="icon-chevron-right"></i> Navs</a></li>
+                <li><a href="#list-group" class="list-group-item"><i class="icon-chevron-right"></i> List group</a></li>
+                <li><a href="#navbar" class="list-group-item"><i class="icon-chevron-right"></i> Navbar</a></li>
+                <li><a href="#breadcrumbs" class="list-group-item"><i class="icon-chevron-right"></i> Breadcrumbs</a></li>
+                <li><a href="#pagination" class="list-group-item"><i class="icon-chevron-right"></i> Pagination</a></li>
+                <li><a href="#labels-badges" class="list-group-item"><i class="icon-chevron-right"></i> Labels and badges</a></li>
+                <li><a href="#typography" class="list-group-item"><i class="icon-chevron-right"></i> Typography</a></li>
+                <li><a href="#thumbnails" class="list-group-item"><i class="icon-chevron-right"></i> Thumbnails</a></li>
+                <li><a href="#alerts" class="list-group-item"><i class="icon-chevron-right"></i> Alerts</a></li>
+                <li><a href="#progress" class="list-group-item"><i class="icon-chevron-right"></i> Progress bars</a></li>
+                <li><a href="#media" class="list-group-item"><i class="icon-chevron-right"></i> Media object</a></li>
+                <li><a href="#misc" class="list-group-item"><i class="icon-chevron-right"></i> Misc</a></li>
             </ul>
         </div>
         <div class="span9">
@@ -49,7 +50,7 @@
 
                 <h2>Example</h2>
                 <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown JavaScript plugin</a>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="dropdown clearfix">
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                             <li><a tabindex="-1" href="#">Action</a></li>
@@ -99,7 +100,7 @@
 
                 <h3>Disabled menu options</h3>
                 <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="dropdown clearfix">
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
                             <li><a tabindex="-1" href="#">Regular link</a></li>
@@ -118,7 +119,7 @@
 
                 <h3>Sub menus on dropdowns</h3>
                 <p>Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.</p>
-                <div class="bs-docs-example bs-docs-example-submenus">
+                <div class="bs-docs-example well bs-docs-example-submenus">
 
                     <div class="pull-left">
                         <p class="muted">Default</p>
@@ -216,7 +217,7 @@
 
                 <h3>Single button group</h3>
                 <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-group" style="margin: 9px 0 5px;">
                         <button class="btn">Left</button>
                         <button class="btn">Middle</button>
@@ -233,7 +234,7 @@
 
                 <h3>Multiple button groups</h3>
                 <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar" style="margin: 0;">
                         <div class="btn-group">
                             <button class="btn">1</button>
@@ -261,7 +262,7 @@
 
                 <h3>Vertical button groups</h3>
                 <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-group btn-group-vertical">
                         <button type="button" class="btn"><i class="icon-align-left"></i></button>
                         <button type="button" class="btn"><i class="icon-align-center"></i></button>
@@ -298,7 +299,7 @@
 
                 <h2>Overview and examples</h2>
                 <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar" style="margin: 0;">
                         <div class="btn-group">
                             <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
@@ -386,7 +387,7 @@
 
                 <h3>Works with all button sizes</h3>
                 <p>Button dropdowns work at any size:  <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar" style="margin: 0;">
                         <div class="btn-group">
                             <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large button <span class="caret"></span></button>
@@ -431,7 +432,7 @@
 
                 <h2>Split button dropdowns</h2>
                 <p>Building on the button group styles and markup, we can easily create a split button. Split buttons feature a standard action on the left and a dropdown toggle on the right with contextual links.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar" style="margin: 0;">
                         <div class="btn-group">
                             <button class="btn">Action</button>
@@ -526,7 +527,7 @@
 
                 <h3>Sizes</h3>
                 <p>Utilize the extra button classes <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code> for sizing.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar">
                         <div class="btn-group">
                             <button class="btn btn-large">Large action</button>
@@ -581,7 +582,7 @@
 
                 <h3>Dropup menus</h3>
                 <p>Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of <code>.dropdown-menu</code>. It will flip the direction of the <code>.caret</code> and reposition the menu itself to move from the bottom up instead of top down.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="btn-toolbar" style="margin: 0;">
                         <div class="btn-group dropup">
                             <button class="btn">Dropup</button>
@@ -635,7 +636,7 @@
 
                 <h3>Basic tabs</h3>
                 <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Profile</a></li>
@@ -654,7 +655,7 @@
 
                 <h3>Basic pills</h3>
                 <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-pills">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Profile</a></li>
@@ -673,7 +674,7 @@
 
                 <h3>Disabled state</h3>
                 <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-pills">
                         <li><a href="#">Clickable link</a></li>
                         <li><a href="#">Clickable link</a></li>
@@ -699,7 +700,7 @@
                 <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
 
                 <h3>Stacked tabs</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-tabs nav-stacked">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Profile</a></li>
@@ -713,7 +714,7 @@
 </pre>
 
                 <h3>Stacked pills</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Profile</a></li>
@@ -734,7 +735,7 @@
                 <p>Add dropdown menus with a little extra HTML and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
 
                 <h3>Tabs with dropdowns</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Help</a></li>
@@ -767,7 +768,7 @@
 </pre>
 
                 <h3>Pills with dropdowns</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="nav nav-pills">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Help</a></li>
@@ -808,7 +809,7 @@
 
                 <h3>Example nav list</h3>
                 <p>Take a list of links and add <code>class="nav nav-list"</code>:</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well" style="max-width: 340px; padding: 8px 0;">
                         <ul class="nav nav-list">
                             <li class="nav-header">List header</li>
@@ -855,7 +856,7 @@
 
                 <h3>Tabbable example</h3>
                 <p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="tabbable" style="margin-bottom: 18px;">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
@@ -902,7 +903,7 @@
 
                 <h4>Tabs on the bottom</h4>
                 <p>Flip the order of the HTML and add a class to put tabs on the bottom.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="tabbable tabs-below">
                         <div class="tab-content">
                             <div class="tab-pane active" id="A">
@@ -935,7 +936,7 @@
 
                 <h4>Tabs on the left</h4>
                 <p>Swap the class to put tabs on the left.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="tabbable tabs-left">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#lA" data-toggle="tab">Section 1</a></li>
@@ -968,7 +969,7 @@
 
                 <h4>Tabs on the right</h4>
                 <p>Swap the class to put tabs on the right.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="tabbable tabs-right">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
@@ -1003,6 +1004,43 @@
 
 
 
+            <!-- List group
+            ================================================== -->
+            <section id="list-group">
+                <div class="page-header">
+                    <h1>List group</h1>
+                </div>
+                <p>A boxed, bordered list of linked items, backported from Bootstrap 3. It's what powers this page's own sidebar, over on the left.</p>
+
+                <h3>Basic list group</h3>
+                <p>Wrap a <code>&lt;ul class="nav list-group"&gt;</code> around <code>&lt;li&gt;</code> items containing a <code>.list-group-item</code> link. Add <code>.active</code> or <code>.disabled</code> to an <code>&lt;li&gt;</code> for its states:</p>
+                <div class="bs-docs-example well">
+                    <div class="well" style="max-width: 340px; padding: 8px 0;">
+                        <ul class="nav list-group">
+                            <li><a href="#" class="list-group-item">Cras justo odio</a></li>
+                            <li class="active"><a href="#" class="list-group-item">Dapibus ac facilisis in</a></li>
+                            <li><a href="#" class="list-group-item">Morbi leo risus</a></li>
+                            <li class="disabled"><a href="#" class="list-group-item">Porta ac consectetur ac</a></li>
+                        </ul>
+                    </div> <!-- /well -->
+                </div>
+                <pre class="prettyprint linenums">
+&lt;ul class="nav list-group"&gt;
+  &lt;li&gt;&lt;a href="#" class="list-group-item"&gt;Cras justo odio&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#" class="list-group-item"&gt;Dapibus ac facilisis in&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="list-group-item"&gt;Morbi leo risus&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="disabled"&gt;&lt;a href="#" class="list-group-item"&gt;Porta ac consectetur ac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                <p>
+                    <span class="label label-info">Note</span>
+                    Unlike Bootstrap 3's <code>.list-group</code>, items stay wrapped in <code>&lt;li&gt;</code> elements &mdash; with <code>.active</code>/<code>.disabled</code> set on the <code>&lt;li&gt;</code>, same as <a href="#navs">nav lists</a> &mdash; and the container keeps the <code>.nav</code> class alongside <code>.list-group</code>. That keeps it compatible with <a href="./javascript.html#scrollspy">Scrollspy</a>, which expects that structure and toggles <code>.active</code> on the <code>&lt;li&gt;</code> itself.
+                </p>
+
+            </section>
+
+
+
             <!-- Navbar
             ================================================== -->
             <section id="navbar">
@@ -1013,7 +1051,7 @@
 
                 <h2>Basic navbar</h2>
                 <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <a class="brand" href="#">Title</a>
@@ -1046,7 +1084,7 @@
 
                 <h3>Brand</h3>
                 <p>A simple link to show your brand or project name only requires an anchor tag.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <a class="brand" href="#">Title</a>
@@ -1059,7 +1097,7 @@
 
                 <h3>Nav links</h3>
                 <p>Nav items are simple to add via unordered lists.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <ul class="nav">
@@ -1080,7 +1118,7 @@
 &lt;/ul&gt;
 </pre>
                 <p>You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <ul class="nav">
@@ -1104,7 +1142,7 @@
 
                 <h3>Forms</h3>
                 <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <form class="navbar-form pull-left">
@@ -1123,7 +1161,7 @@
 
                 <h3>Search form</h3>
                 <p>For a more customized search form, add <code>.navbar-search</code> to the <code>form</code> and <code>.search-query</code> to the input for specialized styles in the navbar.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <form class="navbar-search pull-left">
@@ -1170,7 +1208,7 @@
 
                 <h3>Fixed to top</h3>
                 <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 40px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
-                <div class="bs-docs-example bs-navbar-top-example">
+                <div class="bs-docs-example well bs-navbar-top-example">
                     <div class="navbar navbar-fixed-top" style="position: absolute;">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto; padding: 0 20px;">
@@ -1192,7 +1230,7 @@
 
                 <h3>Fixed to bottom</h3>
                 <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
-                <div class="bs-docs-example bs-navbar-bottom-example">
+                <div class="bs-docs-example well bs-navbar-bottom-example">
                     <div class="navbar navbar-fixed-bottom" style="position: absolute;">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto; padding: 0 20px;">
@@ -1214,7 +1252,7 @@
 
                 <h3>Static top navbar</h3>
                 <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
-                <div class="bs-docs-example bs-navbar-top-example">
+                <div class="bs-docs-example well bs-navbar-top-example">
                     <div class="navbar navbar-static-top" style="margin: -1px -1px 0;">
                         <div class="navbar-inner">
                             <div class="container" style="width: auto; padding: 0 20px;">
@@ -1240,7 +1278,7 @@
 
                 <h2>Responsive navbar</h2>
                 <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar">
                         <div class="navbar-inner">
                             <div class="container">
@@ -1324,7 +1362,7 @@
 
                 <h2>Inverted variation</h2>
                 <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="navbar navbar-inverse" style="position: static;">
                         <div class="navbar-inner">
                             <div class="container">
@@ -1393,7 +1431,7 @@
 
                 <h2>Examples</h2>
                 <p>A single example shown as it might be displayed across multiple pages.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="breadcrumb">
                         <li class="active">Home</li>
                     </ul>
@@ -1428,7 +1466,7 @@
 
                 <h2>Standard pagination</h2>
                 <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="pagination">
                         <ul>
                             <li><a href="#">&laquo;</a></li>
@@ -1463,7 +1501,7 @@
 
                 <h3>Disabled and active states</h3>
                 <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="pagination pagination-centered">
                         <ul>
                             <li class="disabled"><a href="#">&laquo;</a></li>
@@ -1498,7 +1536,7 @@
 
                 <h3>Sizes</h3>
                 <p>Fancy larger or smaller pagination? Add <code>.pagination-large</code>, <code>.pagination-small</code>, or <code>.pagination-mini</code> for additional sizes.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="pagination pagination-large">
                         <ul>
                             <li><a href="#">&laquo;</a></li>
@@ -1569,7 +1607,7 @@
 
                 <h3>Alignment</h3>
                 <p>Add one of two optional classes to change the alignment of pagination links: <code>.pagination-centered</code> and <code>.pagination-right</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="pagination pagination-centered">
                         <ul>
                             <li><a href="#">&laquo;</a></li>
@@ -1587,7 +1625,7 @@
   ...
 &lt;/div&gt;
 </pre>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="pagination pagination-right">
                         <ul>
                             <li><a href="#">&laquo;</a></li>
@@ -1615,7 +1653,7 @@
 
                 <h3>Default example</h3>
                 <p>By default, the pager centers links.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="pager">
                         <li><a href="#">Previous</a></li>
                         <li><a href="#">Next</a></li>
@@ -1630,7 +1668,7 @@
 
                 <h3>Aligned links</h3>
                 <p>Alternatively, you can align each link to the sides:</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="pager">
                         <li class="previous"><a href="#">&larr; Older</a></li>
                         <li class="next"><a href="#">Newer &rarr;</a></li>
@@ -1649,7 +1687,7 @@
 
                 <h3>Optional disabled state</h3>
                 <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="pager">
                         <li class="previous disabled"><a href="#">&larr; Older</a></li>
                         <li class="next"><a href="#">Newer &rarr;</a></li>
@@ -1829,7 +1867,7 @@
 
                 <h2>Hero unit</h2>
                 <p>A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="hero-unit">
                         <h1>Hello, world!</h1>
                         <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -1850,7 +1888,7 @@
 
                 <h2>Page header</h2>
                 <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="page-header">
                         <h1>Example page header <small>Subtext for header</small></h1>
                     </div>
@@ -2015,7 +2053,7 @@
 
                 <h2>Default alert</h2>
                 <p>Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Warning!</strong> Best check yo self, you're not looking too good.
@@ -2043,7 +2081,7 @@
 
                 <h2>Options</h2>
                 <p>For longer messages, increase the padding on the top and bottom of the alert wrapper by adding <code>.alert-block</code>.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert alert-block">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <h4>Warning!</h4>
@@ -2066,7 +2104,7 @@
                 <p>Add optional classes to change an alert's connotation.</p>
 
                 <h3>Error or danger</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert alert-error">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Oh snap!</strong> Change a few things up and try submitting again.
@@ -2079,7 +2117,7 @@
 </pre>
 
                 <h3>Success</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert alert-success">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Well done!</strong> You successfully read this important alert message.
@@ -2092,7 +2130,7 @@
 </pre>
 
                 <h3>Information</h3>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="alert alert-info">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
@@ -2120,7 +2158,7 @@
 
                 <h3>Basic</h3>
                 <p>Default progress bar with a vertical gradient.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress">
                         <div class="bar" style="width: 60%;"></div>
                     </div>
@@ -2133,7 +2171,7 @@
 
                 <h3>Striped</h3>
                 <p>Uses a gradient to create a striped effect. Not available in IE7-8.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress progress-striped">
                         <div class="bar" style="width: 20%;"></div>
                     </div>
@@ -2146,7 +2184,7 @@
 
                 <h3>Animated</h3>
                 <p>Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress progress-striped active">
                         <div class="bar" style="width: 45%"></div>
                     </div>
@@ -2159,7 +2197,7 @@
 
                 <h3>Stacked</h3>
                 <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress">
                         <div class="bar bar-success" style="width: 35%"></div>
                         <div class="bar bar-warning" style="width: 20%"></div>
@@ -2182,7 +2220,7 @@
 
                 <h3>Additional colors</h3>
                 <p>Progress bars use some of the same button and alert classes for consistent styles.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress progress-info" style="margin-bottom: 9px;">
                         <div class="bar" style="width: 20%"></div>
                     </div>
@@ -2213,7 +2251,7 @@
 
                 <h3>Striped bars</h3>
                 <p>Similar to the solid colors, we have varied striped progress bars.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
                         <div class="bar" style="width: 20%"></div>
                     </div>
@@ -2265,7 +2303,7 @@
 
                 <h2>Default example</h2>
                 <p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="media">
                         <a class="pull-left" href="#">
                             <img class="media-object" src="https://placecats.com/neo/64/64">
@@ -2317,7 +2355,7 @@
 
                 <h2>Media list</h2>
                 <p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <ul class="media-list">
                         <li class="media">
                             <a class="pull-left" href="#">
@@ -2403,7 +2441,7 @@
 
                 <h2>Wells</h2>
                 <p>Use the well as a simple effect on an element to give it an inset effect.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well">
                         Look, I'm in a well!
                     </div>
@@ -2415,7 +2453,7 @@
 </pre>
                 <h3>Optional classes</h3>
                 <p>Control padding and rounded corners with two optional modifier classes.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well well-large">
                         Look, I'm in a well!
                     </div>
@@ -2425,7 +2463,7 @@
   ...
 &lt;/div&gt;
 </pre>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <div class="well well-small">
                         Look, I'm in a well!
                     </div>
@@ -2438,7 +2476,7 @@
 
                 <h2>Close icon</h2>
                 <p>Use the generic close icon for dismissing content like modals and alerts.</p>
-                <div class="bs-docs-example">
+                <div class="bs-docs-example well">
                     <p><button class="close" style="float: none;">&times;</button></p>
                 </div>
                 <pre class="prettyprint linenums">&lt;button class="close"&gt;&amp;times;&lt;/button&gt;</pre>

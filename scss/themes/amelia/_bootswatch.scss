@@ -377,21 +377,6 @@ div.subnav {
   padding-bottom: 12px;
 }
 
-.btn-group > .btn-small + .dropdown-toggle {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.btn-group > .btn-mini + .dropdown-toggle {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.btn-group > .btn-large + .dropdown-toggle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 // Tables
 .table th, .table td,
 .table tbody + tbody {
@@ -539,5 +524,3 @@ input, textarea, .search-query, .uneditable-input,
   border-radius: 0;
   color: $white;
 }
-
-
