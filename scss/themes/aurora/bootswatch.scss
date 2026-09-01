@@ -2,11 +2,6 @@
 @use "../../bootstrap/variables" as *;
 
 // Minimal theme shims; most styles come from variable overrides.
-// Align split button dropdown toggle height with buttons.
-.btn-group > .btn + .dropdown-toggle {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
 
 .btn-group > .btn-small + .dropdown-toggle {
   padding-top: 8px;

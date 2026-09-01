@@ -83,12 +83,6 @@ input[type="color"],
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
 }
 
-// Fix heights of split dropdown toggles to match corresponding button heights
-.btn-group > .btn + .dropdown-toggle {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 .btn-group > .btn-small + .dropdown-toggle {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -163,5 +157,4 @@ input[type="color"],
   color: $errorText;
   border: none;
 }
-
 

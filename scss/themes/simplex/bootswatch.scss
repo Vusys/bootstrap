@@ -374,8 +374,8 @@ i[class^="icon-"] {
 
 // Align split button dropdown toggle height with buttons
 .btn-group > .btn + .dropdown-toggle {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 0.6em; // matches .btn's own padding-top override above
+  padding-bottom: 4px;
 }
 
 .btn-group > .btn-small + .dropdown-toggle {

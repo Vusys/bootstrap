@@ -4,11 +4,6 @@
 // Minimal theme shims; most styles come from variable overrides.
 .navbar .brand { text-shadow: 0 1px 0 rgb(255 255 255 / 25%); }
 
-.btn-group > .btn + .dropdown-toggle {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 .btn-group > .btn-small + .dropdown-toggle {
   padding-top: 8px;
   padding-bottom: 8px;

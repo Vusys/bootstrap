@@ -492,12 +492,6 @@ label {
   }
 }
 
-// Align split button dropdown toggle height with buttons
-.btn-group > .btn + .dropdown-toggle {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 .btn-group > .btn-small + .dropdown-toggle {
   padding-top: 8px;
   padding-bottom: 8px;
